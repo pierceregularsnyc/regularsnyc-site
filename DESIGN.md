@@ -37,7 +37,11 @@ Direction chosen without reference sites (the UXKIN library was not reachable fr
 - Booking widget in the hero is the signature element: a working example (pick a day and time, then book), with two floating notification chips.
 - Before/after slider: an old-style site vs a clean one for a made-up shop, always labeled as an example.
 - Scroll story: a sticky phone on desktop follows one customer through find, book, reminder, come back. Inline screens on tablet and phone.
-- Services use 40px line icons in `--accent`, 1.6 stroke, no fills.
+- Hero background: a canvas of Manhattan's street grid (tilted 29 degrees, avenues wide apart, streets close), with cobalt pulses that land as booking pings. Fades out under the headline; still image when reduced motion is on; paused off screen.
+- Services: accessible tabs (arrow keys work) beside a white "owner view" window that shows each tool from the shop's side: site plus text-to-update thread, week calendar, reminder log, missed-call timeline, review requests. All names in it are examples, and the page says so.
+- Missed-call calculator: two sliders (calls missed a week, average visit price) give a yearly figure using only the visitor's numbers, compared with the real first-year cost of Site + Booking ($1,000).
+- Booking confirmation draws a cobalt check. Footer ends with an outlined Gloock "Regulars." wordmark.
+- Service tabs use 32px line icons, 1.6 stroke, no fills; grey when inactive, cobalt when selected.
 - Process steps use large cobalt Gloock numerals because they are a real sequence.
 
 ## Imagery
