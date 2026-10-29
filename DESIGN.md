@@ -1,52 +1,45 @@
-# Regulars NYC — Design
+# Regulars NYC: Design
 
-Feeling: clean and premium. A small, confident studio, not a template. Calm white space, refined type, one deep green used sparingly. Light mode only.
+Feeling: clean and premium, like a well-kept neighborhood barbershop with brass fixtures. Deep green and brass, a signage-style serif for headlines, calm light sections. Light mode only.
 
-Direction chosen without reference sites (the UXKIN library was not reachable), from Pierce's pick of "clean and premium".
+Direction chosen without reference sites (the UXKIN library was not reachable from the build environment), from Pierce's pick of "clean and premium".
 
 ## Color
 
 | Token | Value | Role |
 |---|---|---|
-| `--bg` | `#f6f6f3` | Page background |
-| `--surface` | `#ffffff` | Cards, pricing, phone mockup |
-| `--ink` | `#121513` | Headings, body text, primary buttons |
-| `--ink-2` | `#4b514d` | Secondary text |
-| `--ink-3` | `#8b918d` | Labels, captions, fine print |
-| `--line` | `#e2e4df` | Borders and dividers |
-| `--green` | `#1f4a38` | Accent: stamps, links, highlights, the contact band |
-| `--green-soft` | `#e6eee9` | Tinted backgrounds behind accent elements |
-
-Only one accent. Never use green for body text. Text contrast is 4.5:1 or better on `--bg` and `--surface`.
+| `--green` | `#173b2e` | Brand. Hero, contact band, footer, featured plan, selected states |
+| `--green-3` | `#2c5c4a` | Icon strokes, outlines on light backgrounds |
+| `--brass` | `#c9a35a` | Primary buttons and the logo. Never for text on light backgrounds |
+| `--chalk` | `#f3f4ef` | Page background |
+| `--sage` | `#e2e9e3` | Alternate section background, success messages |
+| `--white` | `#ffffff` | Cards, plans, phone and booking mockups |
+| `--ink` | `#15201b` | Text on light, text on brass buttons |
+| `--ink-2` / `--ink-3` | `#4a5550` / `#7c8781` | Secondary text / captions |
+| `--on-green` / `--on-green-2` | `#eef2ee` / `#a9bdb2` | Text on green / secondary text on green |
+| `--line` | `#d9dfd9` | Borders and dividers |
 
 ## Typography
 
-- Family: Hanken Grotesk (Google Fonts), 400/500/600. Fallback: system sans.
-- Scale (px / line-height): 13/1.4 label, 15/1.5 small, 17/1.6 body, 20/1.5 lead, 26/1.2 h3, 40/1.08 h2, 72/1.0 h1 (fluid down to 44 on phones).
-- Headings: weight 500, letter-spacing -0.035em. No bold-black display type.
-- Labels: 13px, weight 500, uppercase, letter-spacing 0.12em, `--ink-3`.
-- Body text max 62ch.
+- Headlines, logo, prices, step numbers: **Gloock** (Google Fonts), regular weight only.
+- Everything else: **Schibsted Grotesk** 400/500/600.
+- Scale: h1 clamp 48 to 90px / 0.98; h2 clamp 32 to 50px / 1.06; h3 18px 600; lead 19px; body 17px / 1.6; small 14px.
+- No all-caps labels or eyebrows above headings. Headings say the point in sentence case.
 
-## Spacing
+## Spacing and shape
 
-8px base: 4, 8, 12, 16, 24, 32, 48, 64, 96, 144. Sections use 144px on desktop, 88px on phones. Content width 1160px, side gutter at least 20px.
-
-## Shape and depth
-
-- Radius: 8px buttons and inputs, 16px cards, 999px pills.
-- One shadow, for raised objects only (punch card, phone, featured plan): `0 1px 2px rgb(18 21 19 / .04), 0 18px 40px -12px rgb(18 21 19 / .12)`.
-- Borders are 1px `--line`.
+- 8px base. Sections 128px desktop, 104px tablet, 80px phone. Content width 1180px, gutter at least 20px.
+- Radius: 999px buttons, 12px small controls, 18 to 22px cards and plans, 40px phone.
+- One shadow for raised mockups and the featured plan: `0 2px 4px rgb(10 30 22 / .06), 0 24px 48px -16px rgb(10 30 22 / .28)`.
 
 ## Components
 
-- Primary button: `--ink` background, white text, 8px radius, 14px/22px padding. Hover lifts to `#000`. Focus: 2px `--green` outline, 3px offset.
-- Secondary button: transparent, 1px `--ink` border.
-- Text link: `--ink` with a 1px underline offset 4px; hover turns `--green`.
-- Cards: `--surface`, 1px `--line`, 16px radius, no shadow.
-- Nav: logo left, three links and the primary button right; links hide on phones.
+- Buttons: brass pill (primary), outline pill on light, ghost pill on green. Focus ring 2px brass.
+- Booking widget in the hero is the signature element: a working example (pick a day and time, then book).
+- Services use 40px line icons in `--green-3`, 1.6 stroke, no fills.
+- Process steps use large brass Gloock numerals because they are a real sequence.
 
 ## Imagery
 
-- The hero object is a loyalty punch card (the brand idea: a regular has a stamped card). Stamps are thin `--green` rings.
-- Product truth over decoration: a phone mockup shows a real missed-call text-back.
-- No stock illustrations, no emoji icons. Real client photos once there are clients.
+- No stock photos yet. Mockups (booking page, text-back phone, punch card) show the product instead.
+- Once clients exist, use their real shop photos. Never fake client work.
