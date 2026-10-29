@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regulars NYC | Websites and booking for New York small businesses</title>
+  <meta name="description" content="Regulars NYC builds websites and simple booking tools that help New York small businesses turn first-timers into regulars.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Regulars NYC">
+  <meta property="og:description" content="Websites and simple booking tools that help New York small businesses turn first-timers into regulars.">
+  <meta property="og:url" content="https://regularsnyc.co/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="hero-band">
+    <canvas class="hero-map" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="/" aria-label="Regulars NYC home">
+          <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="5" fill="currentColor"/></svg>
+          <span>Regulars</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="#services">Services</a>
+          <a href="#process">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a class="btn btn-accent btn-sm" href="#contact">Get a free mockup</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1><span class="line"><span>Turn first&#8209;timers</span></span> <span class="line"><span>into regulars.</span></span></h1>
+          <p class="lead">Websites and simple booking for New York barbers, salons, trainers, tutors, and studios. Built in about a week, kept up to date for you.</p>
+          <div class="actions">
+            <a class="btn btn-accent" href="#contact">Get a free mockup</a>
+            <a class="btn btn-ghost" href="#pricing">See pricing</a>
+          </div>
+          <p class="local"><span class="local-dot" aria-hidden="true"></span><span>Based in New York. It's <time id="nyc-time">a weekday</time> here.</span></p>
+        </div>
+
+        <figure class="booker" aria-label="Example of an online booking page">
+          <div class="booker-card">
+            <div class="booker-head">
+              <div>
+                <p class="booker-shop">Your Shop</p>
+                <p class="booker-svc">Haircut, 45 min</p>
+              </div>
+              <p class="booker-price">$40</p>
+            </div>
+            <div class="days" role="group" aria-label="Pick a day">
+              <button type="button" class="day" data-day="Mon"><span>Mon</span><b>3</b></button>
+              <button type="button" class="day" data-day="Tue"><span>Tue</span><b>4</b></button>
+              <button type="button" class="day" data-day="Wed"><span>Wed</span><b>5</b></button>
+              <button type="button" class="day is-on" data-day="Thu" aria-pressed="true"><span>Thu</span><b>6</b></button>
+              <button type="button" class="day" data-day="Fri"><span>Fri</span><b>7</b></button>
+            </div>
+            <div class="slots" role="group" aria-label="Pick a time">
+              <button type="button" class="slot">10:00 AM</button>
+              <button type="button" class="slot is-taken" disabled>11:30 AM</button>
+              <button type="button" class="slot">1:15 PM</button>
+              <button type="button" class="slot is-taken" disabled>3:00 PM</button>
+              <button type="button" class="slot is-on" aria-pressed="true">6:00 PM</button>
+              <button type="button" class="slot">7:15 PM</button>
+            </div>
+            <button type="button" class="book-btn" id="book-btn">Book Thu 6:00 PM</button>
+            <p class="booked" id="booked" hidden><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg><span id="booked-text">Booked. A reminder text goes out the day before.</span></p>
+          </div>
+          <p class="chip chip-a" aria-hidden="true"><span class="chip-dot"></span>Reminder sent for tomorrow, 6:00 PM</p>
+          <p class="chip chip-b" aria-hidden="true"><span class="chip-stars">★★★★★</span>New review from a first-timer</p>
+          <figcaption>An example booking page. Try it.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="compare">
+      <div class="wrap">
+        <div class="compare-head">
+          <h2>Same shop. One week later.</h2>
+          <p class="lead">Most New York shops live on their regulars, and still lose new ones to an old site, a "call us" booking process, or a missed call. Drag the handle to see the difference.</p>
+        </div>
+        <div class="compare-bar">
+          <div class="seg" role="group" aria-label="Screen size">
+            <button type="button" class="seg-btn" data-view="desktop" aria-pressed="true">Desktop</button>
+            <button type="button" class="seg-btn" data-view="phone" aria-pressed="false">Phone</button>
+          </div>
+          <p class="compare-hint">On a phone, the old site shrinks to fit. The new one is built for it.</p>
+        </div>
+        <div class="compare-stage" data-view="desktop">
+          <div class="compare-frame" style="--pos: 50%">
+            <div class="site-old" aria-hidden="true">
+              <div class="chrome chrome-old"><span class="chrome-dots"><i></i><i></i><i></i></span><span class="addr">http://www.tonysbarbershop.tripod.com/index.htm</span></div>
+              <div class="old-page">
+                <div class="old-marquee"><span>Welcome to Tony's Barber Shop!!! Best cuts in Brooklyn since 1998 ~~~ Now accepting CASH ONLY ~~~ Closed for holidays (call to check) ~~~</span></div>
+                <div class="old-cols">
+                  <div class="old-side">
+                    <p class="old-side-h">MENU</p>
+                    <p><u>Home</u></p><p><u>About Us</u></p><p><u>Prices</u></p><p><u>Guestbook</u></p><p><u>Links</u></p>
+                    <p class="old-gif">Best viewed in<br>Netscape 4.0<br>at 800x600</p>
+                  </div>
+                  <div class="old-main">
+                    <p class="old-title">TONY'S BARBER SHOP <span class="old-blink">NEW!</span></p>
+                    <p class="old-sub">*** Site under construction, check back soon ***</p>
+                    <div class="old-row">
+                      <div class="old-img"><span>&#x2715;</span> tony_shop.jpg</div>
+                      <table class="old-table">
+                        <tr><td>Haircut</td><td>call for price</td></tr>
+                        <tr><td>Kids cut</td><td>call for price</td></tr>
+                        <tr><td>Hours</td><td>see facebook</td></tr>
+                      </table>
+                    </div>
+                    <p class="old-call">FOR APPOINTMENTS PLEASE CALL (718) 555-0142<br>no texts!! leave a message</p>
+                    <p class="old-links"><u>email tony</u> | <u>sign our guestbook</u></p>
+                    <p class="old-counter">You are visitor #004213</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="site-new" aria-hidden="true">
+              <div class="chrome chrome-new"><span class="chrome-dots"><i></i><i></i><i></i></span><span class="addr"><svg viewBox="0 0 16 16"><rect x="3" y="7" width="10" height="7" rx="2"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>tonysbarbers.com</span></div>
+              <div class="new-page">
+                <div class="new-nav"><span class="new-logo">Tony's Barbers</span><span class="new-links"><span>Services</span><span>Hours</span><span>Find us</span></span><span class="new-book">Book now</span></div>
+                <div class="new-hero">
+                  <div class="new-copy">
+                    <p class="new-h">Sharp cuts in Bay Ridge.</p>
+                    <p class="new-p">Walk-ins welcome. Or book online in 30 seconds, any time of day.</p>
+                    <div class="new-ctas"><span class="new-btn">Book a cut</span><span class="new-btn ghost">See prices</span></div>
+                  </div>
+                  <div class="new-card">
+                    <p class="new-card-h">Haircut, 45 min <b>$40</b></p>
+                    <div class="new-days"><span>Wed</span><span class="on">Thu</span><span>Fri</span><span>Sat</span></div>
+                    <div class="new-slots"><span>11:00</span><span class="off">1:30</span><span class="on">6:00</span></div>
+                    <span class="new-card-btn">Book Thu 6:00 PM</span>
+                  </div>
+                </div>
+                <div class="new-strip">
+                  <div><span>Haircut</span><b>$40</b></div>
+                  <div><span>Skin fade</span><b>$45</b></div>
+                  <div><span>Beard trim</span><b>$20</b></div>
+                  <div class="new-open"><span><i></i>Open today</span><b>9 AM to 8 PM</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="compare-handle" aria-hidden="true"><span></span></div>
+            <span class="compare-tag tag-old" aria-hidden="true">Before</span>
+            <span class="compare-tag tag-new" aria-hidden="true">After</span>
+            <label class="sr-only" for="compare-range">Compare the old and new site</label>
+            <input class="compare-range" id="compare-range" type="range" min="0" max="100" value="50">
+          </div>
+        </div>
+        <div class="diff" role="table" aria-label="What changed">
+          <div class="diff-row diff-headrow" role="row"><span role="columnheader"><span class="sr-only">Topic</span></span><span role="columnheader" class="d-old">Before</span><span role="columnheader" class="d-new">After</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">Booking</span><span role="cell" class="d-old">Call during open hours</span><span role="cell" class="d-new">Online, any hour</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">Prices</span><span role="cell" class="d-old">"Call for price"</span><span role="cell" class="d-new">Right on the page</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">On a phone</span><span role="cell" class="d-old">Pinch and zoom</span><span role="cell" class="d-new">Built for it</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">Hours</span><span role="cell" class="d-old">"See Facebook"</span><span role="cell" class="d-new">Shown, kept current</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">Missed calls</span><span role="cell" class="d-old">Gone</span><span role="cell" class="d-new">Texted a booking link</span></div>
+        </div>
+        <p class="compare-note">Tony's is a made-up example, not a client.</p>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="wrap">
+        <h2 class="section-title">How a first-timer becomes a regular</h2>
+        <div class="story-grid">
+          <div class="story-stage" aria-hidden="true">
+            <div class="story-phone"><div class="story-screens"></div></div>
+          </div>
+          <ol class="story-steps">
+            <li class="story-step" data-step="0">
+              <h3>They find you</h3>
+              <p>Someone searches "barber near me" on their phone. Your site loads fast, looks sharp, and shows prices, hours, and a Book button right away.</p>
+              <div class="screen screen-site">
+                <p class="sc-url">yourshop.com</p>
+                <p class="sc-h">Classic cuts in Bay Ridge.</p>
+                <p class="sc-p">Open today, 9 AM to 8 PM</p>
+                <span class="sc-btn">Book a cut</span>
+                <div class="sc-rows"><span>Haircut</span><b>$40</b><span>Skin fade</span><b>$45</b></div>
+              </div>
+            </li>
+            <li class="story-step" data-step="1">
+              <h3>They book, even if you miss the call</h3>
+              <p>They tap Book, or they call while you're mid-cut. Either way they get a booking link and pick a time themselves.</p>
+              <div class="screen screen-text">
+                <p class="sc-missed"><b>Missed call</b> 2:13 PM</p>
+                <p class="sc-bubble out">Sorry we missed you! Grab any open time here: yourshop.com/book</p>
+                <p class="sc-bubble in">Booked Thursday 6pm, thanks!</p>
+              </div>
+            </li>
+            <li class="story-step" data-step="2">
+              <h3>They actually show up</h3>
+              <p>A reminder text goes out the day before, so the chair isn't empty at 6 PM.</p>
+              <div class="screen screen-remind">
+                <p class="sc-time">Wednesday, 6:00 PM</p>
+                <div class="sc-note"><b>Your Shop</b><span>Reminder: haircut tomorrow at 6:00 PM. Reply C to reschedule.</span></div>
+              </div>
+            </li>
+            <li class="story-step" data-step="3">
+              <h3>They come back</h3>
+              <p>After the visit they get a quick review request and a link to book again. That's how first-timers turn into regulars.</p>
+              <div class="screen screen-back">
+                <p class="sc-h small">How was your cut?</p>
+                <p class="sc-stars">★★★★★</p>
+                <span class="sc-btn">Book your next visit</span>
+                <div class="sc-card"><span>Visits</span><i></i><i></i><i></i><i></i><i class="on"></i></div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="wrap">
+        <div class="svc-head">
+          <h2>What we set up</h2>
+          <p class="lead">Five tools that work together. Pick one to see what it looks like from behind the counter.</p>
+        </div>
+        <div class="svc">
+          <div class="svc-tabs" role="tablist" aria-label="What we set up">
+            <button type="button" class="svc-tab" role="tab" id="tab-site" aria-controls="panel-site" aria-selected="true">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="11" y="4" width="18" height="32" rx="4"/><path d="M17 31h6"/></svg>
+              <span><b>A website that works</b><small>Built for phones first. Text us a change and it's live.</small></span>
+            </button>
+            <button type="button" class="svc-tab" role="tab" id="tab-book" aria-controls="panel-book" aria-selected="false" tabindex="-1">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="8" width="30" height="27" rx="4"/><path d="M5 16h30M13 4v8M27 4v8M15 25l4 4 7-8"/></svg>
+              <span><b>Online booking</b><small>Customers pick a time without calling, any hour.</small></span>
+            </button>
+            <button type="button" class="svc-tab" role="tab" id="tab-remind" aria-controls="panel-remind" aria-selected="false" tabindex="-1">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6a10 10 0 0 0-10 10v8l-3 5h26l-3-5v-8A10 10 0 0 0 20 6Z"/><path d="M16 33a4 4 0 0 0 8 0"/></svg>
+              <span><b>Appointment reminders</b><small>A text before every visit, so fewer no-shows.</small></span>
+            </button>
+            <button type="button" class="svc-tab" role="tab" id="tab-missed" aria-controls="panel-missed" aria-selected="false" tabindex="-1">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 6h7l3 8-4 3a20 20 0 0 0 9 9l3-4 8 3v7a3 3 0 0 1-3 3A28 28 0 0 1 5 9a3 3 0 0 1 3-3Z"/></svg>
+              <span><b>Missed-call text-back</b><small>A call you couldn't pick up still turns into a booking.</small></span>
+            </button>
+            <button type="button" class="svc-tab" role="tab" id="tab-reviews" aria-controls="panel-reviews" aria-selected="false" tabindex="-1">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="m20 5 4.5 9.5 10.5 1.4-7.7 7.3 1.9 10.4L20 28.6l-9.2 5 1.9-10.4L5 15.9l10.5-1.4Z"/></svg>
+              <span><b>Review requests</b><small>Sent after each visit, so happy customers bring in new ones.</small></span>
+            </button>
+          </div>
+
+          <div class="svc-window">
+            <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span>Your Shop, owner view</span></div>
+
+            <div class="svc-panel pn-site" role="tabpanel" id="panel-site" aria-labelledby="tab-site">
+              <div class="pn-browser" aria-hidden="true">
+                <p class="pn-url">yourshop.com</p>
+                <div class="pn-page">
+                  <p class="pn-h">Classic cuts in Bay Ridge.</p>
+                  <p class="pn-muted">Open today, 9 AM to 8 PM</p>
+                  <span class="pn-btn">Book a cut</span>
+                  <div class="pn-rows"><span>Haircut</span><b>$40</b><span>Skin fade</span><b>$45</b><span>Sunday hours</span><b class="pn-new">10 AM to 4 PM</b></div>
+                </div>
+              </div>
+              <div class="pn-thread">
+                <p class="pn-label">Changes, by text</p>
+                <p class="sc-bubble out">Can you add Sunday hours? 10 to 4.</p>
+                <p class="sc-bubble in">Done, it's live on your site now.</p>
+                <p class="pn-muted small">No logins, no page builder. You text, it's updated.</p>
+              </div>
+            </div>
+
+            <div class="svc-panel pn-book" role="tabpanel" id="panel-book" aria-labelledby="tab-book" hidden>
+              <div class="pn-top"><p class="pn-label">This week</p><p class="pn-legend"><i></i>Booked online</p></div>
+              <div class="cal" aria-hidden="true">
+                <span class="cal-d" style="grid-column:2">Mon</span><span class="cal-d" style="grid-column:3">Tue</span><span class="cal-d" style="grid-column:4">Wed</span><span class="cal-d" style="grid-column:5">Thu</span><span class="cal-d" style="grid-column:6">Fri</span><span class="cal-d" style="grid-column:7">Sat</span>
+                <span class="cal-h" style="grid-row:2">10</span><span class="cal-h" style="grid-row:4">12</span><span class="cal-h" style="grid-row:6">2</span><span class="cal-h" style="grid-row:8">4</span><span class="cal-h" style="grid-row:10">6</span>
+                <b class="appt" style="grid-column:2;grid-row:2/4;--d:0">Marcus<small>Fade</small></b>
+                <b class="appt" style="grid-column:3;grid-row:5/7;--d:1">Dee<small>Cut</small></b>
+                <b class="appt" style="grid-column:4;grid-row:2/4;--d:2">Sam<small>Beard</small></b>
+                <b class="appt" style="grid-column:4;grid-row:8/10;--d:3">Leo<small>Cut</small></b>
+                <b class="appt" style="grid-column:5;grid-row:3/5;--d:4">Ana<small>Cut</small></b>
+                <b class="appt appt-new" style="grid-column:5;grid-row:10/12;--d:7">New<small>Thu 6 PM</small></b>
+                <b class="appt" style="grid-column:6;grid-row:6/8;--d:5">Jon<small>Fade</small></b>
+                <b class="appt" style="grid-column:7;grid-row:2/4;--d:6">Rae<small>Cut</small></b>
+                <b class="appt" style="grid-column:7;grid-row:4/6;--d:6">Kai<small>Fade</small></b>
+              </div>
+            </div>
+
+            <div class="svc-panel pn-remind" role="tabpanel" id="panel-remind" aria-labelledby="tab-remind" hidden>
+              <div class="pn-top"><p class="pn-label">Tomorrow's reminders</p><p class="pn-muted small">Sent automatically the day before</p></div>
+              <ul class="log" aria-hidden="true">
+                <li style="--d:0"><span class="who">Marcus</span><span class="when">10:00 AM</span><span class="pill">Confirmed</span></li>
+                <li style="--d:1"><span class="who">Dee</span><span class="when">12:30 PM</span><span class="pill">Confirmed</span></li>
+                <li style="--d:2"><span class="who">Sam</span><span class="when">2:00 PM</span><span class="pill pill-soft">Moved to Fri</span></li>
+                <li style="--d:3"><span class="who">Leo</span><span class="when">4:15 PM</span><span class="pill">Confirmed</span></li>
+                <li style="--d:4"><span class="who">Ana</span><span class="when">6:00 PM</span><span class="pill pill-line">Sent</span></li>
+              </ul>
+              <p class="pn-sms" aria-hidden="true">"Reminder: haircut tomorrow at 6:00 PM. Reply C to reschedule."</p>
+            </div>
+
+            <div class="svc-panel pn-missed" role="tabpanel" id="panel-missed" aria-labelledby="tab-missed" hidden>
+              <p class="pn-label">Call log, Tuesday</p>
+              <ol class="tl" aria-hidden="true">
+                <li style="--d:0"><span class="tl-t">2:13 PM</span><p><b class="tl-red">Missed call</b> from (718) 555-0199. You were mid-cut.</p></li>
+                <li style="--d:1"><span class="tl-t">2:13 PM</span><p><b>Text sent automatically</b> "Sorry we missed you! Grab any open time here: yourshop.com/book"</p></li>
+                <li style="--d:2"><span class="tl-t">2:16 PM</span><p><b>Booked online</b> Thursday, 6:00 PM, haircut.</p></li>
+              </ol>
+              <p class="pn-result" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>Missed call turned into a booking</p>
+            </div>
+
+            <div class="svc-panel pn-reviews" role="tabpanel" id="panel-reviews" aria-labelledby="tab-reviews" hidden>
+              <div class="pn-top"><p class="pn-label">Review requests</p><p class="pn-muted small">Sent an hour after each visit</p></div>
+              <ul class="log" aria-hidden="true">
+                <li style="--d:0"><span class="who">Marcus</span><span class="when">Fade, Mon</span><span class="pill pill-star">★★★★★</span></li>
+                <li style="--d:1"><span class="who">Dee</span><span class="when">Cut, Tue</span><span class="pill pill-star">★★★★★</span></li>
+                <li style="--d:2"><span class="who">Sam</span><span class="when">Beard, Wed</span><span class="pill pill-line">Sent</span></li>
+                <li style="--d:3"><span class="who">Leo</span><span class="when">Cut, Wed</span><span class="pill pill-star">★★★★★</span></li>
+              </ul>
+              <p class="pn-sms" aria-hidden="true">"Thanks for coming in! Mind leaving a quick review? It really helps a small shop."</p>
+            </div>
+          </div>
+        </div>
+        <p class="compare-note">Shop, names, and numbers in these views are examples.</p>
+      </div>
+    </section>
+
+    <section id="process" class="process">
+      <div class="wrap">
+        <h2 class="section-title">You see it before you pay anything</h2>
+        <ol class="steps">
+          <li><span class="step-n">1</span><h3>Free mockup</h3><p>Tell us about your business. We send back a mockup of your new site.</p></li>
+          <li><span class="step-n">2</span><h3>Pick a package</h3><p>Like it? Choose a package and we fill in your real details.</p></li>
+          <li><span class="step-n">3</span><h3>Go live</h3><p>Your site is up on your own domain, usually in about a week.</p></li>
+          <li><span class="step-n">4</span><h3>We keep it current</h3><p>New prices or holiday hours? Text us and we update it.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="calc">
+      <div class="wrap">
+        <div class="calc-card">
+          <div class="calc-copy">
+            <h2>What do missed calls cost you?</h2>
+            <p class="calc-intro">Set the sliders to match your shop. Your numbers, your math.</p>
+            <div class="field">
+              <div class="field-top"><label for="calc-calls">Calls you miss in a week</label><output for="calc-calls" id="calc-calls-out">5</output></div>
+              <input type="range" id="calc-calls" min="0" max="30" step="1" value="5">
+            </div>
+            <div class="field">
+              <div class="field-top"><label for="calc-ticket">Average visit price</label><output for="calc-ticket" id="calc-ticket-out">$40</output></div>
+              <input type="range" id="calc-ticket" min="10" max="200" step="5" value="40">
+            </div>
+          </div>
+          <div class="calc-result">
+            <p class="calc-label">If each of those callers would have booked, that's</p>
+            <p class="calc-big" aria-live="polite"><span id="calc-year">$10,400</span></p>
+            <p class="calc-sub">a year, or <b id="calc-appts">260</b> appointments.</p>
+            <div class="bars" aria-hidden="true">
+              <div class="bar"><span>Missed calls, one year</span><i id="bar-lost" style="--w:100%"></i></div>
+              <div class="bar bar-dark"><span>Site + Booking, whole first year: $1,000</span><i id="bar-cost" style="--w:9.6%"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="wrap">
+        <h2 class="section-title">Two packages</h2>
+        <p class="section-sub">A one-time setup fee, then a small monthly fee that covers hosting, updates, and changes when you need them.</p>
+        <div class="plans">
+          <article class="plan">
+            <h3>Starter Site</h3>
+            <p class="plan-desc">A website that works, kept up to date.</p>
+            <p class="price"><span class="amt">$200</span> to set up</p>
+            <p class="monthly">then $35 a month</p>
+            <ul>
+              <li>Custom website, built for phones</li>
+              <li>Services, prices, hours, and map</li>
+              <li>Hosting and your own domain</li>
+              <li>Updates whenever you need them</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Get a free mockup</a>
+          </article>
+          <article class="plan plan-featured">
+            <h3>Site + Booking</h3>
+            <p class="plan-desc">The one most appointment businesses pick.</p>
+            <p class="price"><span class="amt">$400</span> to set up</p>
+            <p class="monthly">then $50 a month</p>
+            <ul>
+              <li>Everything in Starter Site</li>
+              <li>Online booking on your site</li>
+              <li>Text reminders before appointments</li>
+              <li>Set up and managed for you</li>
+            </ul>
+            <a class="btn btn-accent" href="#contact">Get a free mockup</a>
+          </article>
+        </div>
+        <p class="fine">Want missed-call text-back or automatic review requests? Ask about add-ons.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap about-grid">
+        <p class="about-statement">One person who knows your shop, answers your texts, and shows up in person.</p>
+        <p class="about-copy">Regulars NYC is a local, New York-based business run by Pierce Taylor. When something on your site needs to change, you text the person who built it.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <h2>Get your free mockup.</h2>
+          <p>Send your business name and what you do. We'll put together a mockup of your new site, no strings attached.</p>
+          <a class="btn btn-accent" href="mailto:pierce@regularsnyc.co?subject=Free%20mockup%20for%20my%20business">Email pierce@regularsnyc.co</a>
+        </div>
+        <div class="punch-card" aria-hidden="true">
+          <div class="pc-head"><span>Regular's Card</span><span>9 of 10</span></div>
+          <div class="pc-grid">
+            <i class="stamp"></i><i class="stamp"></i><i class="stamp"></i><i class="stamp"></i><i class="stamp"></i>
+            <i class="stamp"></i><i class="stamp"></i><i class="stamp"></i><i class="stamp"></i><i class="pc-free">Free</i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><p class="footer-mark" aria-hidden="true">Regulars</p></div>
+    <div class="wrap footer-inner">
+      <span class="logo">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="5" fill="currentColor"/></svg>
+        <span>Regulars NYC</span>
+      </span>
+      <a href="mailto:pierce@regularsnyc.co">pierce@regularsnyc.co</a>
+      <span>&copy; 2026 Regulars NYC, New York</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var card = document.querySelector('.booker-card');
+      if (!card) return;
+      var btn = document.getElementById('book-btn');
+      var done = document.getElementById('booked');
+      var doneText = document.getElementById('booked-text');
+      var day = 'Thu', time = '6:00 PM';
+      function pick(group, el) {
+        card.querySelectorAll(group).forEach(function (b) { b.classList.remove('is-on'); b.removeAttribute('aria-pressed'); });
+        el.classList.add('is-on'); el.setAttribute('aria-pressed', 'true');
+        btn.textContent = 'Book ' + day + ' ' + time;
+        btn.hidden = false; done.hidden = true;
+      }
+      card.querySelectorAll('.day').forEach(function (b) {
+        b.addEventListener('click', function () { day = b.dataset.day; pick('.day', b); });
+      });
+      card.querySelectorAll('.slot:not([disabled])').forEach(function (b) {
+        b.addEventListener('click', function () { time = b.textContent; pick('.slot', b); });
+      });
+      btn.addEventListener('click', function () {
+        doneText.textContent = 'Booked for ' + day + ' at ' + time + '. A reminder text goes out the day before.';
+        btn.hidden = true; done.hidden = false;
+      });
+    })();
+
+    (function () {
+      var frame = document.querySelector('.compare-frame');
+      var range = document.getElementById('compare-range');
+      if (frame && range) {
+        var cstage = frame.parentNode;
+        var diff = document.querySelector('.diff');
+        var oldSite = frame.querySelector('.site-old');
+        var oldPage = frame.querySelector('.old-page');
+        var segs = document.querySelectorAll('.seg-btn');
+        var moved = false;
+        var setPos = function (v) {
+          frame.style.setProperty('--pos', v + '%');
+          if (diff) { diff.classList.toggle('lean-new', v < 40); diff.classList.toggle('lean-old', v > 60); }
+        };
+        // The old site renders at a fixed desktop width and scales down, like a site that was never made for phones
+        var fit = function () {
+          var w = frame.clientWidth, s = Math.min(1, w / 860);
+          oldPage.style.setProperty('--ow', Math.max(w, 860) + 'px');
+          oldPage.style.setProperty('--s', s);
+          oldPage.style.height = (oldSite.clientHeight - oldSite.firstElementChild.offsetHeight) / s + 'px';
+        };
+        var view = function (v) {
+          cstage.dataset.view = v;
+          segs.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.view === v ? 'true' : 'false'); });
+          fit();
+        };
+        range.addEventListener('input', function () { moved = true; setPos(Number(range.value)); });
+        segs.forEach(function (b) { b.addEventListener('click', function () { view(b.dataset.view); }); });
+        if (window.innerWidth < 680) view('phone');
+        setPos(50);
+        fit();
+        if ('ResizeObserver' in window) new ResizeObserver(fit).observe(frame);
+        else window.addEventListener('resize', fit);
+
+        // A short sweep the first time it comes into view, so people see it can be dragged
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+          var hint = new IntersectionObserver(function (entries) {
+            if (!entries[0].isIntersecting) return;
+            hint.disconnect();
+            var keys = [50, 74, 26, 50], t0 = performance.now(), dur = 2100;
+            var sweep = function (now) {
+              if (moved) return;
+              var k = Math.min(1, (now - t0) / dur) * (keys.length - 1);
+              var i = Math.min(keys.length - 2, Math.floor(k)), f = k - i;
+              f = f < .5 ? 2 * f * f : 1 - Math.pow(-2 * f + 2, 2) / 2;
+              var v = keys[i] + (keys[i + 1] - keys[i]) * f;
+              range.value = Math.round(v);
+              setPos(v);
+              if (k < keys.length - 1) requestAnimationFrame(sweep);
+            };
+            setTimeout(function () { requestAnimationFrame(function (n) { t0 = n; sweep(n); }); }, 300);
+          }, { threshold: 0.6 });
+          hint.observe(frame);
+        }
+      }
+
+      var stage = document.querySelector('.story-screens');
+      var steps = document.querySelectorAll('.story-step');
+      if (!stage || !steps.length || !('IntersectionObserver' in window)) return;
+      document.documentElement.classList.add('js-story');
+      steps.forEach(function (step, i) {
+        var screen = step.querySelector('.screen').cloneNode(true);
+        if (i === 0) screen.classList.add('is-on');
+        stage.appendChild(screen);
+      });
+      var screens = stage.querySelectorAll('.screen');
+      var show = function (n) {
+        screens.forEach(function (sc, i) { sc.classList.toggle('is-on', i === n); });
+        steps.forEach(function (st, i) { st.classList.toggle('is-on', i === n); });
+      };
+      show(0);
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) show(Number(e.target.dataset.step)); });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      steps.forEach(function (st) { io.observe(st); });
+    })();
+
+    (function () {
+      var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Local time in New York
+      var clock = document.getElementById('nyc-time');
+      if (clock) {
+        var tick = function () {
+          try {
+            var now = new Date(), tz = 'America/New_York';
+            clock.textContent = now.toLocaleDateString('en-US', { timeZone: tz, weekday: 'long' }) + ', ' + now.toLocaleTimeString('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit' });
+          } catch (e) {}
+        };
+        tick();
+        setInterval(tick, 30000);
+      }
+
+      // Services tabs
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.svc-tab'));
+      var select = function (tab, focus) {
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+          t.tabIndex = on ? 0 : -1;
+          document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+        });
+        if (focus) tab.focus();
+      };
+      tabs.forEach(function (t, i) {
+        t.addEventListener('click', function () { select(t); });
+        t.addEventListener('keydown', function (e) {
+          var n = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+          if (e.key === 'Home') n = -i;
+          if (e.key === 'End') n = tabs.length - 1 - i;
+          if (n === undefined) return;
+          e.preventDefault();
+          select(tabs[(i + n + tabs.length) % tabs.length], true);
+        });
+      });
+
+      // Missed-call calculator
+      var calls = document.getElementById('calc-calls');
+      var ticket = document.getElementById('calc-ticket');
+      if (calls && ticket) {
+        var year = document.getElementById('calc-year');
+        var appts = document.getElementById('calc-appts');
+        var lost = document.getElementById('bar-lost');
+        var cost = document.getElementById('bar-cost');
+        var shown = 0, raf = 0;
+        var money = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
+        var fill = function (r) { r.style.setProperty('--fill', ((r.value - r.min) / (r.max - r.min) * 100) + '%'); };
+        var update = function () {
+          var c = Number(calls.value), t = Number(ticket.value);
+          var total = c * t * 52, max = Math.max(total, 1000);
+          document.getElementById('calc-calls-out').textContent = c;
+          document.getElementById('calc-ticket-out').textContent = money(t);
+          appts.textContent = (c * 52).toLocaleString('en-US');
+          lost.style.setProperty('--w', (total / max * 100) + '%');
+          cost.style.setProperty('--w', (1000 / max * 100) + '%');
+          fill(calls); fill(ticket);
+          cancelAnimationFrame(raf);
+          if (still) { shown = total; year.textContent = money(total); return; }
+          var from = shown, t0 = performance.now();
+          var step = function (now) {
+            var k = Math.min(1, (now - t0) / 380);
+            shown = from + (total - from) * (1 - Math.pow(1 - k, 3));
+            year.textContent = money(shown);
+            if (k < 1) raf = requestAnimationFrame(step);
+          };
+          raf = requestAnimationFrame(step);
+        };
+        calls.addEventListener('input', update);
+        ticket.addEventListener('input', update);
+        shown = 10400;
+        update();
+      }
+
+      // Hero street grid: Manhattan's avenues and streets, with bookings pulsing along them
+      var cv = document.querySelector('.hero-map');
+      if (!cv || !cv.getContext) return;
+      var ctx = cv.getContext('2d');
+      var W = 0, H = 0, R = 0, dpr = 1;
+      var AV = 132, ST = 30, ANG = 29 * Math.PI / 180;
+      var runners = [], pings = [], last = 0, running = false;
+
+      var size = function () {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        W = cv.clientWidth; H = cv.clientHeight;
+        R = Math.ceil(Math.hypot(W, H) / 2) + AV;
+        cv.width = W * dpr; cv.height = H * dpr;
+      };
+      var spawn = function () {
+        var avenue = Math.random() < 0.45;
+        var gap = avenue ? AV : ST;
+        var line = Math.round((Math.random() * 2 - 1) * R / gap) * gap;
+        var dir = Math.random() < 0.5 ? 1 : -1;
+        runners.push({ avenue: avenue, line: line, pos: -dir * R, dir: dir, speed: avenue ? 90 + Math.random() * 60 : 60 + Math.random() * 40, stop: (Math.random() * 1.2 - 0.6) * R });
+      };
+      var grid = function () {
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'rgba(15,18,23,0.055)';
+        ctx.beginPath();
+        for (var y = -Math.floor(R / ST) * ST; y <= R; y += ST) { ctx.moveTo(-R, y); ctx.lineTo(R, y); }
+        ctx.stroke();
+        ctx.strokeStyle = 'rgba(15,18,23,0.09)';
+        ctx.beginPath();
+        for (var x = -Math.floor(R / AV) * AV; x <= R; x += AV) { ctx.moveTo(x, -R); ctx.lineTo(x, R); }
+        ctx.stroke();
+        // Broadway cuts across the grid
+        ctx.strokeStyle = 'rgba(39,71,232,0.16)';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.moveTo(-R * 0.35, R); ctx.lineTo(R * 0.15, -R); ctx.stroke();
+      };
+      var point = function (r) { return r.avenue ? [r.line, r.pos] : [r.pos, r.line]; };
+      var draw = function (dt) {
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.clearRect(0, 0, W, H);
+        ctx.translate(W * 0.62, H * 0.5);
+        ctx.rotate(ANG);
+        grid();
+        for (var i = runners.length - 1; i >= 0; i--) {
+          var r = runners[i];
+          r.pos += r.dir * r.speed * dt;
+          var p = point(r), tail = r.dir * -70;
+          var q = r.avenue ? [p[0], p[1] + tail] : [p[0] + tail, p[1]];
+          var g = ctx.createLinearGradient(q[0], q[1], p[0], p[1]);
+          g.addColorStop(0, 'rgba(39,71,232,0)');
+          g.addColorStop(1, 'rgba(39,71,232,0.75)');
+          ctx.strokeStyle = g; ctx.lineWidth = 2;
+          ctx.beginPath(); ctx.moveTo(q[0], q[1]); ctx.lineTo(p[0], p[1]); ctx.stroke();
+          ctx.fillStyle = '#2747e8';
+          ctx.beginPath(); ctx.arc(p[0], p[1], 2.5, 0, 7); ctx.fill();
+          if ((r.dir > 0 && r.pos >= r.stop) || (r.dir < 0 && r.pos <= r.stop)) {
+            pings.push({ x: p[0], y: p[1], age: 0 });
+            runners.splice(i, 1);
+          }
+        }
+        for (var j = pings.length - 1; j >= 0; j--) {
+          var k = pings[j];
+          k.age += dt;
+          var a = Math.max(0, 1 - k.age / 1.6);
+          ctx.strokeStyle = 'rgba(39,71,232,' + (0.55 * a) + ')';
+          ctx.lineWidth = 1.5;
+          ctx.beginPath(); ctx.arc(k.x, k.y, 4 + k.age * 26, 0, 7); ctx.stroke();
+          ctx.fillStyle = 'rgba(39,71,232,' + Math.min(1, a * 1.5) + ')';
+          ctx.beginPath(); ctx.arc(k.x, k.y, 3.5, 0, 7); ctx.fill();
+          if (k.age > 1.6) pings.splice(j, 1);
+        }
+      };
+      var frame = function (now) {
+        if (!running) return;
+        var dt = Math.min(0.05, (now - last) / 1000 || 0);
+        last = now;
+        if (runners.length < 7 && Math.random() < dt * 2.2) spawn();
+        draw(dt);
+        requestAnimationFrame(frame);
+      };
+      var start = function () { if (running || still) return; running = true; last = performance.now(); requestAnimationFrame(frame); };
+      var stop = function () { running = false; };
+
+      size();
+      if (still) {
+        for (var s = 0; s < 5; s++) { spawn(); var r0 = runners[s]; r0.pos = r0.stop; }
+        draw(0);
+      } else {
+        for (var s2 = 0; s2 < 4; s2++) { spawn(); runners[s2].pos = (Math.random() - 0.5) * R; }
+      }
+      window.addEventListener('resize', function () { size(); if (still) draw(0); });
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (e) { e[0].isIntersecting ? start() : stop(); }).observe(cv);
+      } else start();
+      document.addEventListener('visibilitychange', function () { document.hidden ? stop() : start(); });
+    })();
+  </script>
+</body>
+</html>
