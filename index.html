@@ -12,21 +12,21 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="logo" href="/" aria-label="Regulars NYC home">
-        <span class="logo-word">Regulars</span>
-        <span class="logo-stamp">NYC</span>
+        <span class="logo-mark" aria-hidden="true"></span>
+        Regulars <span class="logo-nyc">NYC</span>
       </a>
       <nav class="nav" aria-label="Main">
-        <a href="#tools">What we set up</a>
-        <a href="#how">How it works</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
         <a href="#pricing">Pricing</a>
-        <a class="btn btn-small" href="#contact">Free mockup</a>
+        <a class="btn btn-sm" href="#contact">Free mockup</a>
       </nav>
     </div>
   </header>
@@ -35,137 +35,97 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="kicker">Websites + booking · New York City</p>
-          <h1>Turn first&#8209;timers into <span class="hl">regulars.</span></h1>
-          <p class="lede">We build clean, fast websites for New York small businesses, and set up the simple tools that keep your chair, table, or calendar full.</p>
-          <div class="hero-actions">
+          <p class="label">Websites and booking for New York small businesses</p>
+          <h1>Turn first&#8209;timers into regulars.</h1>
+          <p class="lead">We build clean, fast websites for New York small businesses, and set up the simple tools that keep your chair, table, or calendar full.</p>
+          <div class="actions">
             <a class="btn" href="#contact">Get a free mockup</a>
-            <a class="btn btn-ghost" href="#pricing">See pricing</a>
+            <a class="btn btn-outline" href="#pricing">See pricing</a>
           </div>
-          <p class="hero-note">You run the business. We make sure customers can find you, book you, and come back.</p>
+          <p class="hero-for">Made for barbers, salons, personal trainers, tutors, and studios.</p>
         </div>
 
-        <div class="card-stage" aria-hidden="true">
+        <div class="card-wrap" aria-hidden="true">
           <div class="punch-card">
-            <div class="pc-top">
-              <span class="pc-title">Regular's Card</span>
+            <div class="pc-head">
+              <span class="pc-brand">Regular's Card</span>
+              <span class="pc-count">9 / 10</span>
             </div>
-            <div class="pc-name"><span>Name</span><b>Your next customer</b></div>
             <div class="pc-grid">
-              <i class="stamp" style="--r:-8deg;--d:0"></i>
-              <i class="stamp" style="--r:6deg;--d:1"></i>
-              <i class="stamp" style="--r:-3deg;--d:2"></i>
-              <i class="stamp" style="--r:11deg;--d:3"></i>
-              <i class="stamp" style="--r:-12deg;--d:4"></i>
-              <i class="stamp" style="--r:4deg;--d:5"></i>
-              <i class="stamp" style="--r:-6deg;--d:6"></i>
-              <i class="stamp" style="--r:9deg;--d:7"></i>
-              <i class="stamp" style="--r:-2deg;--d:8"></i>
-              <i class="slot">Free</i>
+              <i class="stamp" style="--d:0"></i><i class="stamp" style="--d:1"></i><i class="stamp" style="--d:2"></i><i class="stamp" style="--d:3"></i><i class="stamp" style="--d:4"></i>
+              <i class="stamp" style="--d:5"></i><i class="stamp" style="--d:6"></i><i class="stamp" style="--d:7"></i><i class="stamp" style="--d:8"></i><i class="slot"></i>
             </div>
             <div class="pc-foot">
-              <span>Visit 9 of 10</span>
-              <span>Booked online</span>
+              <span>Next visit</span>
+              <span class="pc-booked">Thu 6:00 PM · Booked online</span>
             </div>
-            <div class="sticker">Booked<br>again!</div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="ticker" aria-label="Who we work with">
-      <div class="ticker-track">
-        <span>Barbers</span><span>Salons</span><span>Personal trainers</span><span>Tutors</span><span>Studios</span><span>Nail bars</span><span>Lash &amp; brow</span><span>Tattoo shops</span>
-        <span aria-hidden="true">Barbers</span><span aria-hidden="true">Salons</span><span aria-hidden="true">Personal trainers</span><span aria-hidden="true">Tutors</span><span aria-hidden="true">Studios</span><span aria-hidden="true">Nail bars</span><span aria-hidden="true">Lash &amp; brow</span><span aria-hidden="true">Tattoo shops</span>
-      </div>
-    </div>
-
-    <section class="leaks">
-      <div class="wrap leaks-grid">
-        <div>
-          <h2>Where regulars slip away.</h2>
-          <p class="section-lede">Most New York small businesses live on their regulars. But a lot of them still lose customers in small ways:</p>
-          <ul class="leak-list">
-            <li><b>No website.</b> People search for you and find your competitor.</li>
-            <li><b>A site that breaks on a phone.</b> Which is where everyone is looking.</li>
-            <li><b>Booking that's just "call us."</b> At 11pm, nobody calls.</li>
-            <li><b>A missed call with no reply.</b> They've already booked somewhere else.</li>
-          </ul>
-          <p>Regulars NYC fixes that. We build a modern website for your business, usually in about a week, and keep it updated for a small monthly fee so you never have to think about it.</p>
+    <section class="problem">
+      <div class="wrap problem-grid">
+        <div class="problem-head">
+          <p class="label">The problem</p>
+          <h2>Most New York small businesses live on their regulars. Plenty still lose them in small ways.</h2>
         </div>
+        <ul class="leaks">
+          <li><h3>No website</h3><p>People search for you and find someone else.</p></li>
+          <li><h3>A site that breaks on a phone</h3><p>Which is where nearly everyone is looking.</p></li>
+          <li><h3>Booking that's just "call us"</h3><p>At 11pm, nobody calls.</p></li>
+          <li><h3>A missed call with no reply</h3><p>By the time you call back, they've booked elsewhere.</p></li>
+        </ul>
+      </div>
+    </section>
 
+    <section class="showcase">
+      <div class="wrap showcase-grid">
         <figure class="phone" aria-label="Example of a missed-call text-back">
           <div class="phone-screen">
-            <div class="phone-bar"><span>2:14</span><span>Messages</span></div>
-            <div class="missed">
-              <span class="missed-icon">&#x2197;</span>
-              <div><b>Missed call</b><small>(718) 555-0142 · 2:13 PM</small></div>
-            </div>
-            <div class="bubble out">Hey, sorry we missed you! We're with a client. Grab any open time here: <u>yourshop.com/book</u></div>
-            <div class="bubble in">just booked thurs 6pm, thanks!</div>
-            <div class="bubble out">See you Thursday!</div>
+            <div class="phone-top"><span>Messages</span></div>
+            <div class="missed"><b>Missed call</b><span>2:13 PM</span></div>
+            <div class="bubble out">Sorry we missed you, we're with a client. Grab any open time here: yourshop.com/book</div>
+            <div class="bubble in">Just booked Thursday 6pm, thanks!</div>
+            <div class="bubble out">See you Thursday.</div>
           </div>
-          <figcaption>Missed-call text-back: a call you couldn't pick up still turns into a booking.</figcaption>
         </figure>
+        <div class="showcase-copy">
+          <p class="label">How we fix it</p>
+          <h2>A missed call still becomes a booking.</h2>
+          <p class="lead">We build a modern website for your business, usually in about a week, and keep it updated for a small monthly fee so you never have to think about it.</p>
+          <p>When you're ready, we add tools that do the busywork for you. A call you couldn't pick up gets an instant text with your booking link, and the customer books themselves.</p>
+        </div>
       </div>
     </section>
 
-    <section id="tools" class="tools">
+    <section id="services" class="services">
       <div class="wrap">
         <div class="section-head">
-          <h2>What we set up</h2>
-          <p class="section-lede">Start with a great website. When you're ready, add tools that do the busywork for you.</p>
+          <p class="label">Services</p>
+          <h2>Start with a great website. Add the rest when you're ready.</h2>
         </div>
-        <div class="tool-grid">
-          <article class="tool tool-wide">
-            <span class="tool-tag">The foundation</span>
-            <h3>A website that works</h3>
-            <p>Built for phones first. Your services, prices, hours, and location, easy to find. We keep it updated so you never have to log in to anything.</p>
-          </article>
-          <article class="tool">
-            <span class="tool-tag">Fewer phone calls</span>
-            <h3>Online booking</h3>
-            <p>Customers book a time without calling, any hour of the day.</p>
-          </article>
-          <article class="tool">
-            <span class="tool-tag">Fewer no-shows</span>
-            <h3>Appointment reminders</h3>
-            <p>A text before every appointment, so fewer people forget.</p>
-          </article>
-          <article class="tool">
-            <span class="tool-tag">No lost leads</span>
-            <h3>Missed-call text-back</h3>
-            <p>Every missed call gets an instant text with your booking link.</p>
-          </article>
-          <article class="tool">
-            <span class="tool-tag">More new faces</span>
-            <h3>Review requests</h3>
-            <p>Sent after each visit, so happy customers help bring in new ones.</p>
-          </article>
-        </div>
+        <ul class="service-list">
+          <li><h3>A website that works</h3><p>Built for phones first. Your services, prices, hours, and location, easy to find. We keep it updated so you never log in to anything.</p></li>
+          <li><h3>Online booking</h3><p>Customers book a time without calling, any hour of the day.</p></li>
+          <li><h3>Appointment reminders</h3><p>A text before every appointment, so fewer people forget or no-show.</p></li>
+          <li><h3>Missed-call text-back</h3><p>A call you couldn't pick up still turns into a booking.</p></li>
+          <li><h3>Review requests</h3><p>Sent after each visit, so happy customers help bring in new ones.</p></li>
+        </ul>
       </div>
     </section>
 
-    <section id="how" class="how">
+    <section id="process" class="process">
       <div class="wrap">
-        <h2>How it works</h2>
+        <div class="section-head">
+          <p class="label">Process</p>
+          <h2>See it before you pay anything.</h2>
+        </div>
         <ol class="steps">
-          <li>
-            <h3>Free mockup</h3>
-            <p>Tell us about your business. We send back a mockup of your new site. You see it before you pay anything.</p>
-          </li>
-          <li>
-            <h3>Pick a package</h3>
-            <p>Like it? Choose the Starter Site or Site + Booking. We fill in your real details.</p>
-          </li>
-          <li>
-            <h3>Go live</h3>
-            <p>Your site is up on your own domain, usually in about a week.</p>
-          </li>
-          <li>
-            <h3>We keep it fresh</h3>
-            <p>New prices, holiday hours, a new service? Text us and we update it.</p>
-          </li>
+          <li><span class="step-n">01</span><h3>Free mockup</h3><p>Tell us about your business. We send back a mockup of your new site.</p></li>
+          <li><span class="step-n">02</span><h3>Pick a package</h3><p>Like it? Choose a package and we fill in your real details.</p></li>
+          <li><span class="step-n">03</span><h3>Go live</h3><p>Your site is up on your own domain, usually in about a week.</p></li>
+          <li><span class="step-n">04</span><h3>We keep it current</h3><p>New prices or holiday hours? Text us and we update it.</p></li>
         </ol>
       </div>
     </section>
@@ -173,38 +133,36 @@
     <section id="pricing" class="pricing">
       <div class="wrap">
         <div class="section-head">
-          <h2>Simple pricing</h2>
-          <p class="section-lede">One setup fee, then a small monthly fee that covers hosting, updates, and changes when you need them.</p>
+          <p class="label">Pricing</p>
+          <h2>Two packages. No surprises.</h2>
+          <p class="section-sub">A one-time setup fee, then a small monthly fee that covers hosting, updates, and changes when you need them.</p>
         </div>
-        <div class="tickets">
-          <article class="ticket">
-            <div class="ticket-main">
-              <h3>Starter Site</h3>
-              <p class="price"><span class="amt">$200</span><span class="per">setup</span></p>
-              <p class="monthly">then $35/month</p>
-              <ul>
-                <li>Custom website, built for phones</li>
-                <li>Services, prices, hours, and map</li>
-                <li>Hosting and your own domain</li>
-                <li>Updates whenever you need them</li>
-              </ul>
-            </div>
-            <a class="ticket-stub" href="#contact">Start with a free mockup</a>
+        <div class="plans">
+          <article class="plan">
+            <div class="plan-top"><h3>Starter Site</h3></div>
+            <p class="plan-desc">A website that works, kept up to date.</p>
+            <p class="price"><span class="amt">$200</span> setup</p>
+            <p class="monthly">then $35 / month</p>
+            <ul>
+              <li>Custom website, built for phones</li>
+              <li>Services, prices, hours, and map</li>
+              <li>Hosting and your own domain</li>
+              <li>Updates whenever you need them</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#contact">Get a free mockup</a>
           </article>
-          <article class="ticket ticket-hot">
-            <div class="ticket-main">
-              <span class="ticket-flag">Best for appointment businesses</span>
-              <h3>Site + Booking</h3>
-              <p class="price"><span class="amt">$400</span><span class="per">setup</span></p>
-              <p class="monthly">then $50/month</p>
-              <ul>
-                <li>Everything in Starter Site</li>
-                <li>Online booking on your site</li>
-                <li>Text reminders before appointments</li>
-                <li>Set up and managed for you</li>
-              </ul>
-            </div>
-            <a class="ticket-stub" href="#contact">Start with a free mockup</a>
+          <article class="plan plan-featured">
+            <div class="plan-top"><h3>Site + Booking</h3><span class="pill">Best for appointments</span></div>
+            <p class="plan-desc">Everything in Starter, plus booking.</p>
+            <p class="price"><span class="amt">$400</span> setup</p>
+            <p class="monthly">then $50 / month</p>
+            <ul>
+              <li>Everything in Starter Site</li>
+              <li>Online booking on your site</li>
+              <li>Text reminders before appointments</li>
+              <li>Set up and managed for you</li>
+            </ul>
+            <a class="btn btn-block" href="#contact">Get a free mockup</a>
           </article>
         </div>
         <p class="fine">Want missed-call text-back or automatic review requests? Ask about add-ons.</p>
@@ -213,27 +171,32 @@
 
     <section class="about">
       <div class="wrap about-grid">
-        <p class="about-big">One person who knows your shop, answers your texts, and shows up in person.</p>
-        <div class="about-copy">
-          <p>Regulars NYC is a local, New York-based business run by Pierce Taylor. No call centers, no ticket systems. When something on your site needs to change, you text the person who built it.</p>
-          <p class="sig">Regulars, by Pierce Taylor</p>
+        <p class="label">About</p>
+        <div>
+          <p class="about-statement">Regulars NYC is a local, New York-based business. You get one person who knows your shop, answers your texts, and shows up in person.</p>
+          <p class="sig">Pierce Taylor, founder</p>
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <div class="wrap contact-inner">
-        <h2>Get your free mockup.</h2>
-        <p>Send your business name and what you do. We'll put together a mockup of your new site, no strings attached.</p>
-        <a class="contact-email" href="mailto:pierce@regularsnyc.co?subject=Free%20mockup%20for%20my%20business">pierce@regularsnyc.co</a>
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Get your free mockup.</h2>
+          <p>Send your business name and what you do. We'll put together a mockup of your new site, no strings attached.</p>
+        </div>
+        <div class="contact-cta">
+          <a class="btn btn-light" href="mailto:pierce@regularsnyc.co?subject=Free%20mockup%20for%20my%20business">Email Pierce</a>
+          <a class="contact-email" href="mailto:pierce@regularsnyc.co">pierce@regularsnyc.co</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <span class="logo-word">Regulars</span>
-      <span>Websites + booking for New York small businesses</span>
+      <span class="logo"><span class="logo-mark" aria-hidden="true"></span>Regulars <span class="logo-nyc">NYC</span></span>
+      <span>New York, NY</span>
       <span>&copy; 2026 Regulars NYC</span>
     </div>
   </footer>
