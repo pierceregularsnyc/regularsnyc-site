@@ -85,42 +85,84 @@
       <div class="wrap">
         <div class="compare-head">
           <h2>Same shop. One week later.</h2>
-          <p class="lead">Most New York shops live on their regulars, and still lose new ones to an old site, a "call us" booking process, or a missed call. Drag to see the difference.</p>
+          <p class="lead">Most New York shops live on their regulars, and still lose new ones to an old site, a "call us" booking process, or a missed call. Drag the handle to see the difference.</p>
         </div>
-        <div class="compare-frame" style="--pos: 50%">
-          <div class="site-old" aria-hidden="true">
-            <div class="old-bar">Welcome to Tony's Barber Shop!!! Best cuts in Brooklyn since 1998</div>
-            <div class="old-body">
-              <p class="old-title">TONY'S BARBER SHOP</p>
-              <p class="old-sub">*** Under construction, check back soon ***</p>
-              <table class="old-table">
-                <tr><td>Haircut</td><td>call for price</td></tr>
-                <tr><td>Hours</td><td>see facebook</td></tr>
-              </table>
-              <p class="old-call">FOR APPOINTMENTS PLEASE CALL (718) 555-0142<br>no texts!!</p>
-              <p class="old-links"><u>Home</u> | <u>About Us</u> | <u>Guestbook</u> | <u>Links</u></p>
-              <p class="old-counter">You are visitor #004213</p>
-            </div>
+        <div class="compare-bar">
+          <div class="seg" role="group" aria-label="Screen size">
+            <button type="button" class="seg-btn" data-view="desktop" aria-pressed="true">Desktop</button>
+            <button type="button" class="seg-btn" data-view="phone" aria-pressed="false">Phone</button>
           </div>
-          <div class="site-new" aria-hidden="true">
-            <div class="new-nav"><span class="new-logo">Tony's Barbers</span><span class="new-book">Book now</span></div>
-            <div class="new-hero">
-              <p class="new-h">Sharp cuts, Bay Ridge.</p>
-              <p class="new-p">Walk-ins welcome. Book online in 30 seconds.</p>
-              <div class="new-ctas"><span class="new-btn">Book a cut</span><span class="new-btn ghost">See prices</span></div>
+          <p class="compare-hint">On a phone, the old site shrinks to fit. The new one is built for it.</p>
+        </div>
+        <div class="compare-stage" data-view="desktop">
+          <div class="compare-frame" style="--pos: 50%">
+            <div class="site-old" aria-hidden="true">
+              <div class="chrome chrome-old"><span class="chrome-dots"><i></i><i></i><i></i></span><span class="addr">http://www.tonysbarbershop.tripod.com/index.htm</span></div>
+              <div class="old-page">
+                <div class="old-marquee"><span>Welcome to Tony's Barber Shop!!! Best cuts in Brooklyn since 1998 ~~~ Now accepting CASH ONLY ~~~ Closed for holidays (call to check) ~~~</span></div>
+                <div class="old-cols">
+                  <div class="old-side">
+                    <p class="old-side-h">MENU</p>
+                    <p><u>Home</u></p><p><u>About Us</u></p><p><u>Prices</u></p><p><u>Guestbook</u></p><p><u>Links</u></p>
+                    <p class="old-gif">Best viewed in<br>Netscape 4.0<br>at 800x600</p>
+                  </div>
+                  <div class="old-main">
+                    <p class="old-title">TONY'S BARBER SHOP <span class="old-blink">NEW!</span></p>
+                    <p class="old-sub">*** Site under construction, check back soon ***</p>
+                    <div class="old-row">
+                      <div class="old-img"><span>&#x2715;</span> tony_shop.jpg</div>
+                      <table class="old-table">
+                        <tr><td>Haircut</td><td>call for price</td></tr>
+                        <tr><td>Kids cut</td><td>call for price</td></tr>
+                        <tr><td>Hours</td><td>see facebook</td></tr>
+                      </table>
+                    </div>
+                    <p class="old-call">FOR APPOINTMENTS PLEASE CALL (718) 555-0142<br>no texts!! leave a message</p>
+                    <p class="old-links"><u>email tony</u> | <u>sign our guestbook</u></p>
+                    <p class="old-counter">You are visitor #004213</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="new-prices">
-              <div><span>Haircut</span><b>$40</b></div>
-              <div><span>Skin fade</span><b>$45</b></div>
-              <div><span>Beard trim</span><b>$20</b></div>
+            <div class="site-new" aria-hidden="true">
+              <div class="chrome chrome-new"><span class="chrome-dots"><i></i><i></i><i></i></span><span class="addr"><svg viewBox="0 0 16 16"><rect x="3" y="7" width="10" height="7" rx="2"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>tonysbarbers.com</span></div>
+              <div class="new-page">
+                <div class="new-nav"><span class="new-logo">Tony's Barbers</span><span class="new-links"><span>Services</span><span>Hours</span><span>Find us</span></span><span class="new-book">Book now</span></div>
+                <div class="new-hero">
+                  <div class="new-copy">
+                    <p class="new-h">Sharp cuts in Bay Ridge.</p>
+                    <p class="new-p">Walk-ins welcome. Or book online in 30 seconds, any time of day.</p>
+                    <div class="new-ctas"><span class="new-btn">Book a cut</span><span class="new-btn ghost">See prices</span></div>
+                  </div>
+                  <div class="new-card">
+                    <p class="new-card-h">Haircut, 45 min <b>$40</b></p>
+                    <div class="new-days"><span>Wed</span><span class="on">Thu</span><span>Fri</span><span>Sat</span></div>
+                    <div class="new-slots"><span>11:00</span><span class="off">1:30</span><span class="on">6:00</span></div>
+                    <span class="new-card-btn">Book Thu 6:00 PM</span>
+                  </div>
+                </div>
+                <div class="new-strip">
+                  <div><span>Haircut</span><b>$40</b></div>
+                  <div><span>Skin fade</span><b>$45</b></div>
+                  <div><span>Beard trim</span><b>$20</b></div>
+                  <div class="new-open"><span><i></i>Open today</span><b>9 AM to 8 PM</b></div>
+                </div>
+              </div>
             </div>
-            <div class="new-hours"><span>Open today</span><b>9 AM to 8 PM</b></div>
+            <div class="compare-handle" aria-hidden="true"><span></span></div>
+            <span class="compare-tag tag-old" aria-hidden="true">Before</span>
+            <span class="compare-tag tag-new" aria-hidden="true">After</span>
+            <label class="sr-only" for="compare-range">Compare the old and new site</label>
+            <input class="compare-range" id="compare-range" type="range" min="0" max="100" value="50">
           </div>
-          <div class="compare-handle" aria-hidden="true"><span></span></div>
-          <span class="compare-tag tag-old" aria-hidden="true">Before</span>
-          <span class="compare-tag tag-new" aria-hidden="true">After</span>
-          <label class="sr-only" for="compare-range">Compare the old and new site</label>
-          <input class="compare-range" id="compare-range" type="range" min="0" max="100" value="50">
+        </div>
+        <div class="diff" role="table" aria-label="What changed">
+          <div class="diff-row diff-headrow" role="row"><span role="columnheader"><span class="sr-only">Topic</span></span><span role="columnheader" class="d-old">Before</span><span role="columnheader" class="d-new">After</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">Booking</span><span role="cell" class="d-old">Call during open hours</span><span role="cell" class="d-new">Online, any hour</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">Prices</span><span role="cell" class="d-old">"Call for price"</span><span role="cell" class="d-new">Right on the page</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">On a phone</span><span role="cell" class="d-old">Pinch and zoom</span><span role="cell" class="d-new">Built for it</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">Hours</span><span role="cell" class="d-old">"See Facebook"</span><span role="cell" class="d-new">Shown, kept current</span></div>
+          <div class="diff-row" role="row"><span role="rowheader">Missed calls</span><span role="cell" class="d-old">Gone</span><span role="cell" class="d-new">Texted a booking link</span></div>
         </div>
         <p class="compare-note">Tony's is a made-up example, not a client.</p>
       </div>
@@ -426,9 +468,56 @@
       var frame = document.querySelector('.compare-frame');
       var range = document.getElementById('compare-range');
       if (frame && range) {
-        var set = function () { frame.style.setProperty('--pos', range.value + '%'); };
-        range.addEventListener('input', set);
-        set();
+        var cstage = frame.parentNode;
+        var diff = document.querySelector('.diff');
+        var oldSite = frame.querySelector('.site-old');
+        var oldPage = frame.querySelector('.old-page');
+        var segs = document.querySelectorAll('.seg-btn');
+        var moved = false;
+        var setPos = function (v) {
+          frame.style.setProperty('--pos', v + '%');
+          if (diff) { diff.classList.toggle('lean-new', v < 40); diff.classList.toggle('lean-old', v > 60); }
+        };
+        // The old site renders at a fixed desktop width and scales down, like a site that was never made for phones
+        var fit = function () {
+          var w = frame.clientWidth, s = Math.min(1, w / 860);
+          oldPage.style.setProperty('--ow', Math.max(w, 860) + 'px');
+          oldPage.style.setProperty('--s', s);
+          oldPage.style.height = (oldSite.clientHeight - oldSite.firstElementChild.offsetHeight) / s + 'px';
+        };
+        var view = function (v) {
+          cstage.dataset.view = v;
+          segs.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.view === v ? 'true' : 'false'); });
+          fit();
+        };
+        range.addEventListener('input', function () { moved = true; setPos(Number(range.value)); });
+        segs.forEach(function (b) { b.addEventListener('click', function () { view(b.dataset.view); }); });
+        if (window.innerWidth < 680) view('phone');
+        setPos(50);
+        fit();
+        if ('ResizeObserver' in window) new ResizeObserver(fit).observe(frame);
+        else window.addEventListener('resize', fit);
+
+        // A short sweep the first time it comes into view, so people see it can be dragged
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+          var hint = new IntersectionObserver(function (entries) {
+            if (!entries[0].isIntersecting) return;
+            hint.disconnect();
+            var keys = [50, 74, 26, 50], t0 = performance.now(), dur = 2100;
+            var sweep = function (now) {
+              if (moved) return;
+              var k = Math.min(1, (now - t0) / dur) * (keys.length - 1);
+              var i = Math.min(keys.length - 2, Math.floor(k)), f = k - i;
+              f = f < .5 ? 2 * f * f : 1 - Math.pow(-2 * f + 2, 2) / 2;
+              var v = keys[i] + (keys[i + 1] - keys[i]) * f;
+              range.value = Math.round(v);
+              setPos(v);
+              if (k < keys.length - 1) requestAnimationFrame(sweep);
+            };
+            setTimeout(function () { requestAnimationFrame(function (n) { t0 = n; sweep(n); }); }, 300);
+          }, { threshold: 0.6 });
+          hint.observe(frame);
+        }
       }
 
       var stage = document.querySelector('.story-screens');
