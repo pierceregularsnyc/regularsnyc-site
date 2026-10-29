@@ -1,6 +1,6 @@
 # Regulars NYC: Design
 
-Feeling: clean and premium, like a well-kept neighborhood barbershop with brass fixtures. Deep green and brass, a signage-style serif for headlines, calm light sections. Light mode only.
+Feeling: clean and premium. White, black, and one cobalt blue, a sharp serif for headlines, calm light sections. Light mode only.
 
 Direction chosen without reference sites (the UXKIN library was not reachable from the build environment), from Pierce's pick of "clean and premium".
 
@@ -8,16 +8,15 @@ Direction chosen without reference sites (the UXKIN library was not reachable fr
 
 | Token | Value | Role |
 |---|---|---|
-| `--green` | `#173b2e` | Brand. Hero, contact band, footer, featured plan, selected states |
-| `--green-3` | `#2c5c4a` | Icon strokes, outlines on light backgrounds |
-| `--brass` | `#c9a35a` | Primary buttons and the logo. Never for text on light backgrounds |
-| `--chalk` | `#f3f4ef` | Page background |
-| `--sage` | `#e2e9e3` | Alternate section background, success messages |
-| `--white` | `#ffffff` | Cards, plans, phone and booking mockups |
-| `--ink` | `#15201b` | Text on light, text on brass buttons |
-| `--ink-2` / `--ink-3` | `#4a5550` / `#7c8781` | Secondary text / captions |
-| `--on-green` / `--on-green-2` | `#eef2ee` / `#a9bdb2` | Text on green / secondary text on green |
-| `--line` | `#d9dfd9` | Borders and dividers |
+| `--accent` | `#2747e8` | Cobalt. Primary buttons, links, logo, step numbers. The only color |
+| `--accent-2` | `#1d38c4` | Button hover, success text |
+| `--dark` | `#0f1217` | Featured plan, contact band, footer, selected states |
+| `--white` | `#ffffff` | Hero, cards, plans, mockups |
+| `--chalk` | `#f7f7f8` | Page background |
+| `--sage` | `#eef1fd` | Light blue tint: alternate section, success messages |
+| `--ink` / `--ink-2` / `--ink-3` | `#0f1217` / `#4a4f5a` / `#7d828d` | Text, secondary text, captions |
+| `--on-dark` / `--on-dark-2` | `#f4f5f7` / `#a3a8b3` | Text on dark |
+| `--line` | `#e3e5ea` | Borders and dividers |
 
 ## Typography
 
@@ -30,14 +29,14 @@ Direction chosen without reference sites (the UXKIN library was not reachable fr
 
 - 8px base. Sections 128px desktop, 104px tablet, 80px phone. Content width 1180px, gutter at least 20px.
 - Radius: 999px buttons, 12px small controls, 18 to 22px cards and plans, 40px phone.
-- One shadow for raised mockups and the featured plan: `0 2px 4px rgb(10 30 22 / .06), 0 24px 48px -16px rgb(10 30 22 / .28)`.
+- One shadow for raised mockups and the featured plan: `0 2px 4px rgb(15 18 30 / .06), 0 24px 48px -16px rgb(15 18 30 / .28)`.
 
 ## Components
 
-- Buttons: brass pill (primary), outline pill on light, ghost pill on green. Focus ring 2px brass.
+- Buttons: cobalt pill (primary), outline pill on light, ghost pill on white. Focus ring 2px cobalt.
 - Booking widget in the hero is the signature element: a working example (pick a day and time, then book).
-- Services use 40px line icons in `--green-3`, 1.6 stroke, no fills.
-- Process steps use large brass Gloock numerals because they are a real sequence.
+- Services use 40px line icons in `--accent`, 1.6 stroke, no fills.
+- Process steps use large cobalt Gloock numerals because they are a real sequence.
 
 ## Imagery
 
