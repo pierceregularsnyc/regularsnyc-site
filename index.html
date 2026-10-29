@@ -35,7 +35,7 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <h1>Turn first&#8209;timers into regulars.</h1>
+          <h1><span class="line"><span>Turn first&#8209;timers</span></span> <span class="line"><span>into regulars.</span></span></h1>
           <p class="lead">Websites and simple booking for New York barbers, salons, trainers, tutors, and studios. Built in about a week, kept up to date for you.</p>
           <div class="actions">
             <a class="btn btn-accent" href="#contact">Get a free mockup</a>
@@ -70,6 +70,8 @@
             <button type="button" class="book-btn" id="book-btn">Book Thu 6:00 PM</button>
             <p class="booked" id="booked" hidden>Booked. A reminder text goes out the day before.</p>
           </div>
+          <p class="chip chip-a" aria-hidden="true"><span class="chip-dot"></span>Reminder sent for tomorrow, 6:00 PM</p>
+          <p class="chip chip-b" aria-hidden="true"><span class="chip-stars">★★★★★</span>New review from a first-timer</p>
           <figcaption>An example booking page. Try it.</figcaption>
         </figure>
       </div>
@@ -77,34 +79,99 @@
   </div>
 
   <main>
-    <section class="leaks">
-      <div class="wrap leaks-grid">
-        <h2>Most New York shops live on their regulars, and still lose new ones in small ways.</h2>
-        <ul class="leak-list">
-          <li><b>No website.</b> People search for you and find someone else.</li>
-          <li><b>A site that breaks on a phone.</b> Which is where nearly everyone looks.</li>
-          <li><b>Booking that's just "call us."</b> At 11pm, nobody calls.</li>
-          <li><b>A missed call with no reply.</b> By the time you call back, they've booked elsewhere.</li>
-        </ul>
+    <section class="compare">
+      <div class="wrap">
+        <div class="compare-head">
+          <h2>Same shop. One week later.</h2>
+          <p class="lead">Most New York shops live on their regulars, and still lose new ones to an old site, a "call us" booking process, or a missed call. Drag to see the difference.</p>
+        </div>
+        <div class="compare-frame" style="--pos: 50%">
+          <div class="site-old" aria-hidden="true">
+            <div class="old-bar">Welcome to Tony's Barber Shop!!! Best cuts in Brooklyn since 1998</div>
+            <div class="old-body">
+              <p class="old-title">TONY'S BARBER SHOP</p>
+              <p class="old-sub">*** Under construction, check back soon ***</p>
+              <table class="old-table">
+                <tr><td>Haircut</td><td>call for price</td></tr>
+                <tr><td>Hours</td><td>see facebook</td></tr>
+              </table>
+              <p class="old-call">FOR APPOINTMENTS PLEASE CALL (718) 555-0142<br>no texts!!</p>
+              <p class="old-links"><u>Home</u> | <u>About Us</u> | <u>Guestbook</u> | <u>Links</u></p>
+              <p class="old-counter">You are visitor #004213</p>
+            </div>
+          </div>
+          <div class="site-new" aria-hidden="true">
+            <div class="new-nav"><span class="new-logo">Tony's Barbers</span><span class="new-book">Book now</span></div>
+            <div class="new-hero">
+              <p class="new-h">Sharp cuts, Bay Ridge.</p>
+              <p class="new-p">Walk-ins welcome. Book online in 30 seconds.</p>
+              <div class="new-ctas"><span class="new-btn">Book a cut</span><span class="new-btn ghost">See prices</span></div>
+            </div>
+            <div class="new-prices">
+              <div><span>Haircut</span><b>$40</b></div>
+              <div><span>Skin fade</span><b>$45</b></div>
+              <div><span>Beard trim</span><b>$20</b></div>
+            </div>
+            <div class="new-hours"><span>Open today</span><b>9 AM to 8 PM</b></div>
+          </div>
+          <div class="compare-handle" aria-hidden="true"><span></span></div>
+          <span class="compare-tag tag-old" aria-hidden="true">Before</span>
+          <span class="compare-tag tag-new" aria-hidden="true">After</span>
+          <label class="sr-only" for="compare-range">Compare the old and new site</label>
+          <input class="compare-range" id="compare-range" type="range" min="0" max="100" value="50">
+        </div>
+        <p class="compare-note">Tony's is a made-up example, not a client.</p>
       </div>
     </section>
 
-    <section class="textback">
-      <div class="wrap textback-grid">
-        <div class="textback-copy">
-          <h2>A missed call still becomes a booking.</h2>
-          <p class="lead">You're mid-cut and the phone rings. Instead of losing them, they get a text with your booking link, and book themselves.</p>
-          <p>That's one of the tools we add on top of your website, once it's live. Reminders and review requests work the same way: set up once, then they run on their own.</p>
-        </div>
-        <figure class="phone" aria-label="Example of a missed-call text-back">
-          <div class="phone-screen">
-            <p class="phone-top">Messages</p>
-            <p class="missed"><b>Missed call</b> 2:13 PM</p>
-            <p class="bubble out">Sorry we missed you, we're with a client. Grab any open time here: yourshop.com/book</p>
-            <p class="bubble in">Just booked Thursday 6pm, thanks!</p>
-            <p class="bubble out">See you Thursday.</p>
+    <section class="story">
+      <div class="wrap">
+        <h2 class="section-title">How a first-timer becomes a regular</h2>
+        <div class="story-grid">
+          <div class="story-stage" aria-hidden="true">
+            <div class="story-phone"><div class="story-screens"></div></div>
           </div>
-        </figure>
+          <ol class="story-steps">
+            <li class="story-step" data-step="0">
+              <h3>They find you</h3>
+              <p>Someone searches "barber near me" on their phone. Your site loads fast, looks sharp, and shows prices, hours, and a Book button right away.</p>
+              <div class="screen screen-site">
+                <p class="sc-url">yourshop.com</p>
+                <p class="sc-h">Classic cuts in Bay Ridge.</p>
+                <p class="sc-p">Open today, 9 AM to 8 PM</p>
+                <span class="sc-btn">Book a cut</span>
+                <div class="sc-rows"><span>Haircut</span><b>$40</b><span>Skin fade</span><b>$45</b></div>
+              </div>
+            </li>
+            <li class="story-step" data-step="1">
+              <h3>They book, even if you miss the call</h3>
+              <p>They tap Book, or they call while you're mid-cut. Either way they get a booking link and pick a time themselves.</p>
+              <div class="screen screen-text">
+                <p class="sc-missed"><b>Missed call</b> 2:13 PM</p>
+                <p class="sc-bubble out">Sorry we missed you! Grab any open time here: yourshop.com/book</p>
+                <p class="sc-bubble in">Booked Thursday 6pm, thanks!</p>
+              </div>
+            </li>
+            <li class="story-step" data-step="2">
+              <h3>They actually show up</h3>
+              <p>A reminder text goes out the day before, so the chair isn't empty at 6 PM.</p>
+              <div class="screen screen-remind">
+                <p class="sc-time">Wednesday, 6:00 PM</p>
+                <div class="sc-note"><b>Your Shop</b><span>Reminder: haircut tomorrow at 6:00 PM. Reply C to reschedule.</span></div>
+              </div>
+            </li>
+            <li class="story-step" data-step="3">
+              <h3>They come back</h3>
+              <p>After the visit they get a quick review request and a link to book again. That's how first-timers turn into regulars.</p>
+              <div class="screen screen-back">
+                <p class="sc-h small">How was your cut?</p>
+                <p class="sc-stars">★★★★★</p>
+                <span class="sc-btn">Book your next visit</span>
+                <div class="sc-card"><span>Visits</span><i></i><i></i><i></i><i></i><i class="on"></i></div>
+              </div>
+            </li>
+          </ol>
+        </div>
       </div>
     </section>
 
@@ -248,6 +315,36 @@
         done.textContent = 'Booked for ' + day + ' at ' + time + '. A reminder text goes out the day before.';
         btn.hidden = true; done.hidden = false;
       });
+    })();
+
+    (function () {
+      var frame = document.querySelector('.compare-frame');
+      var range = document.getElementById('compare-range');
+      if (frame && range) {
+        var set = function () { frame.style.setProperty('--pos', range.value + '%'); };
+        range.addEventListener('input', set);
+        set();
+      }
+
+      var stage = document.querySelector('.story-screens');
+      var steps = document.querySelectorAll('.story-step');
+      if (!stage || !steps.length || !('IntersectionObserver' in window)) return;
+      document.documentElement.classList.add('js-story');
+      steps.forEach(function (step, i) {
+        var screen = step.querySelector('.screen').cloneNode(true);
+        if (i === 0) screen.classList.add('is-on');
+        stage.appendChild(screen);
+      });
+      var screens = stage.querySelectorAll('.screen');
+      var show = function (n) {
+        screens.forEach(function (sc, i) { sc.classList.toggle('is-on', i === n); });
+        steps.forEach(function (st, i) { st.classList.toggle('is-on', i === n); });
+      };
+      show(0);
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) show(Number(e.target.dataset.step)); });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      steps.forEach(function (st) { io.observe(st); });
     })();
   </script>
 </body>

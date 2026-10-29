@@ -34,7 +34,9 @@ Direction chosen without reference sites (the UXKIN library was not reachable fr
 ## Components
 
 - Buttons: cobalt pill (primary), outline pill on light, ghost pill on white. Focus ring 2px cobalt.
-- Booking widget in the hero is the signature element: a working example (pick a day and time, then book).
+- Booking widget in the hero is the signature element: a working example (pick a day and time, then book), with two floating notification chips.
+- Before/after slider: an old-style site vs a clean one for a made-up shop, always labeled as an example.
+- Scroll story: a sticky phone on desktop follows one customer through find, book, reminder, come back. Inline screens on tablet and phone.
 - Services use 40px line icons in `--accent`, 1.6 stroke, no fills.
 - Process steps use large cobalt Gloock numerals because they are a real sequence.
 
