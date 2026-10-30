@@ -1,7 +1,7 @@
 // Teller & Sons: sample barbershop site by Regulars NYC
 
 // The Cal.com event that every "Book" button opens.
-const CAL_LINK = "regularsnyc/haircut-at-teller-sons";
+const CAL_LINK = "pierce-regularsnyc.co/haircut-at-teller-sons";
 const CAL_URL = "https://cal.com/" + CAL_LINK;
 
 // Opening hours in New York time, 24h. Index 0 is Sunday.
