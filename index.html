@@ -537,7 +537,7 @@
       show(0);
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) { if (e.isIntersecting) show(Number(e.target.dataset.step)); });
-      }, { rootMargin: '-45% 0px -45% 0px' });
+      }, { rootMargin: window.innerWidth < 961 ? '-68% 0px -28% 0px' : '-45% 0px -45% 0px' });
       steps.forEach(function (st) { io.observe(st); });
     })();
 
