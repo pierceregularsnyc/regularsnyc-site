@@ -41,6 +41,7 @@ Direction chosen without reference sites (the UXKIN library was not reachable fr
 - Services: accessible tabs (arrow keys work) beside a white "owner view" window that shows each tool from the shop's side: site plus text-to-update thread, week calendar, reminder log, missed-call timeline, review requests. All names in it are examples, and the page says so.
 - Missed-call calculator: two sliders (calls missed a week, average visit price) give a yearly figure using only the visitor's numbers, compared with the real first-year cost of Site + Booking ($1,000).
 - Booking confirmation draws a cobalt check. Footer ends with an outlined Gloock "Regulars." wordmark.
+- Phones look like real phones: status bar (9:41, signal, wifi, battery) with a Dynamic Island pill, side buttons, home bar, a thin titanium edge. Status text and home bar turn white on dark screens.
 - Service tabs use 32px line icons, 1.6 stroke, no fills; grey when inactive, cobalt when selected.
 - Process steps use large cobalt Gloock numerals because they are a real sequence.
 

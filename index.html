@@ -95,7 +95,10 @@
           <p class="compare-hint">On a phone, the old site shrinks to fit. The new one is built for it.</p>
         </div>
         <div class="compare-stage" data-view="desktop">
+          <div class="compare-device">
           <div class="compare-frame" style="--pos: 50%">
+            <div class="phone-status cf-status" aria-hidden="true"><span class="ps-time">9:41</span><span class="ps-island"></span><span class="ps-icons"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12" class="ps-wifi"><path d="M1.5 4.6a9.5 9.5 0 0 1 13 0"/><path d="M4.2 7.4a5.7 5.7 0 0 1 7.6 0"/><circle cx="8" cy="10.2" r="1.3"/></svg><svg viewBox="0 0 27 12"><rect x="0.6" y="0.6" width="22.8" height="10.8" rx="3.4" class="ps-batt-edge"/><rect x="2.4" y="2.4" width="17" height="7.2" rx="1.8"/><path d="M25 4.2v3.6a1.9 1.9 0 0 0 0-3.6Z" opacity=".45"/></svg></span></div>
+            <span class="cf-home" aria-hidden="true"></span>
             <div class="site-old" aria-hidden="true">
               <div class="chrome chrome-old"><span class="chrome-dots"><i></i><i></i><i></i></span><span class="addr">http://www.tonysbarbershop.tripod.com/index.htm</span></div>
               <div class="old-page">
@@ -155,6 +158,8 @@
             <label class="sr-only" for="compare-range">Compare the old and new site</label>
             <input class="compare-range" id="compare-range" type="range" min="0" max="100" value="50">
           </div>
+          <i class="pb pb-action" aria-hidden="true"></i><i class="pb pb-vol-up" aria-hidden="true"></i><i class="pb pb-vol-down" aria-hidden="true"></i><i class="pb pb-power" aria-hidden="true"></i>
+          </div>
         </div>
         <div class="diff" role="table" aria-label="What changed">
           <div class="diff-row diff-headrow" role="row"><span role="columnheader"><span class="sr-only">Topic</span></span><span role="columnheader" class="d-old">Before</span><span role="columnheader" class="d-new">After</span></div>
@@ -173,7 +178,7 @@
         <h2 class="section-title">How a first-timer becomes a regular</h2>
         <div class="story-grid">
           <div class="story-stage" aria-hidden="true">
-            <div class="story-phone"><div class="story-screens"></div></div>
+            <div class="story-phone"><div class="phone-status" aria-hidden="true"><span class="ps-time">9:41</span><span class="ps-island"></span><span class="ps-icons"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12" class="ps-wifi"><path d="M1.5 4.6a9.5 9.5 0 0 1 13 0"/><path d="M4.2 7.4a5.7 5.7 0 0 1 7.6 0"/><circle cx="8" cy="10.2" r="1.3"/></svg><svg viewBox="0 0 27 12"><rect x="0.6" y="0.6" width="22.8" height="10.8" rx="3.4" class="ps-batt-edge"/><rect x="2.4" y="2.4" width="17" height="7.2" rx="1.8"/><path d="M25 4.2v3.6a1.9 1.9 0 0 0 0-3.6Z" opacity=".45"/></svg></span></div><div class="story-screens"></div><i class="pb pb-action" aria-hidden="true"></i><i class="pb pb-vol-up" aria-hidden="true"></i><i class="pb pb-vol-down" aria-hidden="true"></i><i class="pb pb-power" aria-hidden="true"></i></div>
           </div>
           <ol class="story-steps">
             <li class="story-step" data-step="0">
@@ -468,7 +473,7 @@
       var frame = document.querySelector('.compare-frame');
       var range = document.getElementById('compare-range');
       if (frame && range) {
-        var cstage = frame.parentNode;
+        var cstage = frame.closest('.compare-stage');
         var diff = document.querySelector('.diff');
         var oldSite = frame.querySelector('.site-old');
         var oldPage = frame.querySelector('.old-page');
@@ -530,8 +535,10 @@
         stage.appendChild(screen);
       });
       var screens = stage.querySelectorAll('.screen');
+      var phone = document.querySelector('.story-phone');
       var show = function (n) {
         screens.forEach(function (sc, i) { sc.classList.toggle('is-on', i === n); });
+        phone.classList.toggle('phone-dark', screens[n].classList.contains('screen-remind'));
         steps.forEach(function (st, i) { st.classList.toggle('is-on', i === n); });
       };
       show(0);
