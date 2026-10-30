@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teller & Sons Barbers | Greenpoint, Brooklyn (sample site)</title>
+  <meta name="description" content="A sample barbershop website built by Regulars NYC. Teller & Sons is a made-up shop.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Teller & Sons Barbers (sample site by Regulars NYC)">
+  <meta property="og:description" content="Cuts, shaves and beard work in Greenpoint. A sample site with live hours and online booking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sample-bar">
+    <p><b>Sample site.</b> Teller &amp; Sons is a made-up shop. Built by <a href="/">Regulars NYC</a> to show what your site could look like.</p>
+  </div>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="mark" href="#top" aria-label="Teller and Sons, back to top">
+        <span class="mark-pole" aria-hidden="true"></span>
+        <span class="mark-text">Teller <i>&amp;</i> Sons</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#menu">Prices</a>
+        <a href="#barbers">Barbers</a>
+        <a href="#visit">Hours &amp; map</a>
+      </nav>
+      <a class="btn btn-red btn-sm book" href="#" data-service="">Book now</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status" data-status><span class="dot"></span><span data-status-text>Checking hours…</span></p>
+          <h1><span>Same chair.</span><span>Same corner.</span><span class="h1-em">Since 1987.</span></h1>
+          <p class="lead">Classic cuts, skin fades and hot towel shaves on Manhattan Avenue. Three barbers, one family, and a chair that's ready when you are.</p>
+          <div class="hero-cta">
+            <a class="btn btn-red book" href="#" data-service="">Book now</a>
+            <a class="btn btn-line" href="#menu">See prices</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>4.9</dt><dd>312 reviews</dd></div>
+            <div><dt>$42</dt><dd>Classic cut</dd></div>
+            <div><dt>4 min</dt><dd>from the G train</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art">
+          <figure class="photo photo-tall" style="--rot:-2deg">
+            <img src="art/chair.svg" alt="Illustration of a red barber chair by a mirror" loading="lazy">
+            <figcaption>Sal, chair one</figcaption>
+          </figure>
+          <figure class="photo photo-small" style="--rot:3deg">
+            <img src="art/tools.svg" alt="Illustration of clippers, combs and scissors on the counter" loading="lazy">
+            <figcaption>The counter</figcaption>
+          </figure>
+          <div class="pole" aria-hidden="true"><span class="pole-cap"></span><span class="pole-glass"><span class="pole-stripes"></span></span><span class="pole-cap"></span></div>
+          <div class="stamp" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><defs><path id="ring" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#ring">WALK-INS WELCOME · TUE TO SAT · GREENPOINT ·</textPath></text></svg>
+            <b>T&amp;S</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Hot towel shaves</span><span>Kids under 12, $28</span><span>Walk-ins till 5pm</span><span>Cash, card, Apple Pay</span><span>Est. 1987</span><span>Free line-up between cuts</span>
+        <span>Hot towel shaves</span><span>Kids under 12, $28</span><span>Walk-ins till 5pm</span><span>Cash, card, Apple Pay</span><span>Est. 1987</span><span>Free line-up between cuts</span>
+      </div>
+    </div>
+
+    <section id="menu" class="menu">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The price card</h2>
+          <p class="lead">Tap what you want and we'll add up the time and the total. Then book it in one go.</p>
+        </div>
+
+        <div class="menu-grid">
+          <div class="card">
+            <div class="tabs" role="tablist" aria-label="Service types">
+              <button role="tab" id="tab-cuts" aria-controls="panel-cuts" aria-selected="true">Cuts</button>
+              <button role="tab" id="tab-shave" aria-controls="panel-shave" aria-selected="false" tabindex="-1">Shaves &amp; beards</button>
+              <button role="tab" id="tab-extra" aria-controls="panel-extra" aria-selected="false" tabindex="-1">Extras</button>
+            </div>
+
+            <div role="tabpanel" id="panel-cuts" aria-labelledby="tab-cuts" class="panel">
+              <ul class="price-list">
+                <li><button class="svc" data-name="Classic cut" data-price="42" data-min="35" aria-pressed="false"><span class="svc-name">Classic cut<small>Scissors and clippers, washed and styled</small></span><span class="leader"></span><span class="svc-time">35 min</span><span class="svc-price">$42</span></button></li>
+                <li><button class="svc" data-name="Skin fade" data-price="48" data-min="45" aria-pressed="false"><span class="svc-name">Skin fade<small>Down to the skin, blended by hand</small></span><span class="leader"></span><span class="svc-time">45 min</span><span class="svc-price">$48</span></button></li>
+                <li><button class="svc" data-name="Scissor cut" data-price="55" data-min="50" aria-pressed="false"><span class="svc-name">Scissor cut<small>Longer styles, all scissor work</small></span><span class="leader"></span><span class="svc-time">50 min</span><span class="svc-price">$55</span></button></li>
+                <li><button class="svc" data-name="Buzz cut" data-price="30" data-min="20" aria-pressed="false"><span class="svc-name">Buzz cut<small>One guard all over, neck cleaned up</small></span><span class="leader"></span><span class="svc-time">20 min</span><span class="svc-price">$30</span></button></li>
+                <li><button class="svc" data-name="Kids cut" data-price="28" data-min="30" aria-pressed="false"><span class="svc-name">Kids cut<small>Under 12. Lollipop included</small></span><span class="leader"></span><span class="svc-time">30 min</span><span class="svc-price">$28</span></button></li>
+              </ul>
+            </div>
+            <div role="tabpanel" id="panel-shave" aria-labelledby="tab-shave" class="panel" hidden>
+              <ul class="price-list">
+                <li><button class="svc" data-name="Hot towel shave" data-price="45" data-min="40" aria-pressed="false"><span class="svc-name">Hot towel shave<small>Straight razor, two towels, cold finish</small></span><span class="leader"></span><span class="svc-time">40 min</span><span class="svc-price">$45</span></button></li>
+                <li><button class="svc" data-name="Beard trim" data-price="25" data-min="20" aria-pressed="false"><span class="svc-name">Beard trim<small>Shaped, lined, and oiled</small></span><span class="leader"></span><span class="svc-time">20 min</span><span class="svc-price">$25</span></button></li>
+                <li><button class="svc" data-name="Beard sculpt" data-price="35" data-min="30" aria-pressed="false"><span class="svc-name">Beard sculpt<small>Razor lines and a hot towel</small></span><span class="leader"></span><span class="svc-time">30 min</span><span class="svc-price">$35</span></button></li>
+                <li><button class="svc" data-name="Head shave" data-price="40" data-min="35" aria-pressed="false"><span class="svc-name">Head shave<small>Straight razor, smooth all over</small></span><span class="leader"></span><span class="svc-time">35 min</span><span class="svc-price">$40</span></button></li>
+              </ul>
+            </div>
+            <div role="tabpanel" id="panel-extra" aria-labelledby="tab-extra" class="panel" hidden>
+              <ul class="price-list">
+                <li><button class="svc" data-name="Line-up" data-price="15" data-min="15" aria-pressed="false"><span class="svc-name">Line-up<small>Edges only. Free within 2 weeks of a cut</small></span><span class="leader"></span><span class="svc-time">15 min</span><span class="svc-price">$15</span></button></li>
+                <li><button class="svc" data-name="Eyebrow clean-up" data-price="10" data-min="10" aria-pressed="false"><span class="svc-name">Eyebrow clean-up<small>Quick tidy with a razor</small></span><span class="leader"></span><span class="svc-time">10 min</span><span class="svc-price">$10</span></button></li>
+                <li><button class="svc" data-name="Scalp treatment" data-price="20" data-min="15" aria-pressed="false"><span class="svc-name">Scalp treatment<small>Massage, tonic and a steamed towel</small></span><span class="leader"></span><span class="svc-time">15 min</span><span class="svc-price">$20</span></button></li>
+                <li><button class="svc" data-name="Grey blending" data-price="30" data-min="25" aria-pressed="false"><span class="svc-name">Grey blending<small>Softens grey without looking dyed</small></span><span class="leader"></span><span class="svc-time">25 min</span><span class="svc-price">$30</span></button></li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="ticket" aria-live="polite">
+            <div class="ticket-top">
+              <p class="ticket-shop">Teller &amp; Sons</p>
+              <p class="ticket-no">Ticket <span data-ticket-no>No. 0412</span></p>
+            </div>
+            <ul class="ticket-lines" data-lines>
+              <li class="ticket-empty">Pick a service from the card.</li>
+            </ul>
+            <div class="ticket-total">
+              <span>Total</span><span data-total-time>0 min</span><b data-total-price>$0</b>
+            </div>
+            <a class="btn btn-red btn-block book" href="#" data-ticket-book data-service="">Book this visit</a>
+            <p class="ticket-note">Pay at the shop. Cancel free up to 2 hours before.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="barbers" class="barbers">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Three chairs, one family</h2>
+          <p class="lead">Ask for someone by name, or take the first open chair.</p>
+        </div>
+        <div class="barber-grid">
+          <article class="barber">
+            <figure class="photo"><img src="art/portrait-1.svg" alt="Illustrated portrait of Sal Teller" loading="lazy"></figure>
+            <div class="barber-body">
+              <p class="barber-chair">Chair 1</p>
+              <h3>Sal Teller</h3>
+              <p>Opened the shop in 1987. Classic cuts, scissor work, and opinions about the Mets.</p>
+              <p class="tags"><span>Scissor cuts</span><span>Hot towel shaves</span></p>
+              <a class="link-arrow book" href="#" data-service="with Sal">Book with Sal</a>
+            </div>
+          </article>
+          <article class="barber">
+            <figure class="photo"><img src="art/portrait-2.svg" alt="Illustrated portrait of Danny Teller" loading="lazy"></figure>
+            <div class="barber-body">
+              <p class="barber-chair">Chair 2</p>
+              <h3>Danny Teller</h3>
+              <p>Sal's son. Took over the clippers in 2012 and hasn't put them down. The fade guy.</p>
+              <p class="tags"><span>Skin fades</span><span>Designs</span></p>
+              <a class="link-arrow book" href="#" data-service="with Danny">Book with Danny</a>
+            </div>
+          </article>
+          <article class="barber">
+            <figure class="photo"><img src="art/portrait-3.svg" alt="Illustrated portrait of Marisol Reyes" loading="lazy"></figure>
+            <div class="barber-body">
+              <p class="barber-chair">Chair 3</p>
+              <h3>Marisol Reyes</h3>
+              <p>Ten years behind the chair, six of them here. Beards, razor lines, and the calmest hands in Brooklyn.</p>
+              <p class="tags"><span>Beard sculpts</span><span>Kids cuts</span></p>
+              <a class="link-arrow book" href="#" data-service="with Marisol">Book with Marisol</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Photos from the shop">
+      <div class="gallery-track">
+        <figure class="photo"><img src="art/storefront.svg" alt="Illustration of the Teller and Sons storefront" loading="lazy"><figcaption>Manhattan Ave, since '87</figcaption></figure>
+        <figure class="photo"><img src="art/fade.svg" alt="Illustration of a skin fade from behind" loading="lazy"><figcaption>Danny's skin fade</figcaption></figure>
+        <figure class="photo"><img src="art/razor.svg" alt="Illustration of a straight razor and hot towel" loading="lazy"><figcaption>Hot towel, cold finish</figcaption></figure>
+        <figure class="photo"><img src="art/chair.svg" alt="Illustration of a red barber chair by a mirror" loading="lazy"><figcaption>Chair one, original 1987</figcaption></figure>
+        <figure class="photo"><img src="art/tools.svg" alt="Illustration of clippers, combs and scissors on the counter" loading="lazy"><figcaption>Marisol's beard work</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="wrap reviews-grid">
+        <div class="rating">
+          <p class="rating-num">4.9</p>
+          <p class="stars" aria-label="4.9 out of 5 stars">★★★★★</p>
+          <p class="rating-src">312 Google reviews</p>
+          <p class="rating-note">Example reviews for this sample site.</p>
+        </div>
+        <div class="quotes" data-quotes>
+          <figure class="quote is-on">
+            <blockquote>“Been going to Sal for 22 years. Moved to Jersey and I still come back. That should tell you everything.”</blockquote>
+            <figcaption><b>Mike D.</b> · regular since 2003</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“Booked on my phone at 11pm, got a reminder the next morning, walked in and Danny was ready. Cleanest fade I've had in this city.”</blockquote>
+            <figcaption><b>Andre P.</b> · first visit</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“Marisol is the only person I trust with my beard. The hot towel shave is the best forty minutes of my month.”</blockquote>
+            <figcaption><b>Jonah K.</b> · every 3 weeks</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“My son used to cry at haircuts. Now he asks when we're going back. They're patient and they're quick.”</blockquote>
+            <figcaption><b>Priya S.</b> · kids cuts</figcaption>
+          </figure>
+          <div class="quote-nav">
+            <button class="qbtn" data-q="-1" aria-label="Previous review">←</button>
+            <span data-q-count>1 / 4</span>
+            <button class="qbtn" data-q="1" aria-label="Next review">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="wrap visit-grid">
+        <div class="hours">
+          <h2>Hours</h2>
+          <p class="status status-lg" data-status><span class="dot"></span><span data-status-text>Checking hours…</span></p>
+          <table class="hours-table">
+            <tbody data-hours></tbody>
+          </table>
+          <p class="hours-note">Walk-ins welcome until 5pm. After that, book ahead so we hold a chair.</p>
+        </div>
+
+        <div class="where">
+          <h2>Find us</h2>
+          <div class="map" role="img" aria-label="Map: the shop is on Manhattan Avenue at Calyer Street, two blocks from the Nassau Avenue G train">
+            <svg viewBox="0 0 600 420" aria-hidden="true">
+              <rect width="600" height="420" class="m-bg"/>
+              <g class="m-streets">
+                <path d="M0 70 L600 70"/><path d="M0 140 L600 140"/><path d="M0 210 L600 210"/><path d="M0 280 L600 280"/><path d="M0 350 L600 350"/>
+                <path d="M90 0 L90 420"/><path d="M190 0 L190 420"/><path d="M380 0 L380 420"/><path d="M480 0 L480 420"/>
+              </g>
+              <path class="m-park" d="M386 76 L594 76 L594 204 L386 204 Z"/>
+              <text class="m-label m-park-label" x="490" y="186" text-anchor="middle">McGolrick Park</text>
+              <path class="m-ave" d="M285 0 L285 420"/>
+              <path class="m-ave m-ave-thin" d="M0 300 L600 260"/>
+              <text class="m-label" x="281" y="412" transform="rotate(-90 281 412)" dy="4">MANHATTAN AVE</text>
+              <text class="m-label" x="20" y="132">CALYER ST</text>
+              <text class="m-label" x="20" y="62">MESEROLE AVE</text>
+              <text class="m-label" x="20" y="294" transform="rotate(-3.8 20 294)">NASSAU AVE</text>
+              <g class="m-train" transform="translate(318 266)"><circle r="14"/><text y="5" text-anchor="middle">G</text></g>
+              <path class="m-walk" d="M285 140 L285 272 L304 270"/>
+              <g class="m-pin" transform="translate(285 140)"><circle class="m-pulse" r="12"/><path d="M0 -6 C-12 -6 -18 -16 -18 -24 C-18 -36 -9 -44 0 -44 C9 -44 18 -36 18 -24 C18 -16 12 -6 0 -6 Z" transform="translate(0 6)"/><circle cy="-18" r="6" class="m-pin-dot"/></g>
+              <g class="m-tag" transform="translate(306 92)"><rect width="150" height="44" rx="8"/><text x="14" y="20">Teller &amp; Sons</text><text x="14" y="36" class="m-tag-sub">4 min walk from the G</text></g>
+            </svg>
+          </div>
+          <address>
+            <b>Manhattan Ave at Calyer St</b><br>
+            Greenpoint, Brooklyn<br>
+            <a href="tel:+17185550187">(718) 555-0187</a>
+          </address>
+          <div class="where-cta">
+            <a class="btn btn-line btn-sm" href="https://www.google.com/maps/search/?api=1&query=Manhattan+Ave+%26+Calyer+St+Brooklyn+NY" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn-line btn-sm" href="tel:+17185550187">Call the shop</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closer">
+      <div class="wrap closer-inner">
+        <h2>Your chair's open.</h2>
+        <p class="lead">Pick a time online in under a minute. We'll text you a reminder the day before.</p>
+        <a class="btn btn-cream book" href="#" data-service="">Book now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p class="foot-mark">Teller <i>&amp;</i> Sons</p>
+      <p>Manhattan Ave at Calyer St, Greenpoint · (718) 555-0187 · Tue to Sat</p>
+      <p class="foot-credit">Sample site by <a href="/">Regulars NYC</a>. Want one like this for your shop? <a href="/#contact">Get a free mockup</a>.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-book">
+    <span data-status-short>Barbershop · Greenpoint</span>
+    <a class="btn btn-red btn-sm book" href="#" data-service="">Book now</a>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

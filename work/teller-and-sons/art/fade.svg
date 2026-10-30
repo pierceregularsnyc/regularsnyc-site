@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"><defs><pattern id="g" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#3d1013" opacity=".10"/></pattern></defs>
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset=".25" stop-color="#1a1512"/><stop offset=".62" stop-color="#6b5a4c"/><stop offset=".8" stop-color="#c79f86"/></linearGradient></defs>
+<rect width="400" height="500" fill="#1d2a48"/>
+<circle cx="200" cy="240" r="190" fill="#24345a"/>
+<path d="M110 260q-10-150 90-160q100 10 90 160q0 70-30 110l-10 130H150l-10-130q-30-40-30-110z" fill="#c79f86" stroke="#1a1512" stroke-width="5"/>
+<path d="M110 250q-10-140 90-150q100 10 90 150q-10-20-20-20q-70-10-140 0q-10 0-20 20z" fill="url(#f)"/>
+<path d="M108 252q0 30 12 60M292 252q0 30-12 60" stroke="#6b5a4c" stroke-width="3" stroke-dasharray="2 4" fill="none"/>
+<path d="M98 250q-14 0-12 26t20 30M302 250q14 0 12 26t-20 30" fill="#c79f86" stroke="#1a1512" stroke-width="5"/>
+<path d="M150 500q50-24 100 0" fill="#b3202a"/><path d="M60 500q20-70 90-90l50 30 50-30q70 20 90 90z" fill="#b3202a" stroke="#1a1512" stroke-width="5"/>
+<rect width="400" height="500" fill="url(#g)"/>
+</svg>
