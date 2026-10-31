@@ -1288,3 +1288,35 @@ h1 .line:nth-child(2) > span { animation-delay: .12s; }
   .old-marquee span { padding-left: 10px; }
   .bar i { transition: none; }
 }
+
+/* Work */
+.work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.work-card {
+  display: grid; grid-template-rows: auto 1fr; text-decoration: none; color: inherit;
+  background: var(--white); border: 1px solid var(--line); border-radius: 22px; overflow: hidden;
+  transition: box-shadow .25s, transform .25s, border-color .25s;
+}
+.work-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); border-color: transparent; }
+.work-shot { background: var(--chalk); border-bottom: 1px solid var(--line); overflow: hidden; }
+.work-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-bottom: 1px solid var(--line); background: var(--white); font-size: 0.78rem; color: var(--ink-3); }
+.work-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); }
+.work-bar span { margin-left: 10px; padding: 3px 12px; border-radius: 999px; background: var(--chalk); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.work-shot img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; transition: transform .6s ease; }
+.work-card:hover .work-shot img { transform: scale(1.025); }
+.work-body { display: grid; gap: 8px; align-content: start; padding: 26px 28px 30px; }
+.work-kind { font-size: 0.88rem; color: var(--ink-3); }
+.work-body h3 { font-family: var(--serif); font-weight: 400; font-size: 1.75rem; letter-spacing: -0.01em; }
+.work-body p:not(.work-kind) { color: var(--ink-2); max-width: 30em; }
+.work-link { margin-top: 8px; font-weight: 600; color: var(--accent); }
+.work-link::after { content: " →"; }
+.work-card:hover .work-link { color: var(--accent-2); }
+
+@media (max-width: 860px) {
+  .work-grid { grid-template-columns: 1fr; gap: 20px; }
+  .work-body { padding: 22px 22px 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .work-card, .work-shot img { transition: none; }
+  .work-card:hover { transform: none; }
+  .work-card:hover .work-shot img { transform: none; }
+}

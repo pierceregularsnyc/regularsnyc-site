@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coil Pilates | Reformer classes in Long Island City (sample site)</title>
+  <meta name="description" content="A sample Pilates studio website built by Regulars NYC. Coil Pilates is a made-up studio.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2a1330">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Coil Pilates (sample site by Regulars NYC)">
+  <meta property="og:description" content="Small-group reformer classes in Long Island City. A sample site with a live class schedule and online booking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sample-bar">
+    <p><b>Sample site.</b> Coil Pilates is a made-up studio. Built by <a href="/">Regulars NYC</a> to show what your site could look like.</p>
+  </div>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="mark" href="#top" aria-label="Coil Pilates, back to top">
+        <svg class="mark-coil" viewBox="0 0 40 24" aria-hidden="true"><path d="M2 12h4c2-9 6-9 6 0s4 9 6 0 4-9 6 0 4 9 6 0 4-9 6 0h2"/></svg>
+        <span class="mark-text">coil<span>pilates</span></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#schedule">Schedule</a>
+        <a href="#classes">Classes</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#first">First visit</a>
+      </nav>
+      <a class="btn btn-coral btn-sm book" href="#" data-note="">Book a class</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span class="pulse"></span><span data-open-text>Reformer studio · Long Island City</span></p>
+          <h1>Slow is the <em>hard</em> part.</h1>
+          <p class="lead">Small-group reformer classes on Vernon Boulevard. Twelve machines, an instructor who learns your name, and fifty minutes that do more than an hour anywhere else.</p>
+          <div class="hero-cta">
+            <a class="btn btn-coral book" href="#" data-note="First class ($25 intro)">Try a class for $25</a>
+            <a class="btn btn-ghost" href="#schedule">See this week</a>
+          </div>
+
+          <div class="spring-rule" aria-hidden="true">
+            <svg viewBox="0 0 600 40" preserveAspectRatio="none"><path vector-effect="non-scaling-stroke" d="M0 20H40 C46 2 52 2 54 20 S62 38 68 20 76 2 82 20 90 38 96 20 104 2 110 20 118 38 124 20 132 2 138 20 146 38 152 20 160 2 166 20 174 38 180 20 188 2 194 20 202 38 208 20 216 2 222 20 230 38 236 20 244 2 250 20 258 38 264 20 272 2 278 20 286 38 292 20 300 2 306 20 314 38 320 20 328 2 334 20 342 38 348 20 356 2 362 20 370 38 376 20 384 2 390 20 398 38 404 20 412 2 418 20 426 38 432 20 440 2 446 20 454 38 460 20 468 2 474 20 482 38 488 20 496 2 502 20 510 38 516 20 524 2 530 20 538 38 544 20 552 2 558 20 H600"/></svg>
+            <span class="spring-knob"></span>
+          </div>
+
+          <dl class="hero-facts">
+            <div><dt>12</dt><dd>reformers, never more</dd></div>
+            <div><dt>$25</dt><dd>your first class</dd></div>
+            <div><dt>3 min</dt><dd>from the 7 train</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art">
+          <figure class="arch arch-hero">
+            <img src="photos/hero.webp" alt="A woman in grey kneels on a wooden reformer, gripping the foot bar, in a bright white studio" fetchpriority="high">
+          </figure>
+          <figure class="arch arch-small">
+            <img src="photos/tower-hang.webp" alt="A client hangs upside down from the bars of a Pilates tower">
+          </figure>
+
+          <aside class="next-card" aria-live="polite">
+            <p class="next-label" data-next-when>Next class</p>
+            <p class="next-name" data-next-name>Reformer Flow</p>
+            <p class="next-meta" data-next-meta>With Inès · 50 min</p>
+            <div class="seats" data-next-seats aria-hidden="true"></div>
+            <div class="next-foot">
+              <span data-next-left>Checking spots…</span>
+              <a class="next-btn book" href="#" data-next-book data-note="">Reserve</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>This week on the reformers</h2>
+          <p class="lead">Pick a day, filter by class or instructor, and grab a reformer. Spots update as people book.</p>
+        </div>
+
+        <div class="sched-card">
+          <div class="days" role="tablist" aria-label="Pick a day" data-days></div>
+
+          <div class="filters">
+            <div class="chips" role="group" aria-label="Class type" data-type-chips>
+              <button class="chip" aria-pressed="true" data-type="all">All classes</button>
+              <button class="chip" aria-pressed="false" data-type="flow">Flow</button>
+              <button class="chip" aria-pressed="false" data-type="tower">Tower</button>
+              <button class="chip" aria-pressed="false" data-type="burn">Jump board</button>
+              <button class="chip" aria-pressed="false" data-type="found">Foundations</button>
+              <button class="chip" aria-pressed="false" data-type="slow">Slow springs</button>
+            </div>
+            <label class="who">
+              <span>Instructor</span>
+              <select data-who>
+                <option value="all">Anyone</option>
+                <option value="ines">Inès</option>
+                <option value="tess">Tess</option>
+                <option value="june">June</option>
+              </select>
+            </label>
+          </div>
+
+          <ol class="slots" data-slots aria-live="polite"></ol>
+          <p class="sched-note">Example schedule for this sample site. Cancel free up to 12 hours before class.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes" class="classes">
+      <div class="wrap classes-grid">
+        <div class="classes-copy">
+          <h2>Five classes, one machine</h2>
+          <p class="lead on-dark">The springs set the work. Light springs make it harder to control, heavy springs make it harder to push. We'll tell you which to start with.</p>
+          <ul class="class-list" role="tablist" aria-label="Class types" data-class-list>
+            <li><button role="tab" aria-selected="true" data-class="found"><span class="cl-name">Foundations</span><span class="cl-tag">Start here</span></button></li>
+            <li><button role="tab" aria-selected="false" tabindex="-1" data-class="flow"><span class="cl-name">Reformer Flow</span><span class="cl-tag">Most booked</span></button></li>
+            <li><button role="tab" aria-selected="false" tabindex="-1" data-class="tower"><span class="cl-name">Tower Strength</span><span class="cl-tag">Heavy springs</span></button></li>
+            <li><button role="tab" aria-selected="false" tabindex="-1" data-class="burn"><span class="cl-name">Jump Board Burn</span><span class="cl-tag">Cardio</span></button></li>
+            <li><button role="tab" aria-selected="false" tabindex="-1" data-class="slow"><span class="cl-name">Slow Springs</span><span class="cl-tag">Stretch &amp; reset</span></button></li>
+          </ul>
+        </div>
+
+        <div class="class-view" role="tabpanel" aria-live="polite" data-class-view>
+          <figure class="arch arch-class"><img data-cv-img src="photos/foundations.webp" alt="" loading="lazy"></figure>
+          <div class="cv-body">
+            <div class="cv-meta">
+              <span class="meter" data-cv-meter aria-label="Spring load: light"><i></i><i></i><i></i></span>
+              <span data-cv-load>Light springs</span>
+              <span data-cv-min>50 min</span>
+            </div>
+            <h3 data-cv-name>Foundations</h3>
+            <p data-cv-desc>Every move on the reformer, taught slowly. Footwork, the hundred, short box. You'll leave knowing how to set your own springs.</p>
+            <p class="cv-good"><b>Good if</b> <span data-cv-good>it's your first time, or your first time in a while.</span></p>
+            <button class="btn btn-coral btn-sm" data-cv-times>See Foundations times</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Which pack fits you?</h2>
+          <p class="lead">Slide to how often you'd come. We'll do the math and show you the cheapest way in.</p>
+        </div>
+
+        <div class="calc">
+          <div class="calc-input">
+            <label for="freq" class="calc-q">Classes a week</label>
+            <output class="calc-num" for="freq" data-freq-out>2</output>
+            <input type="range" id="freq" min="1" max="6" step="1" value="2" data-freq>
+            <div class="calc-ticks" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div>
+            <p class="calc-sum" data-calc-sum>At 2 a week, Unlimited saves you $58 a month over drop-ins.</p>
+          </div>
+
+          <div class="plans" data-plans>
+            <article class="plan" data-plan="drop">
+              <div class="plan-top"><h3>Drop-in</h3><span class="plan-badge">Best for you</span></div>
+              <p class="plan-price"><b>$38</b> a class</p>
+              <div class="plan-bar"><span></span></div>
+              <p class="plan-month"><b data-month>$327</b> a month</p>
+              <p class="plan-fine">No commitment. Book any class.</p>
+            </article>
+            <article class="plan" data-plan="pack">
+              <div class="plan-top"><h3>10-class pack</h3><span class="plan-badge">Best for you</span></div>
+              <p class="plan-price"><b>$320</b> for ten</p>
+              <div class="plan-bar"><span></span></div>
+              <p class="plan-month"><b data-month>$275</b> a month</p>
+              <p class="plan-fine">$32 a class. Good for 4 months.</p>
+            </article>
+            <article class="plan" data-plan="unl">
+              <div class="plan-top"><h3>Unlimited</h3><span class="plan-badge">Best for you</span></div>
+              <p class="plan-price"><b>$269</b> a month</p>
+              <div class="plan-bar"><span></span></div>
+              <p class="plan-month"><b data-month>$269</b> a month</p>
+              <p class="plan-fine">One class a day. Pause anytime.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="extras">
+          <div class="intro-offer">
+            <p class="intro-big">$25</p>
+            <div>
+              <h3>Your first class</h3>
+              <p>Any class, any instructor. Grip socks are on us the first time.</p>
+            </div>
+            <a class="btn btn-coral btn-sm book" href="#" data-note="First class ($25 intro)">Claim it</a>
+          </div>
+          <div class="private">
+            <figure><img src="photos/private.webp" alt="An instructor in black leans over a client lying on a reformer, adjusting her shoulders" loading="lazy"></figure>
+            <div>
+              <h3>Private sessions</h3>
+              <p>One instructor, one reformer, 55 minutes. Good for injuries, pregnancy, or getting your form right before joining a group.</p>
+              <p class="private-price"><b>$115</b> a session · <b>$540</b> for five</p>
+              <a class="link-arrow book" href="#" data-note="Private session">Book a private</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The people counting your reps</h2>
+          <p class="lead">Three instructors, all certified on the full apparatus. Take a class with each and see who you click with.</p>
+        </div>
+        <div class="team-grid">
+          <article class="coach">
+            <figure class="arch"><img src="photos/ines.webp" alt="Inès, in a grey ribbed set, standing on a reformer carriage holding the foot bar" loading="lazy"></figure>
+            <h3>Inès Carvalho</h3>
+            <p class="coach-role">Founder · teaching since 2014</p>
+            <p>Danced for nine years before a knee sent her to the reformer. Opened Coil so classes could stay small enough to fix everyone's form.</p>
+            <blockquote>“Slower. Slower than that.”</blockquote>
+            <button class="link-arrow" data-coach="ines">See Inès's classes</button>
+          </article>
+          <article class="coach">
+            <figure class="arch"><img src="photos/tess.webp" alt="Tess, in black, leaning into the foot bar of a reformer in front of a plant" loading="lazy"></figure>
+            <h3>Tess Morrow</h3>
+            <p class="coach-role">Jump board &amp; tower</p>
+            <p>Former college runner. Her Jump Board Burn is the only cardio class in LIC with a waitlist most mornings.</p>
+            <blockquote>“If you can talk, add a spring.”</blockquote>
+            <button class="link-arrow" data-coach="tess">See Tess's classes</button>
+          </article>
+          <article class="coach">
+            <figure class="arch"><img src="photos/june.webp" alt="June, in a black zip top, guiding a client's shoulders on the reformer" loading="lazy"></figure>
+            <h3>June Halloran</h3>
+            <p class="coach-role">Foundations &amp; privates</p>
+            <p>Trained in physical therapy clinics before teaching groups. The one to see if something hurts, or if you're nervous about your first class.</p>
+            <blockquote>“Breathe out on the hard part.”</blockquote>
+            <button class="link-arrow" data-coach="june">See June's classes</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="Photos from the studio">
+      <div class="strip-track">
+        <figure class="arch"><img src="photos/g-hang.webp" alt="A client hangs from the tower bar with her feet in pink straps" loading="lazy"></figure>
+        <figure class="arch wide"><img src="photos/g-mermaid.webp" alt="A woman in grey stretches sideways on a reformer between two palms" loading="lazy"></figure>
+        <figure class="arch"><img src="photos/g-straps.webp" alt="Legs up in the straps, lying on a reformer" loading="lazy"></figure>
+        <figure class="arch"><img src="photos/g-room.webp" alt="Wooden reformer towers lined up in the white studio" loading="lazy"></figure>
+        <figure class="arch"><img src="photos/g-kneel.webp" alt="A client kneels on a reformer, pulling the hand straps" loading="lazy"></figure>
+        <figure class="arch"><img src="photos/tower.webp" alt="An empty wooden tower reformer under a skylight" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section id="first" class="first">
+      <div class="wrap first-grid">
+        <div>
+          <h2>Your first class, start to finish</h2>
+          <ol class="steps">
+            <li><b>Book any class</b><span>Foundations is the gentlest start, but every class is open to beginners. Tell us about injuries when you book.</span></li>
+            <li><b>Come 10 minutes early</b><span>We'll show you the cubbies, the water, and your reformer. Wear something fitted.</span></li>
+            <li><b>Grab grip socks</b><span>Socks with grips on the bottom keep you on the carriage. Your first pair is free.</span></li>
+            <li><b>We set your springs</b><span>Your instructor sets you up the first time, then shows you how to do it yourself.</span></li>
+          </ol>
+        </div>
+        <div class="faq">
+          <h3>Questions people ask</h3>
+          <details open>
+            <summary>I've never done Pilates. Is that OK?</summary>
+            <p>Yes. About a third of every class is new to the reformer. Instructors give easier and harder versions of every move.</p>
+          </details>
+          <details>
+            <summary>What's the cancellation policy?</summary>
+            <p>Cancel up to 12 hours before for free. Later than that, or a no-show, uses the class (or a $15 fee on Unlimited).</p>
+          </details>
+          <details>
+            <summary>Can I come if I'm pregnant?</summary>
+            <p>Yes, after your doctor signs off. Start with a private session with June so she can adjust everything for you.</p>
+          </details>
+          <details>
+            <summary>Is there a shower?</summary>
+            <p>Two, with towels, shampoo and a hair dryer. Lockers are free. Bring a lock or borrow one.</p>
+          </details>
+          <details>
+            <summary>How is this different from mat Pilates?</summary>
+            <p>The reformer adds springs, so moves get lighter or heavier without weights. It's easier to start and harder to master.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="wrap">
+        <div class="reviews-head">
+          <p class="rating"><b>4.9</b><span class="stars" aria-label="4.9 out of 5 stars">★★★★★</span><span>186 Google reviews</span></p>
+          <p class="rating-note">Example reviews for this sample site.</p>
+        </div>
+        <div class="review-grid">
+          <figure class="review">
+            <blockquote>“I tried four studios in LIC. This is the only one where the instructor actually walked over and fixed my hips. Twice.”</blockquote>
+            <figcaption><b>Dana R.</b> · Unlimited, 8 months</figcaption>
+          </figure>
+          <figure class="review tall">
+            <blockquote>“Tess's jump board class at 7:15 is the reason I'm a morning person now. I hate it and I've booked the next six.”</blockquote>
+            <figcaption><b>Marcus L.</b> · 10-pack</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>“Came for back pain after my second kid. Six weeks of privates with June and I can pick up both of them again.”</blockquote>
+            <figcaption><b>Priya N.</b> · privates</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="wrap visit-grid">
+        <div class="map" role="img" aria-label="Map: the studio is on Vernon Boulevard at 48th Avenue, two blocks north of the Vernon Blvd–Jackson Av 7 train">
+          <svg viewBox="0 0 600 460" aria-hidden="true">
+            <rect width="600" height="460" class="m-bg"/>
+            <path class="m-water" d="M0 0 H92 C80 120 104 220 86 300 C74 370 92 420 84 460 H0 Z"/>
+            <text class="m-water-label" x="40" y="250" transform="rotate(-90 40 250)" text-anchor="middle">EAST RIVER</text>
+            <path class="m-park" d="M96 300 L176 300 L176 400 L92 400 Z"/>
+            <text class="m-label m-park-label" x="134" y="356" text-anchor="middle">Gantry</text>
+            <g class="m-streets">
+              <path d="M96 70 L600 70"/><path d="M96 140 L600 140"/><path d="M96 210 L600 210"/><path d="M96 280 L600 280"/><path d="M176 350 L600 350"/><path d="M176 420 L600 420"/>
+              <path d="M200 0 L200 460"/><path d="M420 0 L420 460"/><path d="M520 0 L520 460"/>
+            </g>
+            <path class="m-ave" d="M310 0 L310 460"/>
+            <path class="m-ave m-ave-thin" d="M310 330 L600 190"/>
+            <text class="m-label" x="306" y="452" transform="rotate(-90 306 452)" dy="4">VERNON BLVD</text>
+            <text class="m-label" x="210" y="132">46TH AVE</text>
+            <text class="m-label" x="210" y="202">47TH AVE</text>
+            <text class="m-label" x="210" y="272">48TH AVE</text>
+            <text class="m-label" x="210" y="342">49TH AVE</text>
+            <text class="m-label" x="498" y="232" transform="rotate(-25.8 498 232)">JACKSON AVE</text>
+            <path class="m-walk" d="M310 280 L310 372 L336 376"/>
+            <g class="m-train" transform="translate(354 384)"><circle r="15"/><text y="5" text-anchor="middle">7</text></g>
+            <g class="m-pin" transform="translate(310 280)"><circle class="m-pulse" r="12"/><path d="M0 0 C-12 0 -18 -10 -18 -18 C-18 -30 -9 -38 0 -38 C9 -38 18 -30 18 -18 C18 -10 12 0 0 0 Z"/><circle cy="-19" r="6" class="m-pin-dot"/></g>
+            <g class="m-tag" transform="translate(332 222)"><rect width="150" height="44" rx="22"/><text x="20" y="20">Coil Pilates</text><text x="20" y="36" class="m-tag-sub">3 min from the 7</text></g>
+          </svg>
+        </div>
+
+        <div class="where">
+          <h2>Find the studio</h2>
+          <address>
+            <b>Vernon Blvd at 48th Ave, 2nd floor</b><br>
+            Long Island City, Queens<br>
+            <a href="tel:+17185550148">(718) 555-0148</a>
+          </address>
+          <table class="hours-table">
+            <caption>Front desk hours</caption>
+            <tbody data-hours></tbody>
+          </table>
+          <div class="where-cta">
+            <a class="btn btn-ghost btn-sm" href="https://www.google.com/maps/search/?api=1&query=Vernon+Blvd+%26+48th+Ave+Long+Island+City+NY" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn-ghost btn-sm" href="tel:+17185550148">Call the studio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closer">
+      <div class="wrap closer-inner">
+        <h2>Your reformer's open.</h2>
+        <p class="lead on-dark">Book online in under a minute. We'll text you a reminder the night before, and your first class is $25.</p>
+        <a class="btn btn-coral book" href="#" data-note="First class ($25 intro)">Book your first class</a>
+      </div>
+      <svg class="closer-coil" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M0 60 C40 0 80 0 100 60 S160 120 200 60 260 0 300 60 360 120 400 60 460 0 500 60 560 120 600 60 660 0 700 60 760 120 800 60 860 0 900 60 960 120 1000 60 1060 0 1100 60 1160 120 1200 60"/></svg>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p class="foot-mark">coil<span>pilates</span></p>
+      <p>Vernon Blvd at 48th Ave, Long Island City · (718) 555-0148 · Classes 7 days</p>
+      <p class="foot-credit">Sample site by <a href="/">Regulars NYC</a>. Want one like this for your studio? <a href="/#contact">Get a free mockup</a>.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-book">
+    <span data-mobile-text>Reformer studio · LIC</span>
+    <a class="btn btn-coral btn-sm book" href="#" data-mobile-book data-note="">Book a class</a>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
