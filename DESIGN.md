@@ -49,3 +49,4 @@ Direction chosen without reference sites (the UXKIN library was not reachable fr
 
 - No stock photos yet. Mockups (booking page, text-back phone, punch card) show the product instead.
 - Once clients exist, use their real shop photos. Never fake client work.
+- Work section: one white card per sample site, a browser bar with its URL over a hero screenshot (`work/<name>/cover.webp`, 1120x700), then kind, name in Gloock, one line on what it shows. Always called "Sample sites" and described as made-up businesses.
