@@ -1,0 +1,10 @@
+// Cloudflare settings for the Regulars NYC site.
+// The site is plain HTML/CSS with no build step, so the Worker just serves
+// the files in this folder. Files listed in .assetsignore are not published.
+{
+  "name": "regularsnyc-site",
+  "compatibility_date": "2026-10-23",
+  "assets": {
+    "directory": "."
+  }
+}
