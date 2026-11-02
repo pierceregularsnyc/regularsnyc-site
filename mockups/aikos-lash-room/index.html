@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aiko's Lash Room | Long Island City (mockup by Regulars NYC)</title>
+  <meta name="description" content="A homepage mockup made for Aiko's Lash Room by Regulars NYC.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f6f3ef">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f3ef; --paper: #fffdfa; --stone: #e9e3db; --line: #ddd5ca;
+      --ink: #26221f; --ink-2: #5c554e; --ink-3: #8e867d;
+      --rose: #c98f86; --rose-2: #a8695f; --sage: #9aa792;
+      --serif: "Shippori Mincho", "Hiragino Mincho ProN", Georgia, serif; --sans: "Inter Tight", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button { font: inherit; color: inherit; }
+    .wrap { width: min(1140px, 100% - 40px); margin-inline: auto; }
+
+    .mock-bar { background: #2747e8; color: #fff; font-size: 13.5px; text-align: center; padding: 8px 16px; }
+    .mock-bar p { margin: 0; }
+    .mock-bar a { color: #fff; font-weight: 600; }
+
+    .top-inner { display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 20px; }
+    .mark { text-decoration: none; display: flex; align-items: center; gap: 12px; }
+    .mark svg { width: 34px; height: 34px; stroke: var(--ink); fill: none; stroke-width: 1.3; }
+    .mark b { font: 600 20px/1 var(--serif); letter-spacing: .02em; }
+    .mark small { display: block; font: 500 10px/1 var(--sans); letter-spacing: .34em; color: var(--ink-3); margin-top: 6px; }
+    .nav { display: flex; gap: 30px; font-size: 15px; color: var(--ink-2); }
+    .nav a { text-decoration: none; }
+    .nav a:hover { color: var(--ink); }
+    @media (max-width: 820px) { .nav { display: none; } }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 28px; border-radius: 999px; font: 500 15px/1 var(--sans); letter-spacing: .02em; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: background .18s, color .18s; }
+    .btn-ink { background: var(--ink); color: var(--paper); }
+    .btn-ink:hover { background: #000; }
+    .btn-line { border-color: var(--ink); }
+    .btn-line:hover { background: var(--ink); color: var(--paper); }
+    .btn-sm { height: 42px; padding: 0 20px; font-size: 14px; }
+    .btn:disabled { opacity: .35; cursor: not-allowed; }
+
+    .hero { padding: 40px 0 100px; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .status { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink-2); margin: 0 0 28px; }
+    .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); }
+    .status.is-open .dot { background: #6aa36f; box-shadow: 0 0 0 4px rgb(106 163 111 / .18); }
+    h1 { font: 600 clamp(46px, 6.6vw, 86px)/1.04 var(--serif); letter-spacing: -.02em; margin: 0 0 28px; }
+    h1 em { font-style: normal; color: var(--rose-2); }
+    .lead { font-size: 19px; color: var(--ink-2); max-width: 28em; margin: 0 0 36px; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+    .offer { margin-top: 40px; display: inline-flex; align-items: center; gap: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; font-size: 15px; color: var(--ink-2); }
+    .offer b { font: 600 26px/1 var(--serif); color: var(--rose-2); }
+    .hero-art { position: relative; }
+    .hero-art figure { margin: 0; overflow: hidden; }
+    .ha-main { aspect-ratio: 4/5; border-radius: 999px 999px 24px 24px; }
+    .ha-main img, .ha-small img { width: 100%; height: 100%; object-fit: cover; }
+    .ha-small { position: absolute; width: 40%; aspect-ratio: 1; left: -14%; bottom: 8%; border-radius: 50%; border: 8px solid var(--bg); }
+    .stamp { position: absolute; right: -10px; top: 12%; width: 116px; height: 116px; border-radius: 50%; background: var(--paper); display: grid; place-items: center; text-align: center; box-shadow: 0 16px 34px -18px rgb(38 34 31 / .4); }
+    .stamp b { display: block; font: 600 34px/1 var(--serif); }
+    .stamp span { font-size: 12px; color: var(--ink-3); line-height: 1.3; }
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-art { max-width: 400px; margin-left: 14%; }
+      .stamp { right: -6px; }
+    }
+
+    section { padding: 110px 0; }
+    .sec-head { text-align: center; max-width: 640px; margin: 0 auto 56px; }
+    .kanji { display: block; font: 600 15px/1 var(--serif); color: var(--rose-2); letter-spacing: .3em; margin-bottom: 18px; }
+    h2 { font: 600 clamp(36px, 4.4vw, 54px)/1.08 var(--serif); letter-spacing: -.015em; margin: 0 0 16px; }
+    .sec-head p { color: var(--ink-2); margin: 0; font-size: 18px; }
+
+    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .svc-card { background: var(--paper); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; }
+    .svc-card figure { margin: 0; aspect-ratio: 4/3; overflow: hidden; }
+    .svc-card figure img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+    .svc-card:hover figure img { transform: scale(1.04); }
+    .svc-body { padding: 24px 24px 26px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .svc-body h3 { font: 600 24px/1.2 var(--serif); margin: 0; }
+    .svc-body p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+    .svc-body .price { margin-top: auto; padding-top: 14px; display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid var(--line); }
+    .svc-body .price b { font: 600 22px/1 var(--serif); }
+    .svc-body .price a { font-size: 14px; font-weight: 500; color: var(--rose-2); text-decoration: none; }
+    .also { text-align: center; color: var(--ink-3); font-size: 15px; margin: 30px 0 0; }
+    @media (max-width: 900px) { .svc-grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
+
+    .calm { background: var(--stone); }
+    .calm-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 72px; align-items: center; }
+    .calm figure { margin: 0; border-radius: 24px; overflow: hidden; aspect-ratio: 3/2; }
+    .calm figure img { width: 100%; height: 100%; object-fit: cover; }
+    .quotes { display: grid; gap: 26px; margin-top: 30px; }
+    .quotes blockquote { margin: 0; padding-left: 22px; border-left: 2px solid var(--rose); }
+    .quotes p { margin: 0 0 6px; font: 600 22px/1.35 var(--serif); }
+    .quotes footer { font-size: 14px; color: var(--ink-3); }
+    @media (max-width: 900px) { .calm-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    .book-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    .good { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 14px; }
+    .good li { display: flex; gap: 14px; color: var(--ink-2); }
+    .good li::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--rose); margin-top: 10px; }
+    .widget { background: var(--paper); border: 1px solid var(--line); border-radius: 28px; padding: 30px; position: relative; overflow: hidden; box-shadow: 0 30px 60px -30px rgb(38 34 31 / .35); }
+    .widget h3 { font: 600 26px/1.1 var(--serif); margin: 0 0 4px; }
+    .widget .sub { margin: 0 0 18px; font-size: 14px; color: var(--ink-3); }
+    .step { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-3); margin: 20px 0 10px; }
+    .svcs { display: grid; gap: 8px; }
+    .svc { display: flex; justify-content: space-between; align-items: center; text-align: left; border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; background: transparent; cursor: pointer; }
+    .svc span { color: var(--ink-3); font-size: 14px; }
+    .svc[aria-pressed="true"], .day[aria-pressed="true"], .time[aria-pressed="true"] { border-color: var(--ink); background: var(--bg); }
+    .days { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+    .day { border: 1px solid var(--line); background: transparent; border-radius: 14px; padding: 10px 0; cursor: pointer; display: flex; flex-direction: column; align-items: center; }
+    .day span { font-size: 12px; color: var(--ink-3); }
+    .day b { font: 600 22px/1.15 var(--serif); }
+    .times { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; min-height: 44px; }
+    .time { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 9px 0; cursor: pointer; font-size: 14px; }
+    .time[disabled] { text-decoration: line-through; opacity: .35; cursor: not-allowed; }
+    .hint { grid-column: 1 / -1; margin: 0; color: var(--ink-3); font-size: 14px; }
+    .confirm-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+    .confirm-row p { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+    .done { position: absolute; inset: 0; background: var(--paper); display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 30px; }
+    .is-done .done { display: flex; }
+    .done svg { width: 60px; height: 60px; stroke: var(--rose-2); fill: none; stroke-width: 1.6; margin-bottom: 16px; }
+    .done h4 { font: 600 30px/1.1 var(--serif); margin: 0 0 8px; }
+    .done p { margin: 0 0 6px; color: var(--ink-2); }
+    .done button { margin-top: 16px; background: none; border: 0; color: var(--rose-2); cursor: pointer; text-decoration: underline; }
+    @media (max-width: 900px) { .book-grid { grid-template-columns: 1fr; gap: 40px; } }
+    @media (max-width: 520px) { .widget { padding: 22px; } .days { grid-template-columns: repeat(3, 1fr); } .times { grid-template-columns: repeat(3, 1fr); } }
+
+    .visit { background: var(--paper); border-top: 1px solid var(--line); }
+    .visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+    .visit h3 { font: 600 30px/1.15 var(--serif); margin: 0 0 14px; }
+    .visit p { color: var(--ink-2); margin: 0 0 10px; }
+    .visit a.link { color: var(--rose-2); text-decoration: none; font-weight: 500; }
+    table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+    th, td { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--line); font-weight: 400; }
+    td { text-align: right; color: var(--ink-2); }
+    tr.is-today th, tr.is-today td { color: var(--rose-2); font-weight: 600; }
+    @media (max-width: 900px) { .visit-grid { grid-template-columns: 1fr; gap: 40px; } section { padding: 80px 0; } }
+
+    footer.site { padding: 40px 0 110px; font-size: 14px; color: var(--ink-3); }
+    .foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .mobile-book { display: none; }
+    @media (max-width: 760px) {
+      .mobile-book { display: flex; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; box-shadow: 0 10px 30px -10px rgb(0 0 0 / .45); }
+      .top .btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mock-bar">
+    <p>Homepage mockup made for Aiko's Lash Room by <a href="/">Regulars NYC</a>. Not live yet. Photos are placeholders until we swap in yours.</p>
+  </div>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="mark" href="#top" aria-label="Aiko's Lash Room, back to top">
+        <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M4 18c4-6 9-9 13-9s9 3 13 9"/><path d="M8 15l-2-4M12 12l-1-4M17 11V7M22 12l1-4M26 15l2-4"/></svg>
+        <span><b>Aiko's Lash Room</b><small>LONG ISLAND CITY</small></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#book">Book</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="btn btn-ink btn-sm" href="#book">Book a visit</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="status" data-status><span class="dot"></span><span data-status-text>Checking hours…</span></p>
+          <h1>Lashes that look like <em>you,</em> only rested.</h1>
+          <p class="lead">Lash lifts, extensions and brows in a calm, quiet studio five minutes from the train. Gentle, patient work, and an hour that actually feels like a rest.</p>
+          <div class="cta">
+            <a class="btn btn-ink" href="#book">Book a visit</a>
+            <a class="btn btn-line" href="#services">See services</a>
+          </div>
+          <div class="offer"><b>$30 off</b><span>your first keratin lash lift</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <figure class="ha-main"><img src="photos/at-work.webp" alt="" fetchpriority="high"></figure>
+          <figure class="ha-small"><img src="photos/detail.webp" alt=""></figure>
+          <div class="stamp"><span><b>5.0</b>52 reviews</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kanji">LASHES · BROWS</span>
+          <h2>What Aiko does best</h2>
+          <p>Every set is fitted to your eyes, not a template.</p>
+        </div>
+        <div class="svc-grid">
+          <article class="svc-card">
+            <figure><img src="photos/close.webp" alt="Close-up of a lash lift in progress" loading="lazy"></figure>
+            <div class="svc-body">
+              <h3>Keratin lash lift</h3>
+              <p>Your own lashes, lifted and nourished, with no extensions to look after.</p>
+              <div class="price"><b>$100</b><a href="#book" data-pick="Keratin lash lift">Book →</a></div>
+            </div>
+          </article>
+          <article class="svc-card">
+            <figure><img src="photos/tweezers.webp" alt="Lash artist placing an extension with tweezers" loading="lazy"></figure>
+            <div class="svc-body">
+              <h3>Lash extensions</h3>
+              <p>Natural to full sets, applied one by one so they feel weightless.</p>
+              <div class="price"><b>Your price</b><a href="#book" data-pick="Lash extensions">Book →</a></div>
+            </div>
+          </article>
+          <article class="svc-card">
+            <figure><img src="photos/rest.webp" alt="A client resting with her eyes closed during a treatment" loading="lazy"></figure>
+            <div class="svc-body">
+              <h3>Lift and tint</h3>
+              <p>The lift, plus a tint for definition without mascara.</p>
+              <div class="price"><b>Your price</b><a href="#book" data-pick="Lift and tint">Book →</a></div>
+            </div>
+          </article>
+        </div>
+        <p class="also">Also: eyebrow shaping, eyebrow tinting, eyelash tinting.</p>
+      </div>
+    </section>
+
+    <section class="calm">
+      <div class="wrap calm-grid">
+        <figure><img src="photos/studio.webp" alt="A bright, minimal lash studio with a treatment bed and lamp" loading="lazy"></figure>
+        <div>
+          <h2>A quiet room on 23rd Street</h2>
+          <p style="color:var(--ink-2)">Clean, cozy and calm, with a soft scent in the air and nothing to distract you. Lie back and rest.</p>
+          <div class="quotes">
+            <blockquote><p>“Aiko is so gentle and patient with my lashes.”</p><footer>Client review</footer></blockquote>
+            <blockquote><p>“Her skills are great and she gives gorgeous lash extensions.”</p><footer>Client review</footer></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="wrap book-grid">
+        <div>
+          <h2>Book without the DMs</h2>
+          <p style="color:var(--ink-2);font-size:18px">Pick a time that's actually open, any hour of the day. You get a confirmation now and a reminder text the day before.</p>
+          <ul class="good">
+            <li>Please arrive 10 minutes early. Services start right on time.</li>
+                        <li>Five minutes on foot from the train.</li>
+          </ul>
+        </div>
+        <div class="widget" data-book>
+          <h3>Book with Aiko</h3>
+          <p class="sub">Try it. This demo uses Aiko's real hours, and nothing gets sent.</p>
+          <p class="step">1 · Service</p>
+          <div class="svcs">
+            <button type="button" class="svc" data-svc="Keratin lash lift" aria-pressed="false"><b>Keratin lash lift</b><span>$100</span></button>
+            <button type="button" class="svc" data-svc="Lash extensions" aria-pressed="false"><b>Lash extensions</b><span>Your price</span></button>
+            <button type="button" class="svc" data-svc="Lift and tint" aria-pressed="false"><b>Lift and tint</b><span>Your price</span></button>
+          </div>
+          <p class="step">2 · Day</p>
+          <div class="days" data-days></div>
+          <p class="step">3 · Time</p>
+          <div class="times" data-times></div>
+          <div class="confirm-row">
+            <p data-summary>Pick a service</p>
+            <button type="button" class="btn btn-ink btn-sm" data-confirm disabled>Confirm</button>
+          </div>
+          <div class="done" role="status" data-done>
+            <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26"/><path d="M19 31l7 7 15-16"/></svg>
+            <h4>See you soon</h4>
+            <p data-done-text></p>
+            <p>A reminder text goes out the day before.</p>
+            <button type="button" data-again>Pick another time</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <div>
+          <h3>44-02 23rd Street, Suite 201</h3>
+          <p>Long Island City, NY 11101</p>
+          <p>Call or text <a class="link" href="tel:+13475867879">(347) 586-7879</a></p>
+          <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Aiko%27s+Lash+Room+44-02+23rd+St+Long+Island+City" target="_blank" rel="noopener">Get directions →</a> &nbsp; <a class="link" href="https://www.instagram.com/aikoslashroom/" target="_blank" rel="noopener">Instagram →</a></p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <table><tbody data-hours></tbody></table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap foot">
+      <span>© Aiko's Lash Room · Long Island City</span>
+      <span>Mockup by <a href="/">Regulars NYC</a></span>
+    </div>
+  </footer>
+  <a class="btn btn-ink mobile-book" href="#book">Book a visit</a>
+
+  <script type="application/json" id="hours">[[10.5, 18], null, [11, 19], [11, 19], null, [11, 19], [10.5, 18]]</script>
+  <script src="../mockup.js"></script>
+</body>
+</html>

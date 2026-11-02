@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Well Kept Barbershop | Astoria (mockup by Regulars NYC)</title>
+  <meta name="description" content="A homepage mockup made for Well Kept Barbershop by Regulars NYC.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#151311">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #151311; --ink-2: #4b4640; --ink-3: #847c72;
+      --cream: #f4eee4; --paper: #fbf8f2; --line: #ddd3c4;
+      --ox: #6e1c1c; --ox-2: #561414; --brass: #b08a52;
+      --serif: "Bodoni Moda", Georgia, serif; --sans: "Instrument Sans", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    .wrap { width: min(1160px, 100% - 40px); margin-inline: auto; }
+
+    .mock-bar { background: #2747e8; color: #fff; font-size: 13.5px; text-align: center; padding: 8px 16px; }
+    .mock-bar p { margin: 0; }
+    .mock-bar a { color: #fff; font-weight: 600; }
+
+    .top { position: sticky; top: 0; z-index: 10; background: rgb(244 238 228 / .92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    .top-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 76px; }
+    .mark { display: flex; flex-direction: column; align-items: center; text-decoration: none; line-height: 1; }
+    .mark svg { width: 30px; height: 14px; fill: var(--ink); margin-bottom: 3px; }
+    .mark b { font: 400 26px/1 var(--serif); letter-spacing: -.01em; }
+    .mark small { font: 600 8.5px/1 var(--sans); letter-spacing: .38em; margin-top: 4px; padding-left: .38em; }
+    .nav { display: flex; gap: 28px; font-size: 15px; font-weight: 500; }
+    .nav a { text-decoration: none; color: var(--ink-2); }
+    .nav a:hover { color: var(--ink); }
+    @media (max-width: 760px) { .nav { display: none; } }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; border-radius: 2px; font: 600 15px/1 var(--sans); letter-spacing: .02em; text-decoration: none; border: 1.5px solid transparent; transition: background .18s, color .18s; }
+    .btn-ox { background: var(--ox); color: #fff; }
+    .btn-ox:hover { background: var(--ox-2); }
+    .btn-line { border-color: var(--ink); color: var(--ink); }
+    .btn-line:hover { background: var(--ink); color: var(--cream); }
+    .btn-sm { height: 42px; padding: 0 18px; font-size: 14px; }
+    .btn svg { width: 16px; height: 16px; }
+
+    .hero { padding: 72px 0 96px; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 64px; align-items: center; }
+    .eyebrow-line { display: flex; align-items: center; gap: 12px; color: var(--ink-2); font-size: 15px; margin: 0 0 22px; }
+    .eyebrow-line::before { content: ""; width: 36px; height: 1px; background: var(--brass); }
+    h1 { font: 400 clamp(48px, 7vw, 92px)/.98 var(--serif); letter-spacing: -.02em; margin: 0 0 26px; }
+    h1 i { color: var(--ox); }
+    .lead { font-size: 19px; color: var(--ink-2); max-width: 30em; margin: 0 0 34px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+    .facts { display: grid; grid-template-columns: repeat(3, auto); gap: 34px; margin: 48px 0 0; padding: 26px 0 0; border-top: 1px solid var(--line); justify-content: start; }
+    .facts div { display: flex; flex-direction: column; }
+    .facts dt { font: 400 34px/1 var(--serif); }
+    .facts dd { margin: 6px 0 0; font-size: 14px; color: var(--ink-3); }
+    .stars { color: var(--brass); letter-spacing: 2px; font-size: 13px; }
+
+    .hero-art { position: relative; aspect-ratio: 4 / 5; }
+    .hero-art figure { margin: 0; position: absolute; overflow: hidden; box-shadow: 0 24px 50px -20px rgb(21 19 17 / .45); }
+    .hero-art img { width: 100%; height: 100%; object-fit: cover; }
+    .ph-a { inset: 0 18% 14% 0; border-radius: 220px 220px 4px 4px; }
+    .ph-b { width: 46%; aspect-ratio: 1; right: 0; bottom: 0; border: 8px solid var(--cream); border-radius: 4px; }
+    .since { position: absolute; left: -18px; bottom: 9%; background: var(--ink); color: var(--cream); padding: 16px 18px; font: 400 15px/1.25 var(--serif); }
+    .since b { display: block; font-size: 30px; font-weight: 400; color: var(--brass); }
+    @media (max-width: 900px) {
+      .hero { padding: 40px 0 64px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+      .hero-art { max-width: 460px; }
+      .since { left: 8px; }
+      .facts { gap: 22px; }
+    }
+
+    section { padding: 104px 0; }
+    .sec-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 44px; flex-wrap: wrap; }
+    h2 { font: 400 clamp(36px, 4.6vw, 58px)/1.02 var(--serif); letter-spacing: -.015em; margin: 0; }
+    .sec-note { color: var(--ink-3); font-size: 15px; margin: 0; max-width: 26em; }
+
+    .menu { background: var(--paper); border-block: 1px solid var(--line); }
+    .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+    .menu h3 { font: 600 13px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ox); margin: 0 0 18px; padding-bottom: 14px; border-bottom: 1.5px solid var(--ink); }
+    .menu ul { list-style: none; margin: 0; padding: 0; }
+    .menu li { padding: 16px 0; border-bottom: 1px dashed var(--line); }
+    .row { display: flex; align-items: baseline; gap: 10px; }
+    .row b { font-weight: 600; }
+    .row .dots { flex: 1; border-bottom: 1px dotted var(--ink-3); transform: translateY(-4px); }
+    .row .price { font: 400 22px/1 var(--serif); }
+    .menu li p { margin: 4px 0 0; font-size: 14px; color: var(--ink-3); line-height: 1.45; }
+    @media (max-width: 900px) { .menu-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+    .crew-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .barber { background: var(--paper); border: 1px solid var(--line); padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+    .barber .mono { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--cream); font: 400 24px/1 var(--serif); }
+    .barber.owner .mono { background: var(--ox); }
+    .barber h3 { margin: 0; font: 400 26px/1 var(--serif); }
+    .barber p { margin: 0; font-size: 14px; color: var(--ink-3); }
+    .barber a { margin-top: auto; font-size: 14px; font-weight: 600; color: var(--ox); text-decoration: none; }
+    .barber a:hover { text-decoration: underline; }
+    @media (max-width: 900px) { .crew-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .story { background: var(--ink); color: var(--cream); }
+    .story-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 72px; align-items: center; }
+    .story figure { margin: 0; aspect-ratio: 4/5; overflow: hidden; border-radius: 4px; }
+    .story figure img { width: 100%; height: 100%; object-fit: cover; filter: sepia(.15); }
+    .story h2 { color: var(--cream); margin-bottom: 26px; }
+    .story p { color: #cfc6b8; font-size: 18px; max-width: 32em; }
+    blockquote { margin: 40px 0 0; padding: 28px 0 0; border-top: 1px solid #3a342e; }
+    blockquote p { font: italic 400 30px/1.2 var(--serif) !important; color: var(--cream) !important; margin: 0 0 12px; }
+    blockquote footer { font-size: 14px; color: var(--brass); }
+    @media (max-width: 900px) { .story-grid { grid-template-columns: 1fr; gap: 40px; } .story figure { max-width: 420px; } }
+
+    .visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .card { background: var(--paper); border: 1px solid var(--line); padding: 34px; }
+    .card h3 { font: 400 30px/1.1 var(--serif); margin: 0 0 18px; }
+    .card p { margin: 0 0 10px; color: var(--ink-2); }
+    .card .big { font: 400 22px/1.3 var(--serif); color: var(--ink); }
+    .card a.link { color: var(--ox); font-weight: 600; text-decoration: none; }
+    .map { background: #e7dfd2; border: 1px solid var(--line); min-height: 280px; position: relative; overflow: hidden; }
+    .map svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .map .pin { position: absolute; left: 52%; top: 46%; transform: translate(-50%, -100%); background: var(--ox); color: #fff; font-size: 13px; font-weight: 600; padding: 8px 12px; border-radius: 2px; white-space: nowrap; }
+    .map .pin::after { content: ""; position: absolute; left: 50%; bottom: -7px; border: 7px solid transparent; border-bottom: 0; border-top-color: var(--ox); transform: translateX(-50%); }
+    @media (max-width: 900px) { .visit-grid { grid-template-columns: 1fr; } section { padding: 76px 0; } }
+
+    footer.site { padding: 56px 0 120px; border-top: 1px solid var(--line); }
+    .foot { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; color: var(--ink-3); font-size: 14px; }
+    .mobile-book { display: none; }
+    @media (max-width: 760px) {
+      .mobile-book { display: flex; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; box-shadow: 0 10px 30px -10px rgb(0 0 0 / .5); }
+      .top .btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mock-bar">
+    <p>Homepage mockup made for Well Kept Barbershop by <a href="/">Regulars NYC</a>. Not live yet. Book buttons go to your real Booksy page.</p>
+  </div>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="mark" href="#top" aria-label="Well Kept Barbershop, back to top">
+        <svg viewBox="0 0 60 28" aria-hidden="true"><path d="M30 10c-3 0-5 2-5 4s2 4 5 4 5-2 5-4-2-4-5-4ZM24 13 4 2c-2-1-4 0-4 3v18c0 3 2 4 4 3l20-11ZM36 13 56 2c2-1 4 0 4 3v18c0 3-2 4-4 3L36 15Z"/></svg>
+        <b>Well Kept</b>
+        <small>BARBERSHOP</small>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#prices">Prices</a>
+        <a href="#barbers">Barbers</a>
+        <a href="#story">Our story</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="btn btn-ox btn-sm" href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book a chair</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow-line">30-11 32nd Street, Astoria</p>
+          <h1>Modern cuts.<br><i>Classic</i> chair.</h1>
+          <p class="lead">Skin fades, scissor cuts and Presidential shaves from master licensed barbers. Latino owned, born and raised in Astoria, right on 32nd Street.</p>
+          <div class="cta">
+            <a class="btn btn-ox" href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book a chair
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="btn btn-line" href="#prices">See prices</a>
+          </div>
+          <dl class="facts">
+            <div><dt>5.0</dt><dd><span class="stars">★★★★★</span><br>1,093 reviews</dd></div>
+            <div><dt>$45</dt><dd>The Well Kept,<br>skin fade included</dd></div>
+            <div><dt>6pm</dt><dd>Last chair<br>of the day</dd></div>
+          </dl>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <figure class="ph-a"><img src="photos/fade.webp" alt="" fetchpriority="high"></figure>
+          <figure class="ph-b"><img src="photos/shave.webp" alt=""></figure>
+          <div class="since"><b>2018</b>Astoria's<br>neighborhood chair</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="prices">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Prices</h2>
+          <p class="sec-note">Straight from your Booksy menu. Complimentary hair wash on any cut, hot towel with any beard, on request.</p>
+        </div>
+        <div class="menu-grid">
+          <div>
+            <h3>Cuts</h3>
+            <ul>
+              <li><div class="row"><b>The Well Kept</b><span class="dots"></span><span class="price">$45</span></div><p>Any skin fade: skin fades, skin tape ups, burst fades.</p></li>
+              <li><div class="row"><b>Standard</b><span class="dots"></span><span class="price">$35</span></div><p>Regular haircut, no skin fade, light scissor on top.</p></li>
+              <li><div class="row"><b>All Scissor</b><span class="dots"></span><span class="price">$45</span></div><p>Medium to short hair, scissors only, light clipper edges.</p></li>
+              <li><div class="row"><b>Senior Citizen</b><span class="dots"></span><span class="price">$20</span></div><p>65 and over.</p></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Cut and beard</h3>
+            <ul>
+              <li><div class="row"><b>Well Kept &amp; Beard</b><span class="dots"></span><span class="price">$60</span></div><p>Skin fade plus beard line up, trim, fade or sculpt.</p></li>
+              <li><div class="row"><b>Standard &amp; Beard</b><span class="dots"></span><span class="price">$50</span></div><p>Regular cut plus beard line up, trim or sculpt.</p></li>
+              <li><div class="row"><b>Father &amp; Son</b><span class="dots"></span><span class="price">$60+</span></div><p>Bring your little one, $5 off. Mention it at checkout.</p></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Shaves</h3>
+            <ul>
+              <li><div class="row"><b>Well Kept &amp; Presidential</b><span class="dots"></span><span class="price">$90</span></div><p>Skin fade, blow-dry and style, plus the full traditional shave.</p></li>
+              <li><div class="row"><b>Standard &amp; Presidential</b><span class="dots"></span><span class="price">$85</span></div><p>Regular cut plus the full traditional shave.</p></li>
+              <li><div class="row"><b>Presidential Shave</b><span class="dots"></span><span class="price">$50</span></div><p>Hot and cold towels, steamer, Proraso's 3 step, facial massage.</p></li>
+              <li><div class="row"><b>Tune Up</b><span class="dots"></span><span class="price">$15</span></div><p>A shape up around the edges, no haircut.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="barbers">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>The barbers</h2>
+          <p class="sec-note">Pick your barber and book straight into their chair.</p>
+        </div>
+        <div class="crew-grid">
+          <article class="barber owner"><span class="mono">R</span><h3>Ruben</h3><p>Owner. Opened the shop in 2018.</p><a href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book with Ruben →</a></article>
+          <article class="barber"><span class="mono">R</span><h3>Romelo</h3><p>Barber.</p><a href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book with Romelo →</a></article>
+          <article class="barber"><span class="mono">J</span><h3>Jorge</h3><p>Barber.</p><a href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book with Jorge →</a></article>
+          <article class="barber"><span class="mono">J</span><h3>Joel</h3><p>Barber.</p><a href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book with Joel →</a></article>
+          <article class="barber"><span class="mono">C</span><h3>Charles</h3><p>Barber.</p><a href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book with Charles →</a></article>
+          <article class="barber"><span class="mono">L</span><h3>Lesly</h3><p>Barber.</p><a href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book with Lesly →</a></article>
+          <article class="barber"><span class="mono">J</span><h3>Jenn</h3><p>Apprentice barber, supervised by a licensed pro.</p><a href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book with Jenn →</a></article>
+          <article class="barber"><span class="mono">+</span><h3>Your photos here</h3><p>We'd add a real photo of each barber and their best cuts.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="wrap story-grid">
+        <figure><img src="photos/chairs.webp" alt="Barber chairs in a row in front of mirrors" loading="lazy"></figure>
+        <div>
+          <h2>Opened September 2, 2018. Astoria made it a household name.</h2>
+          <p>Ruben was born and raised right here in Astoria. He opened Well Kept with vintage decor, master licensed barbers and a modern yet classic way of cutting, and the neighborhood took to it fast.</p>
+          <blockquote>
+            <p>“Consistently well kept!”</p>
+            <footer>Scott, Booksy review · one of 1,093</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap">
+        <div class="sec-head"><h2>Come by</h2></div>
+        <div class="visit-grid">
+          <div class="card">
+            <h3>30-11 32nd Street</h3>
+            <p class="big">Astoria, NY 11102</p>
+            <p>Hours: 10am to 7pm. Last appointment at 6pm.</p>
+            <p>Call <a class="link" href="tel:+17182551547">(718) 255-1547</a></p>
+            <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Well+Kept+Barbershop+30-11+32nd+St+Astoria+NY" target="_blank" rel="noopener">Get directions →</a> &nbsp; <a class="link" href="https://www.instagram.com/wellkeptbarbershop/" target="_blank" rel="noopener">Instagram →</a></p>
+          </div>
+          <div class="map" aria-hidden="true">
+            <svg viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice">
+              <g stroke="#fbf8f2" stroke-width="14" fill="none">
+                <path d="M-20 70 L640 20"/><path d="M-20 170 L640 120"/><path d="M-20 270 L640 220"/>
+                <path d="M90 -20 L130 330"/><path d="M230 -20 L270 330"/><path d="M370 -20 L410 330"/><path d="M510 -20 L550 330"/>
+              </g>
+              <g fill="#847c72" font-family="Instrument Sans, sans-serif" font-size="12">
+                <text x="420" y="60">30th Ave</text><text x="20" y="196">30th Rd</text><text x="282" y="290" transform="rotate(-84 282 290)">31st St</text>
+              </g>
+            </svg>
+            <span class="pin">Well Kept</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap foot">
+      <span>© Well Kept Barbershop · Astoria, Queens</span>
+      <span>Mockup by <a href="/">Regulars NYC</a></span>
+    </div>
+  </footer>
+  <a class="btn btn-ox mobile-book" href="https://booksy.com/en-us/683899_well-kept-barbershop_barber-shop_30067_new-york-city" target="_blank" rel="noopener">Book a chair</a>
+</body>
+</html>
