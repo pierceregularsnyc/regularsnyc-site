@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | Regulars NYC</title>
+  <meta name="description" content="Regulars NYC pricing: Starter Site $200 to set up and $35 a month, Site + Booking $400 to set up and $50 a month. Half to start, half when your site goes live.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://regularsnyc.co/pricing/">
+  <meta property="og:title" content="Regulars NYC pricing">
+  <meta property="og:description" content="Two packages, written down. $200 + $35/mo, or $400 + $50/mo with online booking. See a free mockup before you pay anything.">
+  <meta property="og:url" content="https://regularsnyc.co/pricing/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pricing/pricing.css">
+</head>
+<body class="page-pricing">
+  <div class="hero-band pr-band">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="/" aria-label="Regulars NYC home">
+          <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="5" fill="currentColor"/></svg>
+          <span>Regulars</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="/#services">Services</a>
+          <a href="/#work">Work</a>
+          <a href="/#process">How it works</a>
+          <a href="/pricing/" aria-current="page">Pricing</a>
+          <a class="btn btn-accent btn-sm" href="#mockup">Get a free mockup</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="pr-hero">
+      <div class="wrap pr-hero-grid">
+        <div class="pr-hero-copy">
+          <h1>Two prices.<br>Both written down.</h1>
+          <p class="lead">A one-time setup fee, then a flat monthly fee that covers hosting, your domain, and changes whenever you need them. You see a free mockup of your site before you pay anything.</p>
+          <dl class="pr-facts">
+            <div><dt>Free</dt><dd>mockup first, no strings</dd></div>
+            <div><dt>Half</dt><dd>to start, half when it's live</dd></div>
+            <div><dt>~1 week</dt><dd>from yes to live site</dd></div>
+          </dl>
+          <p class="pr-same">Prices are the same for every business. Pick a package on the quote to see exactly what you'd pay and when.</p>
+        </div>
+
+        <form class="quote" id="quote" aria-labelledby="quote-title" onsubmit="return false">
+          <div class="quote-paper">
+            <div class="quote-head">
+              <p class="quote-title" id="quote-title">Your quote</p>
+              <p class="quote-date"><span id="quote-date">Regulars NYC</span></p>
+            </div>
+
+            <fieldset class="q-pick">
+              <legend>Package</legend>
+              <label class="q-opt">
+                <input type="radio" name="plan" value="starter">
+                <span class="q-opt-body"><b>Starter Site</b><small>$200 + $35/mo</small></span>
+              </label>
+              <label class="q-opt">
+                <input type="radio" name="plan" value="booking" checked>
+                <span class="q-opt-body"><b>Site + Booking</b><small>$400 + $50/mo</small></span>
+              </label>
+            </fieldset>
+
+            <fieldset class="q-adds">
+              <legend>Add-ons <span>(optional)</span></legend>
+              <label class="q-add">
+                <input type="checkbox" name="add" value="missed">
+                <span class="q-box" aria-hidden="true"></span>
+                <span class="q-add-name">Missed-call text-back</span>
+                <span class="q-add-price">+$150</span>
+              </label>
+              <label class="q-add">
+                <input type="checkbox" name="add" value="reviews">
+                <span class="q-box" aria-hidden="true"></span>
+                <span class="q-add-name">Automatic review requests</span>
+                <span class="q-add-price">+$100</span>
+              </label>
+            </fieldset>
+
+            <div class="q-lines" aria-live="polite">
+              <ul class="q-items" id="q-items">
+                <li><span>Site + Booking setup</span><span>$400</span></li>
+              </ul>
+              <div class="q-total"><span>Setup, one time</span><span class="q-big" id="q-setup">$400</span></div>
+              <ol class="q-split">
+                <li><span class="q-dot" aria-hidden="true"></span><span>When you say yes</span><b id="q-half1">$200</b></li>
+                <li><span class="q-dot" aria-hidden="true"></span><span>When your site goes live</span><b id="q-half2">$200</b></li>
+                <li><span class="q-dot q-dot-dark" aria-hidden="true"></span><span>Then every month</span><b id="q-month">$50</b></li>
+              </ol>
+            </div>
+
+            <figure class="q-year">
+              <figcaption><span>Your first 12 months</span><b id="q-year">$1,000</b></figcaption>
+              <div class="q-bars" id="q-bars" aria-hidden="true"></div>
+              <div class="q-legend" aria-hidden="true"><span><i class="lg-setup"></i>Setup</span><span><i class="lg-month"></i>Monthly</span></div>
+            </figure>
+
+            <div class="q-actions">
+              <a class="btn btn-accent" id="q-email" href="mailto:pierce@regularsnyc.co?subject=Free%20mockup%20for%20my%20business">Ask for a free mockup</a>
+              <button type="button" class="btn btn-ghost" id="q-copy">Copy link to this quote</button>
+            </div>
+            <p class="q-copied" id="q-copied" role="status"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="pr-compare">
+      <div class="wrap">
+        <h2 class="section-title">What each package includes</h2>
+        <div class="cmp" role="table" aria-label="What each package includes">
+          <div class="cmp-row cmp-headrow" role="row">
+            <span role="columnheader"><span class="sr-only">Feature</span></span>
+            <span role="columnheader"><b>Starter Site</b><small>$200 + $35/mo</small></span>
+            <span role="columnheader" class="cmp-feat"><b>Site + Booking</b><small>$400 + $50/mo</small></span>
+          </div>
+          <div class="cmp-group" role="row"><span role="cell">Your website</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Custom site, designed for your business and built for phones first</span><span role="cell" class="yes">Included</span><span role="cell" class="yes cmp-feat">Included</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Services and prices, hours, map, and contact</span><span role="cell" class="yes">Included</span><span role="cell" class="yes cmp-feat">Included</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Hosting and your own domain</span><span role="cell" class="yes">Included</span><span role="cell" class="yes cmp-feat">Included</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Updates whenever you text or email a change</span><span role="cell" class="yes">Included</span><span role="cell" class="yes cmp-feat">Included</span></div>
+          <div class="cmp-group" role="row"><span role="cell">Booking</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Customers book online, right on your site</span><span role="cell" class="no">Not included</span><span role="cell" class="yes cmp-feat">Included</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Reminders before every appointment</span><span role="cell" class="no">Not included</span><span role="cell" class="yes cmp-feat">Included</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Your hours, services, and breaks set up and managed for you</span><span role="cell" class="no">Not included</span><span role="cell" class="yes cmp-feat">Included</span></div>
+          <div class="cmp-group" role="row"><span role="cell">Add-ons, for either package</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Missed-call text-back</span><span role="cell" class="add">+$150 setup</span><span role="cell" class="add cmp-feat">+$150 setup</span></div>
+          <div class="cmp-row" role="row"><span role="rowheader">Automatic review requests</span><span role="cell" class="add">+$100 setup</span><span role="cell" class="add cmp-feat">+$100 setup</span></div>
+        </div>
+        <p class="fine">Add-ons are a one-time setup fee. Running them is covered by your monthly fee, so it doesn't go up.</p>
+      </div>
+    </section>
+
+    <section class="pr-adds">
+      <div class="wrap">
+        <h2 class="section-title">Add-ons that win back customers</h2>
+        <div class="adds-grid">
+          <article class="add-card">
+            <div class="add-demo" aria-hidden="true">
+              <div class="bubble bubble-sys">Missed call from (718) 555-0142</div>
+              <div class="bubble bubble-out">Sorry we missed you! Book online here, or reply and we'll call you back.</div>
+            </div>
+            <h3>Missed-call text-back</h3>
+            <p>When you can't pick up, the caller gets a text in seconds with your booking link, so they book with you instead of the next shop on Maps.</p>
+            <p class="add-price"><span>$150</span> one time</p>
+          </article>
+          <article class="add-card">
+            <div class="add-demo" aria-hidden="true">
+              <div class="bubble bubble-out">Thanks for coming in today! Mind leaving us a quick review?</div>
+              <div class="stars"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <h3>Automatic review requests</h3>
+            <p>After each visit, customers get a friendly text with a link to your Google reviews. More reviews means you show up higher when people search nearby.</p>
+            <p class="add-price"><span>$100</span> one time</p>
+          </article>
+          <article class="add-card add-card-dark">
+            <div class="add-demo add-demo-flow" aria-hidden="true">
+              <span>New booking</span><i></i><span>Text the owner</span><i></i><span>Add to sheet</span>
+            </div>
+            <h3>Custom AI workflows</h3>
+            <p>Already have a site and booking? We can set up AI tools that take repeat work off your plate, like answering common questions by text or sending you a weekly summary of your bookings.</p>
+            <p class="add-price add-price-quote">Priced per job, after a short call</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pr-pay">
+      <div class="wrap">
+        <h2 class="section-title">How paying works</h2>
+        <ol class="pay-track">
+          <li>
+            <span class="pay-amt">$0</span>
+            <h3>Free mockup</h3>
+            <p>We make a mockup of your new site. Look at it, share it, take your time.</p>
+          </li>
+          <li>
+            <span class="pay-amt">Half</span>
+            <h3>You say yes</h3>
+            <p>Pay half the setup fee and we start building with your real details.</p>
+          </li>
+          <li>
+            <span class="pay-amt">Half</span>
+            <h3>Your site goes live</h3>
+            <p>You check everything first. Once it's live on your domain, the other half is due.</p>
+          </li>
+          <li>
+            <span class="pay-amt">Monthly</span>
+            <h3>We keep it running</h3>
+            <p>The monthly fee starts once you're live. It covers hosting, your domain, and every update.</p>
+          </li>
+        </ol>
+        <p class="fine">You get a simple invoice for each payment, and you can pay by card or PayPal.</p>
+      </div>
+    </section>
+
+    <section class="pr-faq">
+      <div class="wrap faq-grid">
+        <h2>Questions owners ask</h2>
+        <div class="faq">
+          <details>
+            <summary>What does the monthly fee pay for?</summary>
+            <p>Hosting, your domain, keeping the site secure, and changes whenever you need them: new prices, holiday hours, a new service, new photos. With Site + Booking it also covers the booking page and appointment reminders. Text or email the change and it's done.</p>
+          </details>
+          <details>
+            <summary>How long until my site is live?</summary>
+            <p>Usually about a week after you say yes. Most of that time is getting your details, photos, and hours right.</p>
+          </details>
+          <details>
+            <summary>Is there a contract?</summary>
+            <p>No long contract. If you want to stop, tell us and the monthly fee stops at the end of that month.</p>
+          </details>
+          <details>
+            <summary>Can I start with Starter and add booking later?</summary>
+            <p>Yes. You pay the difference in setup, $200, and your monthly fee moves to $50.</p>
+          </details>
+          <details>
+            <summary>Do my customers pay anything to book?</summary>
+            <p>No. Booking is free for your customers, and there are no per-booking fees for you.</p>
+          </details>
+          <details>
+            <summary>I already have a website. Can you redo it?</summary>
+            <p>Yes, same prices. We'll show you a mockup of the new version next to your current one first.</p>
+          </details>
+          <details>
+            <summary>Can I get a discount?</summary>
+            <p>Prices are the same for every business, so no one pays more than you. If budget is tight, the Starter Site is the place to begin, and you can add booking whenever you're ready.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="mockup" class="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <h2>See your site before you pay anything.</h2>
+          <p>Send your business name and what you do. We'll put together a free mockup of your new site, no strings attached.</p>
+          <a class="btn btn-accent" href="mailto:pierce@regularsnyc.co?subject=Free%20mockup%20for%20my%20business">Email pierce@regularsnyc.co</a>
+        </div>
+        <div class="punch-card" aria-hidden="true">
+          <div class="pc-head"><span>Regular's Card</span><span>9 of 10</span></div>
+          <div class="pc-grid">
+            <i class="stamp"></i><i class="stamp"></i><i class="stamp"></i><i class="stamp"></i><i class="stamp"></i>
+            <i class="stamp"></i><i class="stamp"></i><i class="stamp"></i><i class="stamp"></i><i class="pc-free">Free</i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><p class="footer-mark" aria-hidden="true">Regulars</p></div>
+    <div class="wrap footer-inner">
+      <a class="logo" href="/">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="5" fill="currentColor"/></svg>
+        <span>Regulars NYC</span>
+      </a>
+      <a href="mailto:pierce@regularsnyc.co">pierce@regularsnyc.co</a>
+      <span>&copy; 2026 Regulars NYC, New York</span>
+    </div>
+  </footer>
+
+  <script src="/pricing/quote.js" defer></script>
+</body>
+</html>

@@ -50,3 +50,11 @@ Direction chosen without reference sites (the UXKIN library was not reachable fr
 - No stock photos yet. Mockups (booking page, text-back phone, punch card) show the product instead.
 - Once clients exist, use their real shop photos. Never fake client work.
 - Work section: one white card per sample site, a browser bar with its URL over a hero screenshot (`work/<name>/cover.webp`, 1120x700), then kind, name in Gloock, one line on what it shows. Always called "Sample sites" and described as made-up businesses.
+
+## Pricing page (/pricing/)
+
+- A sendable page with the full price list. The homepage keeps its short Two packages section and links here.
+- Signature element: a live quote on a paper slip (perforated top edge, a sage sheet tilted behind it). Pick a package and add-ons; it shows the setup fee split into half at yes and half at launch, the monthly fee, and a 12-month bar chart (cobalt setup, black monthly). The choice is kept in the URL (`?plan=booking&add=missed,reviews`) so a quote link can be sent to an owner. "Ask for a free mockup" opens an email with the quote filled in.
+- Prices live in `pricing/quote.js` and in the page copy; change both together.
+- Faint 32px ruled lines in the hero, like ledger paper. Compare table highlights Site + Booking with a black header and sage column.
+- Printing (or Save as PDF) gives a clean one-pager with every question opened.
