@@ -1320,3 +1320,6 @@ h1 .line:nth-child(2) > span { animation-delay: .12s; }
   .work-card:hover { transform: none; }
   .work-card:hover .work-shot img { transform: none; }
 }
+
+.fine-link { color: var(--accent); font-weight: 600; text-underline-offset: 3px; }
+.fine-link:hover { color: var(--accent-2); }
