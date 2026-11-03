@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hairenomics Mane Bar | Greenpoint (mockup by Regulars NYC)</title>
+  <meta name="description" content="A homepage mockup made for Hairenomics Mane Bar by Regulars NYC.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#2b1c16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --esp: #2b1c16; --esp-2: #3d2a21; --cream: #f7efe5; --sand: #ecdccb; --line: #dfccb8;
+      --copper: #b8602f; --copper-2: #9a4c22; --gold: #d9a35f;
+      --ink: #2b1c16; --ink-2: #5d4a3f; --ink-3: #8c7768; --on-dark: #f7efe5; --on-dark-2: #c9b4a2;
+      --serif: "Cormorant Garamond", Georgia, serif; --sans: "Outfit", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    .wrap { width: min(1180px, 100% - 40px); margin-inline: auto; }
+    button { font: inherit; color: inherit; }
+
+    .mock-bar { background: #2747e8; color: #fff; font-size: 13.5px; text-align: center; padding: 8px 16px; }
+    .mock-bar p { margin: 0; }
+    .mock-bar a { color: #fff; font-weight: 600; }
+
+    .top { position: absolute; left: 0; right: 0; z-index: 10; color: var(--on-dark); }
+    .top-inner { display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 20px; }
+    .mark { text-decoration: none; display: flex; align-items: baseline; gap: 10px; }
+    .mark b { font: italic 600 30px/1 var(--serif); letter-spacing: .01em; }
+    .mark span { font-size: 11px; letter-spacing: .32em; text-transform: uppercase; color: var(--gold); }
+    .nav { display: flex; gap: 30px; font-size: 15px; }
+    .nav a { text-decoration: none; color: var(--on-dark-2); }
+    .nav a:hover { color: var(--on-dark); }
+    @media (max-width: 820px) { .nav { display: none; } }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 54px; padding: 0 30px; border-radius: 999px; font: 500 15.5px/1 var(--sans); letter-spacing: .02em; text-decoration: none; border: 1.5px solid transparent; cursor: pointer; transition: background .18s, color .18s, border-color .18s; }
+    .btn-copper { background: var(--copper); color: #fff; }
+    .btn-copper:hover { background: var(--copper-2); }
+    .btn-ghost { border-color: rgb(247 239 229 / .4); color: var(--on-dark); }
+    .btn-ghost:hover { border-color: var(--on-dark); }
+    .btn-sm { height: 42px; padding: 0 20px; font-size: 14.5px; }
+    .btn:disabled { opacity: .4; cursor: not-allowed; }
+
+    .hero { background: var(--esp); color: var(--on-dark); padding: 150px 0 0; position: relative; overflow: hidden; }
+    .hero::before { content: ""; position: absolute; right: -10%; top: -20%; width: 70vw; height: 70vw; max-width: 900px; max-height: 900px; border-radius: 50%; background: radial-gradient(closest-side, rgb(184 96 47 / .32), transparent); }
+    .hero-grid { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: end; }
+    .status { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: var(--on-dark-2); margin: 0 0 26px; padding: 7px 14px; border: 1px solid rgb(247 239 229 / .18); border-radius: 999px; }
+    .status .dot { width: 8px; height: 8px; border-radius: 50%; background: #9a8676; }
+    .status.is-open .dot { background: #7fd18b; box-shadow: 0 0 0 4px rgb(127 209 139 / .2); }
+    h1 { font: 500 clamp(54px, 8.4vw, 118px)/.92 var(--serif); letter-spacing: -.02em; margin: 0 0 30px; }
+    h1 i { color: var(--gold); font-weight: 500; }
+    .lead { font-size: 19px; font-weight: 300; color: var(--on-dark-2); max-width: 31em; margin: 0 0 36px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; padding-bottom: 96px; }
+    .hero-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-self: stretch; align-items: end; }
+    .hero-photos figure { margin: 0; overflow: hidden; }
+    .hero-photos img { width: 100%; height: 100%; object-fit: cover; }
+    .hp-1 { aspect-ratio: 3/5; border-radius: 300px 300px 0 0; }
+    .hp-2 { aspect-ratio: 3/4; border-radius: 200px 200px 0 0; margin-bottom: 0; }
+    @media (max-width: 900px) {
+      .hero { padding-top: 120px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 0; }
+      .cta { padding-bottom: 48px; }
+      .hero-photos { max-width: 440px; }
+    }
+
+    .ribbon { background: var(--copper); color: #fff; overflow: hidden; white-space: nowrap; padding: 16px 0; font: italic 500 24px/1 var(--serif); }
+    .ribbon-track { display: inline-flex; gap: 40px; animation: slide 40s linear infinite; padding-left: 40px; }
+    .ribbon-track span::after { content: "✦"; margin-left: 40px; font-style: normal; font-size: 14px; vertical-align: middle; }
+    @keyframes slide { to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .ribbon-track { animation: none; } }
+
+    section { padding: 112px 0; }
+    h2 { font: 500 clamp(40px, 5.2vw, 68px)/1 var(--serif); letter-spacing: -.015em; margin: 0 0 18px; }
+    h2 i { color: var(--copper); }
+    .sec-lead { color: var(--ink-2); font-size: 18px; max-width: 34em; margin: 0 0 48px; }
+
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; }
+    .about figure { margin: 0; aspect-ratio: 4/5; border-radius: 4px; overflow: hidden; position: relative; }
+    .about figure img { width: 100%; height: 100%; object-fit: cover; }
+    .about figcaption { position: absolute; left: 16px; bottom: 16px; background: var(--cream); padding: 10px 14px; font-size: 13px; color: var(--ink-2); border-radius: 3px; }
+    .about p { color: var(--ink-2); font-size: 18px; }
+    .creds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 36px; border-top: 1px solid var(--line); }
+    .creds div { padding: 22px 18px 0 0; }
+    .creds b { display: block; font: 500 44px/1 var(--serif); color: var(--copper); }
+    .creds span { font-size: 14px; color: var(--ink-3); }
+    @media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } .about figure { max-width: 420px; } }
+
+    .book-sec { background: var(--sand); }
+    .book-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: start; }
+    .points { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+    .points li { display: grid; grid-template-columns: 34px 1fr; gap: 14px; color: var(--ink-2); }
+    .points li b { color: var(--ink); display: block; }
+    .points svg { width: 34px; height: 34px; stroke: var(--copper); fill: none; stroke-width: 1.5; }
+    .widget { background: #fffaf4; border-radius: 22px; padding: 30px; box-shadow: 0 2px 4px rgb(43 28 22 / .05), 0 30px 60px -24px rgb(43 28 22 / .35); position: relative; overflow: hidden; }
+    .widget h3 { font: 500 30px/1 var(--serif); margin: 0 0 4px; }
+    .widget .sub { margin: 0 0 22px; color: var(--ink-3); font-size: 14px; }
+    .step { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); margin: 22px 0 10px; }
+    .svcs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .svc { text-align: left; background: transparent; border: 1.5px solid var(--line); border-radius: 12px; padding: 12px 14px; cursor: pointer; }
+    .svc b { display: block; font-weight: 500; }
+    .svc span { font-size: 13px; color: var(--ink-3); }
+    .svc[aria-pressed="true"], .day[aria-pressed="true"], .time[aria-pressed="true"] { border-color: var(--copper); background: rgb(184 96 47 / .08); }
+    .days { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+    .day { border: 1.5px solid var(--line); background: transparent; border-radius: 12px; padding: 10px 0; cursor: pointer; display: flex; flex-direction: column; align-items: center; }
+    .day span { font-size: 12px; color: var(--ink-3); }
+    .day b { font: 600 24px/1.1 var(--serif); }
+    .times { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; min-height: 46px; }
+    .time { border: 1.5px solid var(--line); background: transparent; border-radius: 999px; padding: 9px 0; cursor: pointer; font-size: 14px; }
+    .time[disabled] { text-decoration: line-through; opacity: .35; cursor: not-allowed; }
+    .hint { grid-column: 1 / -1; margin: 0; color: var(--ink-3); font-size: 14px; }
+    .confirm-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+    .confirm-row p { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+    .done { position: absolute; inset: 0; background: #fffaf4; display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 30px; }
+    .is-done .done { display: flex; }
+    .done svg { width: 64px; height: 64px; stroke: var(--copper); fill: none; stroke-width: 2; margin-bottom: 18px; }
+    .done h4 { font: 500 34px/1.1 var(--serif); margin: 0 0 8px; }
+    .done p { color: var(--ink-2); margin: 0 0 6px; }
+    .done button { margin-top: 18px; background: none; border: 0; color: var(--copper); font-weight: 500; cursor: pointer; text-decoration: underline; }
+    @media (max-width: 900px) { .book-grid { grid-template-columns: 1fr; gap: 40px; } }
+    @media (max-width: 520px) { .widget { padding: 22px; } .svcs { grid-template-columns: 1fr; } .days { grid-template-columns: repeat(3, 1fr); } .times { grid-template-columns: repeat(3, 1fr); } }
+
+    .quote { background: var(--esp); color: var(--on-dark); text-align: center; }
+    .quote p { font: italic 500 clamp(34px, 4.6vw, 60px)/1.08 var(--serif); max-width: 18em; margin: 0 auto 22px; }
+    .quote span { color: var(--gold); font-size: 15px; letter-spacing: .08em; }
+
+    .visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .card { background: #fffaf4; border: 1px solid var(--line); border-radius: 18px; padding: 34px; }
+    .card h3 { font: 500 34px/1.05 var(--serif); margin: 0 0 14px; }
+    .card p { margin: 0 0 10px; color: var(--ink-2); }
+    .card a.link { color: var(--copper); font-weight: 500; text-decoration: none; }
+    table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+    th, td { text-align: left; padding: 9px 0; border-bottom: 1px solid var(--line); font-weight: 400; }
+    td { text-align: right; color: var(--ink-2); }
+    tr.is-today th, tr.is-today td { color: var(--copper); font-weight: 600; }
+    .small { font-size: 13px; color: var(--ink-3); margin-top: 12px !important; }
+    @media (max-width: 900px) { .visit-grid { grid-template-columns: 1fr; } section { padding: 80px 0; } }
+
+    footer.site { background: var(--esp); color: var(--on-dark-2); padding: 48px 0 110px; font-size: 14px; }
+    .foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .foot a { color: var(--on-dark); }
+    .mobile-book { display: none; }
+    @media (max-width: 760px) {
+      .mobile-book { display: flex; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; box-shadow: 0 10px 30px -10px rgb(0 0 0 / .5); }
+      .top .btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mock-bar">
+    <p>Homepage mockup made for Hairenomics Mane Bar by <a href="/">Regulars NYC</a>. Not live yet. Photos and menu are placeholders until we swap in yours.</p>
+  </div>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="mark" href="#top"><b>Hairenomics</b><span>Mane Bar</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="#about">About Tamara</a>
+        <a href="#book">Book</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="btn btn-copper btn-sm" href="#book">Book an appointment</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="status" data-status><span class="dot"></span><span data-status-text>Checking hours…</span></p>
+          <h1>Healthy hair,<br><i>on time,</i><br>in Greenpoint.</h1>
+          <p class="lead">A warm, welcoming salon that specializes in black hair care, from a stylist with over twenty years behind the chair at editorial shoots and fashion shows. Book your spot online in under a minute.</p>
+          <div class="cta">
+            <a class="btn btn-copper" href="#book">Book an appointment</a>
+            <a class="btn btn-ghost" href="#about">Meet Tamara</a>
+          </div>
+        </div>
+        <div class="hero-photos" aria-hidden="true">
+          <figure class="hp-1"><img src="photos/blowout.webp" alt="" fetchpriority="high"></figure>
+          <figure class="hp-2"><img src="photos/products.webp" alt=""></figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <span>Black hair care specialists</span><span>69 West Street</span><span>Appointments that start on time</span><span>Since 2017</span>
+        <span>Black hair care specialists</span><span>69 West Street</span><span>Appointments that start on time</span><span>Since 2017</span>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <figure>
+          <img src="photos/chair.webp" alt="A styling chair in a salon" loading="lazy">
+          <figcaption>Your photo of Tamara goes here</figcaption>
+        </figure>
+        <div>
+          <h2>Meet <i>Tamara Laureus</i></h2>
+          <p>Tamara opened Hairenomics on West Street in 2017, after more than twenty years styling hair for editorial shoots, fashion shows and celebrities. She brought that standard home to Greenpoint: a clean, welcoming salon where your appointment starts when it's supposed to.</p>
+          <p>Next door, Boujee Beauty Supply stocks what you need to keep it up between visits.</p>
+          <div class="creds">
+            <div><b>20+</b><span>years behind the chair</span></div>
+            <div><b>2017</b><span>opened on West St</span></div>
+            <div><b>2</b><span>shops on West St: salon and beauty supply</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-sec" id="book">
+      <div class="wrap book-grid">
+        <div>
+          <h2>Book in <i>under a minute</i></h2>
+          <p class="sec-lead">No calls, no DMs. Clients pick a time that works and get a text reminder the day before.</p>
+          <ul class="points">
+            <li><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="13"/><path d="M17 10v7l5 3"/></svg><div><b>Open 24/7 for bookings</b>Clients book at midnight, you see it in the morning.</div></li>
+            <li><svg viewBox="0 0 34 34"><path d="M8 6h18v22l-9-5-9 5z"/></svg><div><b>Reminders cut no-shows</b>An automatic text the day before.</div></li>
+            <li><svg viewBox="0 0 34 34"><path d="M6 17l7 7L28 9"/></svg><div><b>Deposits if you want them</b>Hold the chair with a deposit at booking.</div></li>
+          </ul>
+        </div>
+
+        <div class="widget" data-book>
+          <h3>Book at Hairenomics</h3>
+          <p class="sub">Try it. This is a working demo, nothing gets sent.</p>
+          <p class="step">1 · Service</p>
+          <div class="svcs">
+            <button type="button" class="svc" data-svc="Silk press" aria-pressed="false"><b>Silk press</b><span>Menu item placeholder</span></button>
+            <button type="button" class="svc" data-svc="Wash and style" aria-pressed="false"><b>Wash and style</b><span>Menu item placeholder</span></button>
+            <button type="button" class="svc" data-svc="Trim" aria-pressed="false"><b>Trim</b><span>Menu item placeholder</span></button>
+            <button type="button" class="svc" data-svc="Color" aria-pressed="false"><b>Color</b><span>Menu item placeholder</span></button>
+          </div>
+          <p class="step">2 · Day</p>
+          <div class="days" data-days></div>
+          <p class="step">3 · Time</p>
+          <div class="times" data-times></div>
+          <div class="confirm-row">
+            <p data-summary>Pick a service</p>
+            <button type="button" class="btn btn-copper btn-sm" data-confirm disabled>Confirm booking</button>
+          </div>
+          <div class="done" role="status" data-done>
+            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-17"/></svg>
+            <h4>You're booked</h4>
+            <p data-done-text></p>
+            <p>A reminder text goes out the day before.</p>
+            <button type="button" data-again>Try another time</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="wrap">
+        <p>“Tamara at the Hair Salon is a godsend for hair transformations.”</p>
+        <span>From a client review</span>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap visit-grid">
+        <div class="card">
+          <h3>69 West Street</h3>
+          <p>Greenpoint, Brooklyn, NY 11222</p>
+          <p>Call <a class="link" href="tel:+13479269322">(347) 926-9322</a></p>
+          <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Hairenomics+Mane+Bar+69+West+St+Brooklyn" target="_blank" rel="noopener">Get directions →</a></p>
+        </div>
+        <div class="card">
+          <h3>Hours</h3>
+          <table><tbody data-hours></tbody></table>
+          <p class="small">Sample hours for the demo. We'd put your real hours here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap foot">
+      <span>© Hairenomics Mane Bar · Greenpoint, Brooklyn</span>
+      <span>Mockup by <a href="/">Regulars NYC</a></span>
+    </div>
+  </footer>
+  <a class="btn btn-copper mobile-book" href="#book">Book an appointment</a>
+
+  <script type="application/json" id="hours">[null, null, [10, 19], [10, 19], [10, 19], [10, 19], [9, 17]]</script>
+  <script src="../mockup.js"></script>
+</body>
+</html>
