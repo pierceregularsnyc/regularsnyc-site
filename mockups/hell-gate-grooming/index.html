@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hell Gate Grooming | Astoria (mockup by Regulars NYC)</title>
+  <meta name="description" content="A homepage mockup made for Hell Gate Grooming by Regulars NYC.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#14171b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+:root { --bg: #14171b; --paper: #1c2026; --stone: #181b20; --line: #2d333b; --ink: #ecebe7; --ink-2: #c2c4c6; --ink-3: #8a8f95; --acc: #e2602a; --acc-2: #c24d1c; --on-acc: #fff; --display: "Big Shoulders Display", Impact, sans-serif; --sans: "Work Sans", system-ui, sans-serif; --btn-r: 0; --card-r: 0; --hero-shape: 0; --h1-weight: 800; --h1-case: uppercase; --h1-lh: .92; --h1-track: .01em; --mark-case: uppercase; --mark-weight: 800; --btn-case: uppercase; --btn-track: .1em; --dot-r: 0; --quote-font: "Work Sans", sans-serif; --quote-weight: 500; --hero-pos: 50% 25%; --hero-shade: linear-gradient(90deg, rgb(20 23 27 / .92) 0%, rgb(20 23 27 / .55) 55%, rgb(20 23 27 / .2) 100%) }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+.wrap { width: min(1160px, 100% - 40px); margin-inline: auto; }
+.mock-bar { background: #2747e8; color: #fff; font: 400 13.5px/1.5 system-ui, sans-serif; text-align: center; padding: 8px 16px; position: relative; z-index: 5; }
+.mock-bar p { margin: 0; } .mock-bar a { color: #fff; font-weight: 600; }
+
+.top { position: relative; z-index: 4; }
+.top-inner { display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 20px; }
+.mark { text-decoration: none; display: flex; align-items: center; gap: 12px; }
+.mark svg { width: 36px; height: 36px; stroke: var(--acc); fill: none; stroke-width: 1.6; flex: none; }
+.mark b { font: var(--mark-weight, 700) 20px/1 var(--display); letter-spacing: var(--mark-track, .01em); text-transform: var(--mark-case, none); }
+.mark small { display: block; font: 600 10px/1 var(--sans); letter-spacing: .3em; color: var(--ink-3); margin-top: 6px; }
+.nav { display: flex; gap: 30px; font-size: 15px; color: var(--ink-2); }
+.nav a { text-decoration: none; } .nav a:hover { color: var(--ink); }
+@media (max-width: 860px) { .nav { display: none; } }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 54px; padding: 0 28px; border-radius: var(--btn-r); font: 600 15px/1 var(--sans); letter-spacing: var(--btn-track, .02em); text-transform: var(--btn-case, none); text-decoration: none; border: 1.5px solid transparent; cursor: pointer; transition: background .18s, color .18s, transform .18s; }
+.btn:active { transform: translateY(1px); }
+.btn-acc { background: var(--acc); color: var(--on-acc); }
+.btn-acc:hover { background: var(--acc-2); }
+.btn-line { border-color: currentColor; }
+.btn-line:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn-sm { height: 44px; padding: 0 20px; font-size: 14px; }
+.btn:disabled { opacity: .35; cursor: not-allowed; }
+
+.status { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink-2); margin: 0 0 26px; padding: 7px 14px 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: color-mix(in srgb, var(--paper) 70%, transparent); }
+.status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); }
+.status.is-open .dot { background: #4caf6a; box-shadow: 0 0 0 4px rgb(76 175 106 / .2); }
+h1 { font: var(--h1-weight, 600) clamp(46px, 6.8vw, 92px)/var(--h1-lh, 1.02) var(--display); letter-spacing: var(--h1-track, -.02em); text-transform: var(--h1-case, none); margin: 0 0 26px; text-wrap: balance; }
+h1 em { font-style: var(--em-style, normal); color: var(--acc); }
+.lead { font-size: 19px; color: var(--ink-2); max-width: 30em; margin: 0 0 34px; }
+.cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.facts { display: flex; flex-wrap: wrap; gap: 10px 26px; margin: 34px 0 0; padding: 0; list-style: none; font-size: 14.5px; color: var(--ink-2); }
+.facts li { display: flex; align-items: center; gap: 8px; }
+.facts li::before { content: ""; width: 6px; height: 6px; background: var(--acc); border-radius: var(--dot-r, 50%); }
+
+/* hero: split */
+.hero-split { padding: 36px 0 100px; }
+.hero-split .grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 64px; align-items: center; }
+.hero-art { position: relative; }
+.hero-art figure { margin: 0; overflow: hidden; }
+.ha-main { aspect-ratio: 4/5; border-radius: var(--hero-shape); }
+.ha-main img, .ha-small img { width: 100%; height: 100%; object-fit: cover; }
+.ha-small { position: absolute; width: 38%; aspect-ratio: 1; left: -12%; bottom: 7%; border-radius: var(--small-shape, 50%); border: 8px solid var(--bg); }
+.stamp { position: absolute; right: -8px; top: 10%; width: 120px; height: 120px; border-radius: 50%; background: var(--paper); color: var(--ink); display: grid; place-items: center; text-align: center; box-shadow: 0 18px 36px -18px rgb(0 0 0 / .45); }
+.stamp b { display: block; font: 700 34px/1 var(--display); }
+.stamp span { font-size: 12px; color: var(--ink-3); line-height: 1.3; }
+@media (max-width: 900px) {
+  .hero-split .grid { grid-template-columns: 1fr; gap: 48px; }
+  .hero-split .hero-art { max-width: 420px; margin-left: 12%; }
+}
+
+/* hero: full-bleed photo */
+.hero-bleed { position: relative; margin-top: -84px; min-height: min(92vh, 860px); display: flex; align-items: flex-end; padding: 150px 0 80px; color: #fff; overflow: hidden; }
+.hero-bleed > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--hero-pos, center); }
+.hero-bleed::after { content: ""; position: absolute; inset: 0; background: var(--hero-shade, linear-gradient(180deg, rgb(0 0 0 / .55) 0%, rgb(0 0 0 / .15) 35%, rgb(0 0 0 / .78) 100%)); }
+.hero-bleed .wrap { position: relative; z-index: 2; }
+.hero-bleed .lead, .hero-bleed .facts { color: rgb(255 255 255 / .86); }
+.hero-bleed .status { color: #fff; border-color: rgb(255 255 255 / .3); background: rgb(0 0 0 / .3); backdrop-filter: blur(6px); }
+.hero-bleed h1 { max-width: 12em; }
+.hero-bleed .btn-line { color: #fff; }
+.hero-bleed .btn-line:hover { background: #fff; color: #000; border-color: #fff; }
+.hero-bleed .stamp { position: absolute; right: 20px; top: -40px; }
+.has-bleed .top { color: #fff; }
+.has-bleed .top .mark small { color: rgb(255 255 255 / .7); }
+.has-bleed .top .nav { color: rgb(255 255 255 / .85); }
+.has-bleed .top .mark svg { stroke: #fff; }
+@media (max-width: 760px) { .hero-bleed .stamp { display: none; } .hero-bleed { min-height: 640px; padding-top: 130px; } .hero-bleed::after { background: linear-gradient(180deg, rgb(0 0 0 / .6) 0%, rgb(0 0 0 / .45) 30%, rgb(0 0 0 / .88) 62%, rgb(0 0 0 / .94) 100%); } }
+
+/* hero: poster */
+.hero-poster { padding: 40px 0 90px; text-align: center; }
+.hero-poster h1 { font-size: clamp(48px, 9vw, 128px); max-width: 11em; margin-inline: auto; }
+.hero-poster .lead { margin-inline: auto; }
+.hero-poster .cta, .hero-poster .facts { justify-content: center; }
+.hero-poster .status { margin-bottom: 30px; }
+.strip { display: grid; grid-template-columns: 1fr 1.35fr 1fr; gap: 16px; margin-top: 64px; align-items: end; }
+.strip figure { margin: 0; overflow: hidden; border-radius: var(--card-r); }
+.strip figure:nth-child(1), .strip figure:nth-child(3) { aspect-ratio: 3/4; }
+.strip figure:nth-child(2) { aspect-ratio: 4/4.6; }
+.strip img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .strip { grid-template-columns: 1fr 1fr; } .strip figure:nth-child(2) { grid-column: 1 / -1; order: -1; aspect-ratio: 4/3; } }
+
+/* ticker */
+.ticker { background: var(--acc); color: var(--on-acc); overflow: hidden; white-space: nowrap; border-block: 1px solid var(--line); }
+.ticker div { display: inline-flex; gap: 40px; padding: 16px 0; animation: tick 38s linear infinite; font: var(--h1-weight, 600) 22px/1 var(--display); text-transform: var(--h1-case, none); letter-spacing: .02em; }
+.ticker span::after { content: "✦"; margin-left: 40px; opacity: .6; }
+@keyframes tick { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker div { animation: none; } }
+
+section { padding: 110px 0; position: relative; }
+.sec-head { max-width: 680px; margin: 0 0 56px; }
+.sec-head.center { text-align: center; margin-inline: auto; }
+.kicker { display: inline-block; font: 600 13px/1 var(--sans); color: var(--acc); letter-spacing: .26em; text-transform: uppercase; margin-bottom: 18px; }
+h2 { font: var(--h1-weight, 600) clamp(36px, 4.6vw, 58px)/1.06 var(--display); letter-spacing: var(--h2-track, -.015em); text-transform: var(--h1-case, none); margin: 0 0 16px; text-wrap: balance; }
+h2 em { font-style: var(--em-style, normal); color: var(--acc); }
+.sec-head p { color: var(--ink-2); margin: 0; font-size: 18px; }
+
+.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.svc-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--card-r); overflow: hidden; display: flex; flex-direction: column; }
+.svc-card figure { margin: 0; aspect-ratio: 4/3; overflow: hidden; }
+.svc-card figure img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+.svc-card:hover figure img { transform: scale(1.04); }
+.svc-body { padding: 24px 24px 26px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.svc-body h3 { font: var(--h1-weight, 600) 24px/1.2 var(--display); text-transform: var(--h1-case, none); margin: 0; }
+.svc-body p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+.price { margin-top: auto; padding-top: 14px; display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid var(--line); }
+.price b { font: 700 22px/1 var(--display); }
+.price b small { font: 500 13px var(--sans); color: var(--ink-3); margin-left: 6px; }
+.price a { font-size: 14px; font-weight: 600; color: var(--acc); text-decoration: none; }
+.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px; }
+.menu-row { display: flex; align-items: baseline; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.menu-row h3 { font: var(--h1-weight, 600) 21px/1.25 var(--display); text-transform: var(--h1-case, none); margin: 0; }
+.menu-row p { margin: 2px 0 0; color: var(--ink-3); font-size: 14.5px; }
+.menu-row .dots { flex: 1; border-bottom: 1px dashed var(--line); transform: translateY(-6px); min-width: 20px; }
+.menu-row b { font: 700 20px/1 var(--display); white-space: nowrap; }
+.menu-row a { font-size: 13.5px; font-weight: 600; color: var(--acc); text-decoration: none; white-space: nowrap; }
+.also { color: var(--ink-3); font-size: 15px; margin: 30px 0 0; }
+@media (max-width: 900px) { .svc-grid { grid-template-columns: 1fr; max-width: 480px; } .menu { grid-template-columns: 1fr; } }
+
+.story { background: var(--stone); }
+.story-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 72px; align-items: center; }
+.story figure { margin: 0; border-radius: var(--card-r); overflow: hidden; aspect-ratio: 4/3.3; }
+.story figure img { width: 100%; height: 100%; object-fit: cover; }
+.story p.body { color: var(--ink-2); }
+.quotes { display: grid; gap: 26px; margin-top: 30px; }
+.quotes blockquote { margin: 0; padding-left: 22px; border-left: 3px solid var(--acc); }
+.quotes p { margin: 0 0 6px; font: var(--quote-weight, 600) 21px/1.4 var(--quote-font, var(--display)); }
+.quotes footer { font-size: 14px; color: var(--ink-3); }
+.perks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 56px; }
+.perk { background: var(--paper); border: 1px solid var(--line); border-radius: var(--card-r); padding: 22px; }
+.perk b { display: block; font: var(--h1-weight, 600) 20px/1.2 var(--display); text-transform: var(--h1-case, none); margin-bottom: 6px; }
+.perk span { color: var(--ink-2); font-size: 15px; }
+@media (max-width: 900px) { .story-grid { grid-template-columns: 1fr; gap: 40px; } .perks { grid-template-columns: 1fr; } }
+
+.book-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+.good { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 14px; }
+.good li { display: flex; gap: 14px; color: var(--ink-2); }
+.good li::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: var(--dot-r, 50%); background: var(--acc); margin-top: 10px; }
+.widget { background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: calc(var(--card-r) + 6px); padding: 30px; position: relative; overflow: hidden; box-shadow: 0 30px 60px -30px rgb(0 0 0 / .4); }
+.widget h3 { font: var(--h1-weight, 600) 26px/1.1 var(--display); text-transform: var(--h1-case, none); margin: 0 0 4px; }
+.widget .sub { margin: 0 0 18px; font-size: 14px; color: var(--ink-3); }
+.step { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-3); margin: 20px 0 10px; }
+.svcs { display: grid; gap: 8px; }
+.svc { display: flex; justify-content: space-between; align-items: center; gap: 12px; text-align: left; border: 1px solid var(--line); border-radius: calc(var(--card-r) / 1.6); padding: 12px 16px; background: transparent; cursor: pointer; }
+.svc span { color: var(--ink-3); font-size: 14px; white-space: nowrap; }
+.svc[aria-pressed="true"], .day[aria-pressed="true"], .time[aria-pressed="true"] { border-color: var(--acc); background: color-mix(in srgb, var(--acc) 12%, transparent); }
+.days { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.day { border: 1px solid var(--line); background: transparent; border-radius: calc(var(--card-r) / 1.6); padding: 10px 0; cursor: pointer; display: flex; flex-direction: column; align-items: center; }
+.day span { font-size: 12px; color: var(--ink-3); }
+.day b { font: 700 21px/1.15 var(--display); }
+.times { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; min-height: 44px; }
+.time { border: 1px solid var(--line); background: transparent; border-radius: var(--btn-r); padding: 9px 0; cursor: pointer; font-size: 14px; }
+.time[disabled] { text-decoration: line-through; opacity: .35; cursor: not-allowed; }
+.hint { grid-column: 1 / -1; margin: 0; color: var(--ink-3); font-size: 14px; }
+.confirm-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.confirm-row p { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+.done { position: absolute; inset: 0; background: var(--paper); display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 30px; }
+.is-done .done { display: flex; }
+.done svg { width: 60px; height: 60px; stroke: var(--acc); fill: none; stroke-width: 1.8; margin-bottom: 16px; }
+.done h4 { font: var(--h1-weight, 600) 30px/1.1 var(--display); text-transform: var(--h1-case, none); margin: 0 0 8px; }
+.done p { margin: 0 0 6px; color: var(--ink-2); }
+.done button { margin-top: 16px; background: none; border: 0; color: var(--acc); cursor: pointer; text-decoration: underline; }
+@media (max-width: 900px) { .book-grid { grid-template-columns: 1fr; gap: 40px; } }
+@media (max-width: 520px) { .widget { padding: 22px; } .days { grid-template-columns: repeat(3, 1fr); } .times { grid-template-columns: repeat(3, 1fr); } }
+
+.visit { background: var(--paper); border-top: 1px solid var(--line); }
+.visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.visit h3 { font: var(--h1-weight, 600) 30px/1.15 var(--display); text-transform: var(--h1-case, none); margin: 0 0 14px; }
+.visit p { color: var(--ink-2); margin: 0 0 10px; }
+.visit a.link { color: var(--acc); text-decoration: none; font-weight: 600; }
+table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+th, td { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--line); font-weight: 400; }
+td { text-align: right; color: var(--ink-2); }
+tr.is-today th, tr.is-today td { color: var(--acc); font-weight: 700; }
+@media (max-width: 900px) { .visit-grid { grid-template-columns: 1fr; gap: 40px; } section { padding: 80px 0; } }
+
+footer.site { padding: 40px 0 110px; font-size: 14px; color: var(--ink-3); }
+.foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.mobile-book { display: none; }
+@media (max-width: 760px) {
+  .mobile-book { display: flex; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; box-shadow: 0 10px 30px -10px rgb(0 0 0 / .5); }
+  .top .btn { display: none; }
+}
+.bridge { position: absolute; left: 0; right: 0; bottom: 0; height: 32%; z-index: 1; stroke: #e2602a; stroke-width: 2; fill: none; opacity: .5; } .svc-card { background: #1a1e23; } .story { background: #101316; } .price b { color: var(--acc); }
+</style>
+</head>
+<body class="has-bleed">
+  <div class="mock-bar"><p>Homepage mockup made for Hell Gate Grooming by <a href="/">Regulars NYC</a>. Not live yet. Photos are placeholders until we swap in yours.</p></div>
+  <header class="top"><div class="wrap top-inner">
+    <a class="mark" href="#top" aria-label="Hell Gate Grooming, back to top"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M3 28h30"/><path d="M6 28c2-12 8-18 12-18s10 6 12 18"/><path d="M10 28V19M14 28v-12M18 28V10M22 28v-12M26 28v-9"/></svg><span><b>Hell Gate Grooming</b><small>ASTORIA · 21ST ST</small></span></a>
+    <nav class="nav" aria-label="Main"><a href="#services">Services</a><a href="#book">Book</a><a href="#visit">Visit</a></nav>
+    <a class="btn btn-acc btn-sm" href="#book">Book a cut</a>
+  </div></header>
+  <main id="top">
+    <section class="hero-bleed"><img src="photos/hero.webp" alt="" fetchpriority="high"><svg class="bridge" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true"><path d="M0 290h1200M60 290C220 60 420 20 600 20s380 40 540 270"/><path d="M120 290V180M200 290V120M280 290V84M360 290V60M440 290V44M520 290V34M600 290V30M680 290V34M760 290V44M840 290V60M920 290V84M1000 290V120M1080 290V180"/></svg><div class="wrap"><div class="stamp"><span><b>4.8</b>on Google</span></div><p class="status" data-status><span class="dot"></span><span data-status-text>Checking hours…</span></p><h1>Sharp cuts <em>near the bridge.</em></h1><p class="lead">A clean, upbeat shop on 21st Street. Pick your barber, Stephen or Kelvin, and grab a time in a few taps.</p><div class="cta"><a class="btn btn-acc" href="#book">Book a cut</a><a class="btn btn-line" href="#services">See services</a></div><ul class="facts"><li>4.8 from 71 Google reviews</li><li>Kid friendly</li><li>Walk-ins welcome</li></ul></div></section>
+    <div class="ticker" aria-hidden="true"><div><span>Stephen</span><span>Kelvin</span><span>Fades</span><span>Line-ups</span><span>Kids welcome</span><span>21st Street</span><span>Stephen</span><span>Kelvin</span><span>Fades</span><span>Line-ups</span><span>Kids welcome</span><span>21st Street</span><span>Stephen</span><span>Kelvin</span><span>Fades</span><span>Line-ups</span><span>Kids welcome</span><span>21st Street</span><span>Stephen</span><span>Kelvin</span><span>Fades</span><span>Line-ups</span><span>Kids welcome</span><span>21st Street</span></div></div>
+    <section id="services"><div class="wrap">
+      <div class="sec-head "><span class="kicker">Cuts and prices</span><h2>Pick your barber. <em>Pick your cut.</em></h2><p>Prices from your Booksy page. Every cut gets the same care, whoever&#x27;s in the chair.</p></div>
+      <div class="svc-grid"><article class="svc-card"><figure><img src="photos/hero.webp" alt="Regular haircut with Stephen" loading="lazy"></figure><div class="svc-body"><h3>Regular haircut with Stephen</h3><p>A full cut with a clean finish, from wash to style.</p><div class="price"><b>$50</b><a href="#book" data-pick="Regular haircut with Stephen">Book →</a></div></div></article><article class="svc-card"><figure><img src="photos/tools.webp" alt="Men&#x27;s haircut with Kelvin" loading="lazy"></figure><div class="svc-body"><h3>Men&#x27;s haircut with Kelvin</h3><p>Fades, tapers and classic cuts, blended clean.</p><div class="price"><b>$40</b><a href="#book" data-pick="Men&#x27;s haircut with Kelvin">Book →</a></div></div></article><article class="svc-card"><figure><img src="photos/razor.webp" alt="Line-up with enhancements" loading="lazy"></figure><div class="svc-body"><h3>Line-up with enhancements</h3><p>Edges, beard and enhancements between cuts.</p><div class="price"><b>$30</b><a href="#book" data-pick="Line-up with enhancements">Book →</a></div></div></article></div><p class="also">Kids cuts, beard work and more are all bookable too.</p>
+    </div></section>
+    <section class="story"><div class="wrap">
+      <div class="story-grid">
+        <figure><img src="photos/tools.webp" alt="Barber tools laid out on a wooden counter" loading="lazy"></figure>
+        <div><span class="kicker">The shop</span><h2>Clean shop. <em>Good energy.</em></h2><p class="body">Spacious, spotless and always upbeat. Bring the kids, pick the barber you like, and hang out for a bit. It&#x27;s that kind of place.</p>
+          <div class="quotes"><blockquote><p>“I got the best haircut of my life at this barbershop.”</p><footer>Google review, paraphrased</footer></blockquote>
+<blockquote><p>“The barbers are skilled artists and real perfectionists.”</p><footer>Google reviews, paraphrased</footer></blockquote></div></div>
+      </div>
+      <div class="perks"><div class="perk"><b>Your own site</b><span>Booksy shows clients nearby shops. Your site only shows you.</span></div><div class="perk"><b>Still uses Booksy</b><span>The Book buttons can go straight to your Booksy, nothing to change.</span></div><div class="perk"><b>Show off the work</b><span>A gallery of your best cuts, right on the homepage.</span></div></div>
+    </div></section>
+    <section id="book"><div class="wrap book-grid">
+      <div><span class="kicker">Book online</span><h2>Book in <em>three taps.</em></h2><p style="color:var(--ink-2);font-size:18px">Pick a barber, a day and a time. On your real site, this would connect to your Booksy so nothing changes on your end.</p><ul class="good"><li>Walk-ins welcome, but booking means no wait.</li><li>Reminder text the day before.</li></ul></div>
+      <div class="widget" data-book>
+        <h3>Book at Hell Gate</h3>
+        <p class="sub">Try it. This demo uses Hell Gate&#x27;s real hours, and nothing gets sent.</p>
+        <p class="step">1 · Service</p><div class="svcs"><button type="button" class="svc" data-svc="Regular haircut with Stephen" aria-pressed="false"><b>Regular haircut with Stephen</b><span>$50</span></button><button type="button" class="svc" data-svc="Men&#x27;s haircut with Kelvin" aria-pressed="false"><b>Men&#x27;s haircut with Kelvin</b><span>$40</span></button><button type="button" class="svc" data-svc="Line-up with enhancements" aria-pressed="false"><b>Line-up with enhancements</b><span>$30</span></button></div>
+        <p class="step">2 · Day</p><div class="days" data-days></div>
+        <p class="step">3 · Time</p><div class="times" data-times></div>
+        <div class="confirm-row"><p data-summary>Pick a service</p><button type="button" class="btn btn-acc btn-sm" data-confirm disabled>Confirm</button></div>
+        <div class="done" role="status" data-done>
+          <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26"/><path d="M19 31l7 7 15-16"/></svg>
+          <h4>You&#x27;re in the chair</h4><p data-done-text></p><p>A reminder text goes out the day before.</p>
+          <button type="button" data-again>Pick another time</button>
+        </div>
+      </div>
+    </div></section>
+    <section class="visit" id="visit"><div class="wrap visit-grid">
+      <div><h3>26-18 21st Street</h3><p>Astoria, NY 11102</p><p>Call <a class="link" href="tel:+17186006164">(718) 600-6164</a></p><p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Hell Gate Grooming 26-18 21st St Astoria" target="_blank" rel="noopener">Get directions →</a> &nbsp; <a class="link" href="https://www.instagram.com/hellgategrooming_/" target="_blank" rel="noopener">Instagram →</a></p></div>
+      <div><h3>Hours</h3><table><tbody data-hours></tbody></table></div>
+    </div></section>
+  </main>
+  <footer class="site"><div class="wrap foot"><span>© Hell Gate Grooming · Astoria</span><span>Mockup by <a href="/">Regulars NYC</a></span></div></footer>
+  <a class="btn btn-acc mobile-book" href="#book">Book a cut</a>
+  <script type="application/json" id="hours">[null, [10, 19], [10, 19], [10, 20], [10, 20], [10, 20], [10, 20]]</script>
+  <script src="../mockup.js"></script>
+</body>
+</html>
